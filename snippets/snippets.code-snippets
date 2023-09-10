@@ -2,7 +2,8 @@
   "Create flex-layout-col without props": {
     "prefix": "flc",
     "body": ["\"flex-layout-col#${1}\":{", "  \"title\": \"${2}\"", "},"],
-    "description": "Prueba Description"
+    "description": "Prueba Description",
+    "scope": "json, jsonc"
   },
   "Create slider to images": {
     "prefix": "carrousel",
@@ -13,7 +14,7 @@
       "        \"props\": {",
       "            \"images\": []",
       "        }",
-      "    },",
+      "   },",
       "\"slider-layout#${4}\":{",
       "        \"title\": \"${5}\",",
       "        \"props\": {",
@@ -24,9 +25,10 @@
       "            },",
       "            \"blockClass\": [${6}]",
       "        }",
-      "    }",
+      "   }",
       ""
     ],
-    "description": "Create slider to images"
+    "description": "Create slider to images",
+    "scope": "json, jsonc"
   }
 }

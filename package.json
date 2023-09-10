@@ -19,6 +19,14 @@
         "language": "jsonc",
         "path": "./snippets/snippets.code-snippets"
       }
+    ],
+    "jsonValidation": [
+      {
+        "fileMatch": [
+          "/snippets/snippets.code-snippets"
+        ],
+        "url": "./components/components.schema.json"
+      }
     ]
   }
 }
