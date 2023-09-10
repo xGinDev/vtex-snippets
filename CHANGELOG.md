@@ -1,9 +1,15 @@
-# Change Log
+# vtex-snippets README
 
-All notable changes to the "vtex-snippets" extension will be documented in this file.
+This is the README for your extension "vtex-snippets". After writing up a brief description, we recommend including the following sections.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+```
+    flc: {
+        "flex-layout.col": {
+            "title": "",
+            "props": {
 
-## [Unreleased]
+            }
+        }
+    }
 
-- Initial release
+```
