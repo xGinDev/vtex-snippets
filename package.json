@@ -14,6 +14,10 @@
       {
         "language": "json",
         "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "jsonc",
+        "path": "./snippets/snippets.code-snippets"
       }
     ]
   }

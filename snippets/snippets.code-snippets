@@ -1,1 +1,32 @@
-{}
+{
+  "Create flex-layout-col without props": {
+    "prefix": "flc",
+    "body": ["\"flex-layout-col#${1}\":{", "  \"title\": \"${2}\"", "},"],
+    "description": "Prueba Description"
+  },
+  "Create slider to images": {
+    "prefix": "carrousel",
+    "body": [
+      " \"list-context.image-list#${1}\": {",
+      "        \"title\": \"${2}\",",
+      "        \"children\": [\"slider-layout#${3}\"],",
+      "        \"props\": {",
+      "            \"images\": []",
+      "        }",
+      "    },",
+      "\"slider-layout#${4}\":{",
+      "        \"title\": \"${5}\",",
+      "        \"props\": {",
+      "            \"itemsPerPage\": {",
+      "                \"desktop\": 5,",
+      "                \"tablet\": 2,",
+      "                \"phone\": 1",
+      "            },",
+      "            \"blockClass\": [${6}]",
+      "        }",
+      "    }",
+      ""
+    ],
+    "description": "Create slider to images"
+  }
+}
