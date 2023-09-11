@@ -1,14 +1,14 @@
 {
-  "name": "vtex-snippets-io",
-  "displayName": "vtex-snippets-io",
+  "name": "vtex-snippet-io",
+  "displayName": "VTEX IO Snippets",
   "description": "Snippets to improve performance when developing in VTEX IO",
   "version": "0.0.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/xGinDev/vtex-snippets"
   },
-  "publisher": "vtex-snippets-io",
-  "icon": "logo.png",
+  "publisher": "xGinDev",
+  "icon": "logo.jpg",
   "engines": {
     "vscode": "^1.82.0"
   },
