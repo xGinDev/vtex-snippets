@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "patternProperties": {
+    "^flex-layout.col#": {
+      "additionalProperties": false,
+      "type": "object",
+      "pattern": "",
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "The title of the block see in Site Editor"
+        },
+        "children": {
+          "title": "Block's children",
+          "type": "array",
+          "items": {}
+        },
+        "props": {
+          "type": "object",
+          "description": "The props of the block",
+          "properties": {
+            "borderColor": {
+              "type": "string",
+              "description": "The color of the border."
+            }
+          }
+        }
+      }
+    }
+  },
+  "required": ["title"]
+}
