@@ -4,5 +4,6 @@ VTEX IO Snippets are concise, reusable code fragments tailored for VTEX IO. Thes
 
 ## Commands
 
-| :--------------------------------------------------------- |
+| Blocks Snippets            |
+| :------------------------- |
 | "flc" => "flex-layout.col" |

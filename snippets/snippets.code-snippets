@@ -30,5 +30,43 @@
     ],
     "description": "Create slider to images",
     "scope": "json, jsonc"
+  },
+  "rich text #": {
+    "prefix": "rt#",
+    "body": [
+      "\"rich-text#$1\": {\r",
+      "\t\"props\": {\r",
+      "\t\t\"blockClass\": \"$1\",\r",
+      "\t\t\"font\": \"$2\",\r",
+      "\t\t\"htmlId\": \"$3\",\r",
+      "\t\t\"preventVerticalStretch\": $4,\r",
+      "\t\t\"text\": \"$5\",\r",
+      "\t\t\"textAlignment\": \"$6\",\r",
+      "\t\t\"textColor\": \"$7\",\r",
+      "\t\t\"textPosition\": \"$7\"\r",
+      "\t},\r",
+      "\t\"children\": [\r",
+      "\t\t\"$8\"\r",
+      "\t}\r",
+      "}"
+    ],
+    "description": "The Rich Text block converts texts written in Markdown to HTML and displays it in your storefront."
+  },
+  "rich-text": {
+    "prefix": "rt",
+    "body": [
+      "\"rich-text#$1\": {\r",
+      "\t\"props\": {\r",
+      "\t\t\"blockClass\": \"$1\",\r",
+      "\t\t\"preventVerticalStretch\": $4,\r",
+      "\t\t\"text\": \"$5\",\r",
+      "\t\t\"textAlignment\": \"$6\",\r",
+      "\t},\r",
+      "\t\"children\": [\r",
+      "\t\t\"$8\"\r",
+      "\t}\r",
+      "}"
+    ],
+    "description": "The Rich Text block converts texts written in Markdown to HTML and displays it in your storefront."
   }
 }

@@ -1,0 +1,130 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "VTEX Blocks",
+  "type": "object",
+  "patternProperties": {
+    "^rich-text#": {
+      "additionalProperties": false,
+      "type": "object",
+      "pattern": "",
+      "markdownDescription": "https://developers.vtex.com/vtex-developer-docs/docs/vtex-rich-text\n\nThe Rich Text block converts texts written in Markdown to HTML and displays it in your storefront.\n\n`\"vtex.rich-text@0.x\"`",
+      "properties": {
+        "children": {
+          "title": "Block's chindren",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "props": {
+          "type": "object",
+          "description": "Block's properties",
+          "properties": {
+            "preventVerticalStretch": {
+              "type": "boolean"
+            },
+            "text": {
+              "type": "string",
+              "description": "Text content (Markdown)"
+            },
+            "textAlignment": {
+              "enum": ["LEFT", "CENTER", "RIGHT"],
+              "description": "Text Alignment"
+            },
+            "textPosition": {
+              "enum": ["LEFT", "CENTER", "RIGHT"],
+              "description": "Text Position"
+            },
+            "textColor": {
+              "type": "string",
+              "description": "Define the tachyon token to be used as text color.",
+              "default": "c-on-base"
+            },
+            "font": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "$ref": "#/definitions/children"
+                }
+              ],
+              "description": "Define the tachyon token to be used as font.",
+              "default": "t-body"
+            },
+            "htmlId": {
+              "type": "string",
+              "description": "Define a HTML id to be used to scroll page for this block"
+            },
+            "blockClass": {
+              "type": "string",
+              "description": "Class name"
+            }
+          },
+          "required": ["text"]
+        }
+      }
+    }
+  },
+  "properties": {
+    "rich-text": {
+      "type": "object",
+      "pattern": "",
+      "markdownDescription": "https://developers.vtex.com/vtex-developer-docs/docs/vtex-rich-text\n\nThe Rich Text block converts texts written in Markdown to HTML and displays it in your storefront.\n\n`\"vtex.rich-text@0.x\"`",
+      "properties": {
+        "children": {
+          "title": "Block's chindren",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/children"
+          }
+        },
+        "props": {
+          "type": "object",
+          "description": "Block's properties",
+          "properties": {
+            "preventVerticalStretch": {
+              "type": "boolean"
+            },
+            "text": {
+              "type": "string",
+              "description": "Text content (Markdown)"
+            },
+            "textAlignment": {
+              "type": "string",
+              "enum": ["LEFT", "CENTER", "RIGHT"],
+              "description": "Text Alignment"
+            },
+            "textPosition": {
+              "type": "string",
+              "enum": ["LEFT", "CENTER", "RIGHT"],
+              "description": "Text Position"
+            },
+            "textColor": {
+              "type": "string",
+              "description": "Define the tachyon token to be used as text color.",
+              "default": "c-on-base"
+            },
+            "font": {
+              "anyOf": [
+                {
+                  "type": "string"
+                }
+              ],
+              "description": "Define the tachyon token to be used as font.",
+              "default": "t-body"
+            },
+            "htmlId": {
+              "type": "string",
+              "description": "Define a HTML id to be used to scroll page for this block"
+            },
+            "blockClass": {
+              "type": "string",
+              "description": "Class name"
+            }
+          }
+        }
+      }
+    }
+  }
+}
