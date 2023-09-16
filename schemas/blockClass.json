@@ -1,0 +1,9 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "title": "Handler's id CSS",
+  "description": "Handler's id CSS",
+  "anyOf": [
+    { "type": "string" },
+    { "type": "array", "items": { "type": "string" } }
+  ]
+}

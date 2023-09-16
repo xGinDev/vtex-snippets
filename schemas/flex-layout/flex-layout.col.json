@@ -20,9 +20,20 @@
           "type": "object",
           "description": "The props of the block",
           "properties": {
+            "blockClass": { "$ref": "../blockClass.json" },
             "borderColor": {
               "type": "string",
               "description": "The color of the border."
+            },
+            "borderWidth": {
+              "anyOf": [
+                {
+                  "type": "number",
+                  "min": 0,
+                  "max": 5
+                }
+              ],
+              "description": "A number or string magnitude for the bw Tachyons token to be applied to the column."
             }
           }
         }
