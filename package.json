@@ -2,7 +2,7 @@
   "name": "vtex-snippet-io",
   "displayName": "VTEX IO Snippets",
   "description": "Snippets to improve performance when developing in VTEX IO",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "repository": {
     "type": "git",
     "url": "https://github.com/xGinDev/vtex-snippets"
@@ -26,11 +26,11 @@
     "snippets": [
       {
         "language": "json",
-        "path": "./snippets/snippets.code-snippets"
+        "path": "./snippets/blocks.code-snippets"
       },
       {
         "language": "jsonc",
-        "path": "./snippets/snippets.code-snippets"
+        "path": "./snippets/blocks.code-snippets"
       },
       {
         "language": "json",

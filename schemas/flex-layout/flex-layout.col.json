@@ -1,130 +1,123 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
-  "patternProperties": {
-    "^flex-layout.col#|^flex-layout.col": {
-      "additionalProperties": false,
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "children": {
+      "title": "Block's children",
+      "type": "array",
+      "items": {}
+    },
+    "props": {
       "type": "object",
-      "pattern": "",
+      "description": "The props of the block",
       "properties": {
-        "title": {
+        "blockClass": { "$ref": "../blockClass.json" },
+        "borderColor": {
           "type": "string",
-          "description": "The title of the block see in Site Editor"
+          "description": "The color of the border."
         },
-        "children": {
-          "title": "Block's children",
-          "type": "array",
-          "items": {}
-        },
-        "props": {
-          "type": "object",
-          "description": "The props of the block",
-          "properties": {
-            "blockClass": { "$ref": "../blockClass.json" },
-            "borderColor": {
-              "type": "string",
-              "description": "The color of the border."
-            },
-            "borderWidth": {
-              "anyOf": [
-                {
-                  "type": "number",
-                  "min": 0,
-                  "max": 5
-                }
-              ],
-              "description": "A number or string magnitude for the bw Tachyons token to be applied to the column."
-            },
-            "border": {
-              "anyOf": [
-                { "type": "string" },
-                { "type": "array", "items": { "type": "string" } }
-              ],
-              "description": "An array to define in which sides of the row a border should be applied to (top, right, bottom, left or all)."
-            },
-            "horizontalAlign": {
-              "anyOf": [
-                {
-                  "type": "string",
-                  "enum": ["left", "right", "center"]
-                }
-              ],
-              "description": "Controls horizontal alignment for the items inside the flex-layout.col.",
-              "default": "left"
-            },
-            "marginLeft": {
-              "anyOf": [
-                {
-                  "type": "number",
-                  "min": 0,
-                  "max": 10
-                }
-              ],
-              "description": "A number or string magnitude for the ml Tachyons token to be applied to the column."
-            },
-            "marginRight": {
-              "anyOf": [
-                {
-                  "type": "number",
-                  "min": 0,
-                  "max": 10
-                }
-              ],
-              "description": "A number or string magnitude for the mr Tachyons token to be applied to the column."
-            },
-            "paddingLeft": {
-              "anyOf": [
-                {
-                  "type": "number",
-                  "min": 0,
-                  "max": 10
-                }
-              ],
-              "description": "A number or string magnitude for the pl Tachyons token to be applied to the column."
-            },
-            "paddingRight": {
-              "anyOf": [
-                {
-                  "type": "number",
-                  "min": 0,
-                  "max": 10
-                }
-              ],
-              "description": "A number or string magnitude for the pr Tachyons token to be applied to the column."
-            },
-            "preventVerticalStretch": {
-              "type": "boolean",
-              "description": "Prevents the row from stretching vertically to fill its parent height with height: 100%, using height: 'auto' instead.",
-              "default": false
-            },
-            "rowGap": {
-              "anyOf": [
-                {
-                  "type": "number",
-                  "min": 0,
-                  "max": 10
-                }
-              ],
-              "description": "A number or string magnitude for the pb Tachyons token to be applied to rows inside of the flex-layout.col."
-            },
-            "verticalAlign": {
-              "anyOf": [
-                {
-                  "type": "string",
-                  "enum": ["top", "middle", "bottom"]
-                }
-              ],
-              "description": "Controls vertical alignment for the items inside the flex-layout.col.",
-              "default": "top"
-            },
-            "width": {
-              "anyOf": [
-                { "type": "string", "pattern": "[0-9]+%" },
-                { "type": "string", "enum": ["grow"] }
-              ],
-              "description": "Sets the width of the column. Accepts either a percentage or 'grow'."
+        "borderWidth": {
+          "anyOf": [
+            {
+              "type": "number",
+              "min": 0,
+              "max": 5
             }
-          }
+          ],
+          "description": "A number or string magnitude for the bw Tachyons token to be applied to the column."
+        },
+        "border": {
+          "anyOf": [
+            { "type": "string" },
+            { "type": "array", "items": { "type": "string" } }
+          ],
+          "description": "An array to define in which sides of the row a border should be applied to (top, right, bottom, left or all)."
+        },
+        "horizontalAlign": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": ["left", "right", "center"]
+            }
+          ],
+          "description": "Controls horizontal alignment for the items inside the flex-layout.col.",
+          "default": "left"
+        },
+        "marginLeft": {
+          "anyOf": [
+            {
+              "type": "number",
+              "min": 0,
+              "max": 10
+            }
+          ],
+          "description": "A number or string magnitude for the ml Tachyons token to be applied to the column."
+        },
+        "marginRight": {
+          "anyOf": [
+            {
+              "type": "number",
+              "min": 0,
+              "max": 10
+            }
+          ],
+          "description": "A number or string magnitude for the mr Tachyons token to be applied to the column."
+        },
+        "paddingLeft": {
+          "anyOf": [
+            {
+              "type": "number",
+              "min": 0,
+              "max": 10
+            }
+          ],
+          "description": "A number or string magnitude for the pl Tachyons token to be applied to the column."
+        },
+        "paddingRight": {
+          "anyOf": [
+            {
+              "type": "number",
+              "min": 0,
+              "max": 10
+            }
+          ],
+          "description": "A number or string magnitude for the pr Tachyons token to be applied to the column."
+        },
+        "preventVerticalStretch": {
+          "type": "boolean",
+          "description": "Prevents the row from stretching vertically to fill its parent height with height: 100%, using height: 'auto' instead.",
+          "default": false
+        },
+        "rowGap": {
+          "anyOf": [
+            {
+              "type": "number",
+              "min": 0,
+              "max": 10
+            }
+          ],
+          "description": "A number or string magnitude for the pb Tachyons token to be applied to rows inside of the flex-layout.col."
+        },
+        "verticalAlign": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": ["top", "middle", "bottom"]
+            }
+          ],
+          "description": "Controls vertical alignment for the items inside the flex-layout.col.",
+          "default": "top"
+        },
+        "width": {
+          "anyOf": [
+            { "type": "string", "pattern": "[0-9]+%" },
+            { "type": "string", "enum": ["grow"] }
+          ],
+          "description": "Sets the width of the column. Accepts either a percentage or 'grow'."
         }
       }
     }
