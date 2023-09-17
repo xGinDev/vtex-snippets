@@ -5,6 +5,9 @@
   "patternProperties": {
     "^(flex-layout.col#)|^(flex-layout.col)$": {
       "$ref": "./components/flex-layout/flex-layout.col.json"
+    },
+    "^(flex-layout.row#)|^(flex-layout.row)$": {
+      "$ref": "./components/flex-layout/flex-layout.row.json"
     }
   }
 }
