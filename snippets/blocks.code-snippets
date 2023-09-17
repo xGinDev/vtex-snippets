@@ -1,0 +1,14 @@
+{
+  "Create flex-layout-row": {
+    "prefix": "flr",
+    "body": ["\"flex-layout.row#${1}\":{", "  \"title\": \"${2}\"", "},"],
+    "description": "Create Flex Layout Row",
+    "scope": "json, jsonc"
+  },
+  "Create flex-layout-col": {
+    "prefix": "flc",
+    "body": ["\"flex-layout.col#${1}\":{", "  \"title\": \"${2}\"", "},"],
+    "description": "Create Flex Layout Col",
+    "scope": "json, jsonc"
+  }
+}

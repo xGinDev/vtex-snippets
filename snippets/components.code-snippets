@@ -1,10 +1,4 @@
 {
-  "Create flex-layout-col without props": {
-    "prefix": "flc",
-    "body": ["\"flex-layout.col#${1}\":{", "  \"title\": \"${2}\"", "},"],
-    "description": "Prueba Description",
-    "scope": "json, jsonc"
-  },
   "Create slider to images": {
     "prefix": "carrousel",
     "body": [
