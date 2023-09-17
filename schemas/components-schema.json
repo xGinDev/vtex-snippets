@@ -3,7 +3,7 @@
   "title": "Schemas Components VTEX IO",
   "type": "object",
   "patternProperties": {
-    "^(flex-layout.col#)|^(flex-layout.col)$": {
+    "^flex-layout.col#": {
       "$ref": "./components/flex-layout/flex-layout.col.schema.json"
     }
   }
