@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "patternProperties": {
-    "^(flex-layout.row#)|^(flex-layout.row)$": {
+    "^flex-layout.row#": {
       "additionalProperties": false,
       "type": "object",
       "pattern": "",
