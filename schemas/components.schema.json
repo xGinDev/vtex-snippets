@@ -4,7 +4,7 @@
   "type": "object",
   "patternProperties": {
     "^flex-layout.col#": {
-      "$ref": "./schemas/flex-layout/flex-layout.col.schema.json"
+      "$ref": "./flex-layout/flex-layout.col.schema.json"
     }
   }
 }
