@@ -2,7 +2,7 @@
   "name": "vtex-snippet-io",
   "displayName": "VTEX IO Snippets",
   "description": "Snippets to improve performance when developing in VTEX IO",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "repository": {
     "type": "git",
     "url": "https://github.com/xGinDev/vtex-snippets"
@@ -47,7 +47,7 @@
           "**/store/**/*.jsonc",
           "**/store/**/*.json"
         ],
-        "url": "./schemas/components-schema.json"
+        "url": "./schemas/components.schema.json"
       }
     ]
   }
