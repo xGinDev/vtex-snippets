@@ -5,6 +5,10 @@
   "patternProperties": {
     "^flex-layout.col#": {
       "$ref": "./flex-layout/flex-layout.col.schema.json"
+
+    },
+    "^rich-text#": {
+      "$ref": "./rich-text/rich-text.schema.json"
     }
   }
 }

@@ -10,5 +10,17 @@
     "body": ["\"flex-layout.col#${1}\":{", "  \"title\": \"${2}\"", "},"],
     "description": "Create Flex Layout Col",
     "scope": "json, jsonc"
+  },
+  "create rich text": {
+    "prefix": "rt",
+    "body": [
+      "\"rich-text\": {",
+      "  \"title\":\"\"",
+      "  \"props\": { ",
+      "  }",
+      "}"
+    ],
+    "scope":"json,jsonc",
+    "description": "Create rich text"
   }
 }
