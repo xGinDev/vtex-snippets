@@ -15,12 +15,12 @@
     "prefix": "rt",
     "body": [
       "\"rich-text\": {",
-      "  \"title\":\"\"",
+      "  \"title\":\"\",",
       "  \"props\": { ",
       "  }",
       "}"
     ],
     "scope":"json,jsonc",
-    "description": "Create rich text"
+    "description": "Generate rich text block"
   }
 }
