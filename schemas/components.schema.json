@@ -11,6 +11,9 @@
     },
     "^(rich-text#)|^(rich-text)": {
       "$ref": "./rich-text/rich-text.schema.json"
+    },
+    "^(slider-layout#)|^(slider-layout)": {
+      "$ref": "./rich-text/rich-text.schema.json"
     }
   }
 }

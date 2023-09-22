@@ -11,7 +11,7 @@
     "description": "Create Flex Layout Col",
     "scope": "json, jsonc"
   },
-  "create rich text": {
+  "Create rich text": {
     "prefix": "rt",
     "body": [
       "\"rich-text\": {",
@@ -20,7 +20,20 @@
       "  }",
       "}"
     ],
-    "scope":"json,jsonc",
+    "scope": "json,jsonc",
     "description": "Generate rich text block"
+  },
+  "Create slider-layout": {
+    "prefix": "sl",
+    "body": [
+      "\"slider-layout#${1}\": {",
+      "    \"title\": \"${2}\",",
+      "    \"props\": {",
+      "      ",
+      "    }",
+      "  }"
+    ],
+    "scope": "json,jsonc",
+    "description": "Generate slider layout block"
   }
 }
