@@ -3,11 +3,13 @@
   "title": "Schemas Components VTEX IO",
   "type": "object",
   "patternProperties": {
-    "^flex-layout.col#": {
+    "^(flex-layout.col#)|^(flex-layout.col)": {
       "$ref": "./flex-layout/flex-layout.col.schema.json"
-
     },
-    "^rich-text#": {
+    "^(flex-layout.row#)|^(flex-layout.row)": {
+      "$ref": "./flex-layout/flex-layout.col.schema.json"
+    },
+    "^(rich-text#)|^(rich-text)": {
       "$ref": "./rich-text/rich-text.schema.json"
     }
   }
