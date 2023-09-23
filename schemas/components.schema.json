@@ -13,7 +13,10 @@
       "$ref": "./rich-text/rich-text.schema.json"
     },
     "^(slider-layout#)|^(slider-layout)": {
-      "$ref": "./rich-text/rich-text.schema.json"
+      "$ref": "./slider-layout/slider-layout.schema.json"
+    },
+    "^(add-to-cart#)|^(add-to-cart)": {
+      "$ref": "./add-to-cart/add-to-cart.schema.json"
     }
   }
 }

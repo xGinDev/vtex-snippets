@@ -35,5 +35,11 @@
     ],
     "scope": "json,jsonc",
     "description": "Generate slider layout block"
+  },
+  "Create add-to-cart": {
+    "prefix": "atc",
+    "body": ["\"add-to-cart-button\""],
+    "scope": "json,jsonc",
+    "description": "Generate add to cart button"
   }
 }
