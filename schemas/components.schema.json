@@ -17,6 +17,9 @@
     },
     "^(add-to-cart#)|^(add-to-cart)": {
       "$ref": "./add-to-cart/add-to-cart.schema.json"
+    },
+    "^(autocomplete-result-list.v2#)|^(autocomplete-result-list.v2)": {
+      "$ref": "./add-to-cart/add-to-cart.schema.json"
     }
   }
 }
