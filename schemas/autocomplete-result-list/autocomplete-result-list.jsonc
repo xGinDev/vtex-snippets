@@ -47,7 +47,12 @@
           "description": "Autocomplete width. Number between 0 and 100"
         },
         "productLayout": {
-          "type": "null",
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": ["HORIZONTAL", "VERTICAL"]
+            }
+          ],
           "description": "Defines the product layout in the suggested products list"
         },
         "hideTitles": {
@@ -61,7 +66,12 @@
           "default": false
         },
         "customBreakpoints": {
-          "type": "null",
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": ["md", "lg", "xlg"]
+            }
+          ],
           "description": "Defines a maximum number of suggested products by breakpoints"
         },
         "__unstableProductOriginVtex": {
