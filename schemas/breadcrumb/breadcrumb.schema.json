@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "props": {
+      "type": "object",
+      "description": "Block's properties",
+      "properties": {
+        "blockClass": { "$ref": "../blockClass.json" },
+        "area": {
+          "type": "string",
+          "description": "Idicates the area. It needs to match the area configured in the banner."
+        },
+        "showOnMobile": {
+          "type": "boolean",
+          "description": "It determines whether Breadcrumb should also be displayed on mobile",
+          "default": false
+        },
+        "homeIconSize": {
+          "type": "number",
+          "description": "Controls the size property of IconHome",
+          "default": 26
+        },
+        "caretIconSize": {
+          "type": "number",
+          "description": "Controls the size property of IconCaret",
+          "default": 8
+        }
+      }
+    }
+  },
+  "required": ["title"]
+}

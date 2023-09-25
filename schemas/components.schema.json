@@ -23,6 +23,9 @@
     },
     "^(search-banner#)|^(search-banner)": {
       "$ref": "./search-banner/search-banner.schema.json"
+    },
+    "^(breadcrumb#)|^breadcrumb)|^(breadcrumb.search#)|^breadcrumb.search)": {
+      "$ref": "./breadcrumb/breadcrumb.schema.json"
     }
   }
 }
