@@ -11,10 +11,6 @@
       "description": "Block's properties",
       "properties": {
         "blockClass": { "$ref": "../blockClass.json" },
-        "area": {
-          "type": "string",
-          "description": "Idicates the area. It needs to match the area configured in the banner."
-        },
         "socialNetworks": {
           "anyOf": [
             {
@@ -31,6 +27,10 @@
           ],
           "description": "Defines the horizontal alignment for the banner.",
           "default": "center"
+        },
+        "showInColor": {
+          "type": "boolean",
+          "description": "Whether the icons are colored or not."
         }
       }
     }

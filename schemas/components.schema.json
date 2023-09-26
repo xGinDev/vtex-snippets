@@ -26,6 +26,9 @@
     },
     "^(breadcrumb#)|^breadcrumb)|^(breadcrumb.search#)|^breadcrumb.search)": {
       "$ref": "./breadcrumb/breadcrumb.schema.json"
+    },
+    "^(social-networks#)|^social-networks)": {
+      "$ref": "./footer/social-networks.schema.jsonc"
     }
   }
 }
