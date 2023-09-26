@@ -11,21 +11,13 @@
       "description": "Block's properties",
       "properties": {
         "blockClass": { "$ref": "../blockClass.json" },
-        "socialNetworks": {
+        "paymentMethods": {
           "anyOf": [
             {
-              "type": "string",
-              "url": "string",
-              "enum": [
-                "facebook",
-                "twitter",
-                "linkedin",
-                "youtube",
-                "pinterest"
-              ]
+              "enum": ["mastercard", "visa", "diners club"]
             }
           ],
-          "description": "Defines the horizontal alignment for the banner."
+          "description": "Possible values: mastercard, visa, diners club"
         },
         "showInColor": {
           "type": "boolean",

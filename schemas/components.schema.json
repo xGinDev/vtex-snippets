@@ -29,6 +29,9 @@
     },
     "^(social-networks#)|^social-networks)": {
       "$ref": "./footer/social-networks.schema.jsonc"
+    },
+    "^(accepted-payment-methods#)|^accepted-payment-methods)": {
+      "$ref": "./footer/accepted-payment-methods.schema.jsonc"
     }
   }
 }
