@@ -19,7 +19,7 @@
       "$ref": "./add-to-cart/add-to-cart.schema.json"
     },
     "^(autocomplete-result-list.v2#)|^(autocomplete-result-list.v2)": {
-      "$ref": "./autocomplete-result-list/autocomplete-result-list.json"
+      "$ref": "./autocomplete-result-list/autocomplete-result-list.schema.json"
     },
     "^(search-banner#)|^(search-banner)": {
       "$ref": "./search-banner/search-banner.schema.json"
@@ -27,11 +27,14 @@
     "^(breadcrumb#)|^breadcrumb)|^(breadcrumb.search#)|^breadcrumb.search)": {
       "$ref": "./breadcrumb/breadcrumb.schema.json"
     },
-    "^(social-networks#)|^social-networks)": {
-      "$ref": "./footer/social-networks.schema.jsonc"
+    "^(social-networks#)|^(social-networks)": {
+      "$ref": "./footer/social-networks.schema.json"
     },
-    "^(accepted-payment-methods#)|^accepted-payment-methods)": {
-      "$ref": "./footer/accepted-payment-methods.schema.jsonc"
+    "^(accepted-payment-methods#)|^(accepted-payment-methods)": {
+      "$ref": "./footer/accepted-payment-methods.schema.json"
+    },
+    "^(powered-by#)|^(powered-by)": {
+      "$ref": "./footer/powered-by.schema.json"
     }
   }
 }
