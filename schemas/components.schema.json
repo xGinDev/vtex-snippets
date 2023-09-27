@@ -27,6 +27,12 @@
     "^(breadcrumb#)|^breadcrumb)|^(breadcrumb.search#)|^breadcrumb.search)": {
       "$ref": "./breadcrumb/breadcrumb.schema.json"
     },
+    "^(footer-layout.desktop#)|^(footer-layout.desktop)": {
+      "$ref": "./footer/footer-desktop.schema.json"
+    },
+    "^(footer-layout.mobile#)|^(footer-layout.mobile)": {
+      "$ref": "./footer/footer-mobile.schema.json"
+    },
     "^(footer#)|^(footer)": {
       "$ref": "./footer/footer.schema.json"
     },
