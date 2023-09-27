@@ -27,6 +27,9 @@
     "^(breadcrumb#)|^breadcrumb)|^(breadcrumb.search#)|^breadcrumb.search)": {
       "$ref": "./breadcrumb/breadcrumb.schema.json"
     },
+    "^(footer#)|^(footer)": {
+      "$ref": "./footer/footer.schema.json"
+    },
     "^(social-networks#)|^(social-networks)": {
       "$ref": "./footer/social-networks.schema.json"
     },
