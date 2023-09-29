@@ -12,11 +12,8 @@
       "properties": {
         "blockClass": { "$ref": "../blockClass.json" },
         "paymentMethods": {
-          "anyOf": [
-            {
-              "enum": ["mastercard", "visa", "diners club"]
-            }
-          ],
+          "type": "string",
+          "enum": ["mastercard", "visa", "diners club"],
           "description": "Possible values: mastercard, visa, diners club"
         },
         "showInColor": {

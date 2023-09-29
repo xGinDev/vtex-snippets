@@ -11,18 +11,32 @@
       "description": "Block's properties",
       "properties": {
         "blockClass": { "$ref": "../blockClass.json" },
+        "title": {
+          "type": "string",
+          "description": "Text to show above of list of links"
+        },
         "socialNetworks": {
-          "anyOf": [
+          "type": "array",
+          "items": [
             {
-              "type": "string",
-              "url": "string",
-              "enum": [
-                "facebook",
-                "twitter",
-                "linkedin",
-                "youtube",
-                "pinterest"
-              ]
+              "type": "object",
+              "properties": {
+                "url": {
+                  "type": "string",
+                  "description": "Link to the social network profile"
+                },
+                "name": {
+                  "type": "string",
+                  "enum": [
+                    "facebook",
+                    "twitter",
+                    "linkedin",
+                    "youtube",
+                    "pinterest"
+                  ],
+                  "description": "Possible values: facebook, twitter, linkedin, youtube, pinterest"
+                }
+              }
             }
           ],
           "description": "Defines the horizontal alignment for the banner."

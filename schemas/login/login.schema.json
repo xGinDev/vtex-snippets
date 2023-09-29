@@ -1,0 +1,100 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "blocks": {
+      "title": "Block's children",
+      "type": "array",
+      "items": {}
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "blockClass": { "$ref": "../blockClass.json" },
+        "optionsTitle": {
+          "type": "string",
+          "description": "Text to entitle the login options."
+        },
+        "emailAndPasswordTitle": {
+          "type": "string",
+          "description": "Text to display the email-and-password option."
+        },
+        "accessCodeTitle": {
+          "type": "string",
+          "description": "Text to display the access-code option."
+        },
+        "emailPlaceholder": {
+          "type": "string",
+          "description": "Text to be displayed as placeholder to the email input."
+        },
+        "passwordPlaceholder": {
+          "type": "string",
+          "description": "Text to be displayed as placeholder to the password input."
+        },
+        "acessCodePlaceholder": {
+          "type": "string",
+          "description": "Text to be displayed as placeholder to the access code input."
+        },
+        "showPasswordVerificationIntoTooltip": {
+          "type": "boolean",
+          "description": "Whether a tooltip responsible for checking the password format should be shown (true) or not (false).",
+          "default": true
+        },
+        "showIconProfile": {
+          "type": "boolean",
+          "description": "Whether the hpa-profile icon from Store Icons should be displayed on the Login component (true) or not (false).",
+          "default": true
+        },
+        "iconLabel": {
+          "type": "string",
+          "description": "Text string to entitle the Login icon."
+        },
+        "hideIconLabel": {
+          "type": "boolean",
+          "description": "Whether the text string defined for the Login icon should be hidden (true) or not (false).",
+          "default": false
+        },
+        "labelClasses": {
+          "anyOf": [
+            { "type": "string" },
+            { "type": "array", "items": { "type": "string" } }
+          ],
+          "description": "Login icon's classnames."
+        },
+        "providerPasswordButtonLabel": {
+          "type": "string",
+          "description": "Text to be displayed as the password button label."
+        },
+        "identifierPlaceholder": {
+          "type": "string",
+          "description": "Text to be displayed as placeholder to the extension input."
+        },
+        "invalidIdentifierError": {
+          "type": "string",
+          "description": "Error message for invalid user identifier."
+        },
+        "mirrorTooltipToRight": {
+          "type": "boolean",
+          "description": "Whether the Login tooltip should open towards the right side of the screen (true) or not (false).",
+          "default": false
+        },
+        "logInButtonBehavior": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": ["popover", "link"]
+            }
+          ],
+          "description": "Expected behavior of the Login component when clicked on. Possible values are: popover (opens a popover tab) and link (redirects user to the /login page).",
+          "default": "popover"
+        },
+        "accountOptionsButtonBehavior": {}
+      }
+    }
+  }
+}
