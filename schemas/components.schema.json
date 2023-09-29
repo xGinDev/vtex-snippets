@@ -62,6 +62,9 @@
     },
     "^(login#)|^(login)": {
       "$ref": "./login/login.schema.json"
+    },
+    "^(login-content#)|^(login-content)": {
+      "$ref": "./login/login-content.schema.json"
     }
   }
 }
