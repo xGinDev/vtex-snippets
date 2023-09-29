@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "children": {
+      "title": "Block's children",
+      "type": "array",
+      "items": [{}]
+    },
+    "props": {
+      "type": "object",
+      "description": "Block's properties",
+      "properties": {
+        "blockClass": { "$ref": "../blockClass.json" },
+        "zIndex": {
+          "type": "number",
+          "description": "CSS property that controls the vertical stacking order of elements for overlapping.",
+          "default": 0
+        },
+        "sticky": {
+          "type": "boolean",
+          "description": "Whether the Header margin should be fixed on the layout (true) or not (false)",
+          "default": false
+        },
+        "fullWidth": {
+          "type": "boolean",
+          "description": "Whether the Header should take the full width of the screen or not",
+          "default": true
+        },
+        "inverted": {
+          "type": "boolean",
+          "description": "Whether the row will use the base color (false) or the inverted base color (true) as defined in styles.json.",
+          "default": false
+        }
+      }
+    }
+  },
+  "required": ["title"]
+}

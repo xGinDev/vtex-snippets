@@ -44,6 +44,21 @@
     },
     "^(powered-by#)|^(powered-by)": {
       "$ref": "./footer/powered-by.schema.json"
+    },
+    "^(header#)|^(header)": {
+      "$ref": "./header/header.schema.json"
+    },
+    "^(header-layout.desktop#)|^(header-layout.desktop)": {
+      "$ref": "./header/header-desktop.schema.json"
+    },
+    "^(header-layout.mobile#)|^(header-layout.mobile)": {
+      "$ref": "./header/header-mobile.schema.json"
+    },
+    "^(header-row#)|^(header-row)": {
+      "$ref": "./header/header-row.schema.json"
+    },
+    "^(header-force-center#)|^(header-force-center)": {
+      "$ref": "./header/header-force-center.schema.json"
     }
   }
 }
