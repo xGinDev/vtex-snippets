@@ -94,6 +94,16 @@
           "default": "popover"
         },
         "accountOptionsButtonBehavior": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": ["popover", "link"]
+            }
+          ],
+          "description": "Expected behavior of the My account button when clicked on. Possible values are: popover (opens a popover tab) and link (redirects user to the /account page).",
+          "default": "popover"
+        },
+        "accountOptionLinks": {
           "type": "object",
           "properties": {
             "label": {
@@ -113,6 +123,39 @@
             }
           },
           "description": "Creates a custom link to replace the default one set for the accountOptionsButtonBehavior's link value (/account). Check out below the available props for the object."
+        },
+        "termsAndConditions": {
+          "type": "string",
+          "description": "Text to be displayed below the login options regarding terms&conditions."
+        },
+        "hasGoogleOneTap": {
+          "type": "boolean",
+          "description": "Whether the Google's One-tap sign-up and auto sign-in solution should be enabled (true) or not (false).",
+          "default": false
+        },
+        "googleOneTapAlignment": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": ["Left", "Right"]
+            }
+          ],
+          "description": "Defines pop-up alignment for the Google One-tap login. Possible values are Left and Right."
+        },
+        "googleOneTapMarginTop": {
+          "type": "string",
+          "description": "Defines the pop-up top margin for the Google One-tap login. The values supported are the same supported by the CSS property top.",
+          "default": "3rem"
+        },
+        "disabledEmailInputs": {
+          "type": "boolean",
+          "description": "Whether user email editing should be allowed (true) or not (false).",
+          "default": false
+        },
+        "blockOAuthAutoRedirect": {
+          "type": "boolean",
+          "description": "If this prop is true and the only active provider is an OAuth, the login won't auto-redirect as usual. Also, the query string oAuthRedirect will be disabled.",
+          "default": false
         }
       }
     }

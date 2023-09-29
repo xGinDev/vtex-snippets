@@ -1,0 +1,86 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "blocks": {
+      "title": "Block's children",
+      "type": "array",
+      "items": {}
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "isInitialScreenOptionOnly": {
+          "type": "boolean",
+          "description": "Whether only the login options will be displayed on the initial screen (true) or not (false).",
+          "default": false
+        },
+        "defaultOption": {
+          "anyOf": [
+            {
+              "type": "number",
+              "enum": [0, 1, 2]
+            }
+          ],
+          "description": "Defines the default login options to be shown. Possible values are: 0 (shows the access-code option for login), 1 (shows the email/password option for login) and 2 (shows the corporate option for login).",
+          "default": 0
+        },
+        "optionsTitle": {
+          "type": "string",
+          "description": "Text to entitle the login options."
+        },
+        "emailAndPasswordTitle": {
+          "type": "string",
+          "description": "Text to display the email-and-password option."
+        },
+        "accessCodeTitle": {
+          "type": "string",
+          "description": "Text to display the access-code option."
+        },
+        "emailPlaceholder": {
+          "type": "string",
+          "description": "Text to be displayed as placeholder to the email input."
+        },
+        "passwordPlaceholder": {
+          "type": "string",
+          "description": "Text to be displayed as placeholder to the password input."
+        },
+        "showPasswordVerificationIntoTooltip": {
+          "type": "boolean",
+          "description": "Whether a tooltip responsible for checking the password format should be shown (true) or not (false)",
+          "default": true
+        },
+        "acessCodePlaceholder": {
+          "type": "string",
+          "description": "Text to be displayed as placeholder to the access code input."
+        },
+        "providerPasswordButtonLabel": {
+          "type": "string",
+          "description": "Text to be displayed as the password button label."
+        },
+        "identifierPlaceholder": {
+          "type": "string",
+          "description": "Text to be displayed as placeholder to the extension input."
+        },
+        "invalidIdentifierError": {
+          "type": "string",
+          "description": "Error message for invalid user identifier."
+        },
+        "termsAndConditions": {
+          "type": "string",
+          "description": "Text to be displayed below the login options regarding terms&conditions."
+        },
+        "disabledEmailInputs": {
+          "type": "boolean",
+          "description": "Whether user email editing should be allowed (true) or not (false).",
+          "default": false
+        }
+      }
+    }
+  }
+}
