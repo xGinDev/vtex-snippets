@@ -93,7 +93,27 @@
           "description": "Expected behavior of the Login component when clicked on. Possible values are: popover (opens a popover tab) and link (redirects user to the /login page).",
           "default": "popover"
         },
-        "accountOptionsButtonBehavior": {}
+        "accountOptionsButtonBehavior": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string",
+              "description": "Text lable for the custom link."
+            },
+            "path": {
+              "type": "string",
+              "description": "Custom link's path."
+            },
+            "cssClass": {
+              "anyOf": [
+                { "type": "string" },
+                { "type": "array", "items": { "type": "string" } }
+              ],
+              "description": "Login icon's class names."
+            }
+          },
+          "description": "Creates a custom link to replace the default one set for the accountOptionsButtonBehavior's link value (/account). Check out below the available props for the object."
+        }
       }
     }
   }

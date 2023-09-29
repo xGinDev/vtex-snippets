@@ -59,6 +59,9 @@
     },
     "^(header-force-center#)|^(header-force-center)": {
       "$ref": "./header/header-force-center.schema.json"
+    },
+    "^(login#)|^(login)": {
+      "$ref": "./login/login.schema.json"
     }
   }
 }
