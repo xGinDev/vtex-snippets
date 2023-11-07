@@ -1,0 +1,113 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "blockClass": { "$ref": "../blockClass.json" },
+        "type": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": ["category", "custom"]
+            }
+          ],
+          "description": "Menu item type, either category or custom",
+          "default": "category"
+        },
+        "id": {
+          "type": "string",
+          "description": "menu item ID"
+        },
+        "highlight": {
+          "type": "boolean",
+          "description": "Whether the item has highlight"
+        },
+        "iconPosition": {
+          "type": "string",
+          "description": "Icon position relative to the menu item text. Either to the left or right",
+          "default": "left"
+        },
+        "iconProps": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "Icon ID"
+            },
+            "isActive": {
+              "type": "boolean",
+              "description": "Whether the item is active or not",
+              "default": true
+            },
+            "size": {
+              "type": "number",
+              "description": "Icon size",
+              "default": 16
+            },
+            "viexBox": {
+              "type": "string",
+              "description": "Icon view box",
+              "default": "0 0 16 16"
+            },
+            "activeClassName": {
+              "type": "string",
+              "description": "Icon classname when isActive is true"
+            },
+            "mutedClassName": {
+              "type": "string",
+              "description": "Icon classname when isActive is false"
+            }
+          }
+        },
+        "onMountBehavior": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": ["open", "closed"]
+            }
+          ],
+          "description": "Whether the submenu should always be automatically displayed when its parent is hovered/clicked on (open) or not (closed).",
+          "default": "closed"
+        },
+        "itemProps": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "enum": ["internal", "external"]
+                }
+              ],
+              "description": "Menu item type, either internal or external",
+              "default": "internal"
+            },
+            "href": {
+              "type": "string",
+              "description": "Link to where the menu item leads"
+            },
+            "noFollow": {
+              "type": "boolean",
+              "description": "No follow attribute"
+            },
+            "tagTitle": {
+              "type": "string",
+              "description": "Menu item tag"
+            },
+            "text": {
+              "type": "string",
+              "description": "Menu item text"
+            }
+          }
+        }
+      }
+    }
+  }
+}
