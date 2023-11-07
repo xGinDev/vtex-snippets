@@ -1,0 +1,103 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "children": {
+      "title": "Block's children",
+      "type": "array",
+      "items": {}
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "blockClass": { "$ref": "../blockClass.json" },
+        "variation": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": ["popup", "drawer", "link", "popupWithLink"]
+            }
+          ],
+          "description": "Minicart behavior when rendered. Possible values for displaying the VTEX Minicart are: popup (appears as a pop-up window on the homepage), drawer (appears as a sidebar), link (redirects the user to the Checkout page when clicked), popupWithLink (combines link and popup functionalities), and block (displays the Minicart as a fixed block on the page).",
+          "default": "drawer"
+        },
+        "drawerSlideDirection": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": ["rightToLeft", "leftToRight"]
+            }
+          ],
+          "description": "Slide direction for the drawer Minicart opening. Possible values are: rightToLeft or leftToRight.",
+          "default": "rightToLeft"
+        },
+        "linkVariationUrl": {
+          "type": "string",
+          "description": "Link associated with the link Minicart."
+        },
+        "maxDrawerWidth": {
+          "type": "number",
+          "description": "Maximum width (in pixels) for the drawer Minicart when opened.",
+          "default": 440
+        },
+        "openOnHover": {
+          "type": "boolean",
+          "description": "Indicates whether the popup Minicart should open when the user hovers over it.",
+          "default": false
+        },
+        "quantityDisplay": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": ["always", "not-empty", "never"]
+            }
+          ],
+          "description": "Shows the quantity badge even when the amount of products in the cart is zero. Possible values are: always or not-empty or never.",
+          "default": "not-empty"
+        },
+        "itemCountMode": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "total",
+                "distinct",
+                "totalAvailable",
+                "distinctAvailable"
+              ]
+            }
+          ],
+          "description": "Quantity badge behavior when displaying the total items added to Minicart. Possible values are: total (quantity badge displays the number of items added to the cart), distinct (only displays the number of different products added to the cart), totalAvailable (displays the number of available items added to the cart), and distinctAvailable (displays the number of different and available products added to the cart).",
+          "default": "distinct"
+        },
+        "backdropMode": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": ["visible", "none"]
+            }
+          ],
+          "description": "Controls whether the backdrop should be displayed when the drawer Minicart is opened or not. Possible values are: visible (renders the backdrop) or none (renders the drawer without backdrop).",
+          "default": "none"
+        },
+        "MinicartIcon": {
+          "description": "Icon displayed on the Minicart button. This prop value must match the block name responsible for rendering the desired icon.",
+          "default": "icon-cart"
+        },
+        "customPixelEventId": {
+          "type": "string",
+          "description": "Store event ID responsible for triggering the minicart.v2 to automatically open on the interface."
+        },
+        "customPixelEventName": {
+          "type": "string",
+          "description": "Store event name responsible for triggering the minicart.v2 to automatically open on the interface. Some examples are: 'addToCart' and 'removeFromCart'. Note that using this prop will make the minicart.v2 open in every event with the specified name if no customPixelEventId is specified."
+        }
+      }
+    }
+  }
+}

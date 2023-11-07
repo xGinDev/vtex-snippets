@@ -68,6 +68,9 @@
     },
     "^(menu#)|^(menu)": {
       "$ref": "./menu/menu.schema.json"
+    },
+    "^(menu-item#)|^(menu-item)": {
+      "$ref": "./menu/menu-item.schema.json"
     }
   }
 }
