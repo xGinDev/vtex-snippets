@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "children": {
+      "title": "Block's children",
+      "type": "array",
+      "items": {}
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "blockClass": { "$ref": "../blockClass.json" },
+        "borderless": {
+          "type": "boolean",
+          "description": "Remove the bottom border of the section",
+          "default": false
+        },
+        "marginBottom": {
+          "type": "number",
+          "description": "Margin space below the section",
+          "default": 0
+        },
+        "paddingBottom": {
+          "type": "number",
+          "description": "Padding space below the section",
+          "default": 0
+        },
+        "width": {
+          "type": "string",
+          "description": "Width of the section",
+          "default": "100%"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the section. Use it to have custom css handles for it."
+        }
+      }
+    }
+  }
+}

@@ -71,6 +71,12 @@
     },
     "^(menu-item#)|^(menu-item)": {
       "$ref": "./menu/menu-item.schema.json"
+    },
+    "^(minicart#)|^(minicart)": {
+      "$ref": "./minicart/minicart.schema.json"
+    },
+    "^(op-section#)|^(op-section)": {
+      "$ref": "./order-placed/op-section.schema.json"
     }
   }
 }
