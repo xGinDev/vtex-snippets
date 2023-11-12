@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "variation": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "primary",
+                "secondary",
+                "tertiary",
+                "inverted-tertiary",
+                "danger",
+                "danger-tertiary"
+              ]
+            }
+          ],
+          "description": "Variation for the button visual proeminence based on the VTEX Styleguide. Possible values are: primary, secondary, tertiary, inverted-tertiary, danger and danger-tertiary",
+          "default": "danger"
+        },
+        "displayMode": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": ["text-button", "icon-button"]
+            }
+          ],
+          "description": "Defines how the remove button should be displayed. Possible values are: icon-button (to render an icon button) and text-button (to render a text message button). If you desire to create a modal in the remove button, use the icon-button value.",
+          "default": "icon-button"
+        }
+      }
+    }
+  },
+  "required": ["title"]
+}

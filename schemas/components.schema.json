@@ -86,6 +86,33 @@
     },
     "^(product-highlight-wrapper#)|^(product-highlight-wrapper)": {
       "$ref": "./product-highlights/product-highlight-wrapper.schema.json"
+    },
+    "^(product-identifier.product#)|^(product-identifier.product)": {
+      "$ref": "./product-identifier/product-identifier.schema.json"
+    },
+    "^(product-list#)|^(product-list)": {
+      "$ref": "./product-list/product-list.schema.json"
+    },
+    "^(message#)|^(message)": {
+      "$ref": "./product-list/message.schema.json"
+    },
+    "^(price#)|^(price)": {
+      "$ref": "./product-list/price.schema.json"
+    },
+    "^(unit-price#)|^(unit-price)": {
+      "$ref": "./product-list/unit-price.schema.json"
+    },
+    "^(product-list-image#)|^(product-list-image)": {
+      "$ref": "./product-list/product-list-image.schema.json"
+    },
+    "^(product-reference#)|^(product-reference)": {
+      "$ref": "./product-list/product-reference.schema.json"
+    },
+    "^(remove-button#)|^(remove-button)": {
+      "$ref": "./product-list/remove-button.schema.json"
+    },
+    "^(quantity-selector#)|^(quantity-selector)": {
+      "$ref": "./product-list/quantity-selector.schema.json"
     }
   }
 }

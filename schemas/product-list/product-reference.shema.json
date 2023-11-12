@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "identifierLabel": {
+          "type": "string",
+          "description": "Text label to be displayed to the left of the product reference value."
+        },
+        "identifierOption": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "ProductId",
+                "ProductSkuItemId",
+                "ProductReferenceId",
+                "ProductSkuReferenceId"
+              ]
+            }
+          ],
+          "description": "Desired product reference data i.e. product identifier to be displayed. Possible options are: ProductId, ProductSkuItemId, ProductReferenceId, and ProductSkuReferenceId.",
+          "default": "ProductReferenceId"
+        }
+      }
+    }
+  },
+  "required": ["title"]
+}
