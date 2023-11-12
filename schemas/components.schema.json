@@ -80,6 +80,12 @@
     },
     "^(product-highlights#)|^(product-highlights)": {
       "$ref": "./product-highlights/product-highlights.schema.json"
+    },
+    "^(product-highlight-text#)|^(product-highlight-text)": {
+      "$ref": "./product-highlights/product-highlight-text.schema.json"
+    },
+    "^(product-highlight-wrapper#)|^(product-highlight-wrapper)": {
+      "$ref": "./product-highlights/product-highlight-wrapper.schema.json"
     }
   }
 }
