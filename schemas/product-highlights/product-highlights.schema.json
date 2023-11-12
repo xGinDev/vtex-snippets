@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "children": {
+      "title": "Block's children",
+      "type": "array",
+      "items": {}
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "blockClass": {
+          "$ref": "../blockClass.json"
+        },
+        "type": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": ["collection", "promotion", "teaser"]
+            }
+          ],
+          "default": "collection"
+        },
+        "filter": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "enum": ["show", "hide"]
+                }
+              ]
+            }
+          }
+        }
+      },
+      "required": ["title"]
+    }
+  }
+}

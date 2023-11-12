@@ -77,6 +77,9 @@
     },
     "^(op-section#)|^(op-section)": {
       "$ref": "./order-placed/op-section.schema.json"
+    },
+    "^(product-highlights#)|^(product-highlights)": {
+      "$ref": "./product-highlights/product-highlights.schema.json"
     }
   }
 }
