@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "blockClass": {
+          "$ref": "../blockClass.json"
+        },
+        "label": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": ["default", "custom", "hide"]
+            }
+          ],
+          "default": "default"
+        },
+        "customLabel": {
+          "type": "string"
+        },
+        "idField": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "itemId",
+                "productId",
+                "productReference",
+                "skuEan",
+                "skuReferenceId"
+              ]
+            }
+          ]
+        }
+      },
+      "required": ["title"]
+    }
+  }
+}
