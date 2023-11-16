@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "percentageStyle": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": ["locale", "compact"]
+            }
+          ],
+          "description": "Set to compact if you want to remove the white space between the number and the percent sign. It uses pattern provided by the current locale as default.",
+          "default": "locale"
+        },
+        "minimumPercentage": {
+          "type": "number",
+          "description": "Set the minimum value for the percentage value display. If not informed, it always appears. Example: 10, savings under or equal 10% will not show up.",
+          "default": 0
+        },
+        "message": {
+          "type": "string",
+          "enum": [
+            "{previousPriceValue}",
+            "{newPriceValue}",
+            "{savingsValue}",
+            "{savingsWithTax}",
+            "{savingsPercentage}"
+          ],
+          "description": "Options for message price savings"
+        },
+        "blockClass": {
+          "$ref": "../blockClass.json"
+        }
+      }
+    }
+  },
+  "required": ["title"]
+}

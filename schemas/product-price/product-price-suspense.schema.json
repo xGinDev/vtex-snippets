@@ -22,6 +22,10 @@
         "message": {
           "type": "string",
           "description": "Defines the block's default text i.e. the block message. You can also define which text message a block will render on the UI using the admin's Site Editor."
+        },
+        "Fallback": {
+          "type": "string",
+          "description": "Name of the block that will be rendered when the price is loading."
         }
       }
     }

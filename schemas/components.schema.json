@@ -116,6 +116,9 @@
     },
     "^(product-price-suspense#)|^(product-price-suspense)": {
       "$ref": "./product-price/product-price-suspense.schema.json"
+    },
+    "^(product-price-savings#)|^(product-price-savings)": {
+      "$ref": "./product-price/product-price-savings.schema.json"
     }
   }
 }
