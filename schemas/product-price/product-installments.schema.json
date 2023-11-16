@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "installmentsCriteria": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": ["max-quantity", "max-quantity-without-interest"]
+            }
+          ],
+          "description": "When set to max-quantity, the block will render the installments plan with the biggest number of installments. When set to max-quantity-without-interest, the block will render the installments plan with the biggest number of installments and zero interest. Notice that, if this prop is set to max-quantity-without-interest, and no installments plan matches the 'without interest' criteria, the component will fallback the default behavior.",
+          "default": "max-quantity"
+        },
+        "installmentOptionsFilter": {
+          "type": "object",
+          "description": "Allows you to define two filtering rules that will narrow down the possible installments plans the component might render."
+        }
+      }
+    }
+  },
+  "required": ["title"]
+}
