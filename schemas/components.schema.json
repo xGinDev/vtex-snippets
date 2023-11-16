@@ -113,6 +113,9 @@
     },
     "^(quantity-selector#)|^(quantity-selector)": {
       "$ref": "./product-list/quantity-selector.schema.json"
+    },
+    "^(product-price-suspense#)|^(product-price-suspense)": {
+      "$ref": "./product-price/product-price-suspense.schema.json"
     }
   }
 }
