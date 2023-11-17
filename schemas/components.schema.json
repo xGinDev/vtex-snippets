@@ -122,6 +122,12 @@
     },
     "^(product-installments#)|^(product-installments)": {
       "$ref": "./product-price/product-installments.schema.json"
+    },
+    "^(product-quantity#)|^(product-quantity)": {
+      "$ref": "./product-quantity/product-quantity.schema.json"
+    },
+    "^(product-summary-quantity#)|^(product-summary-quantity)": {
+      "$ref": "./product-quantity/product-quantity.schema.json"
     }
   }
 }
