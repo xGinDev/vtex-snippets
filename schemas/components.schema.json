@@ -128,6 +128,9 @@
     },
     "^(product-summary-quantity#)|^(product-summary-quantity)": {
       "$ref": "./product-quantity/product-quantity.schema.json"
+    },
+    "^(product-specification-group#)|^(product-specification-group)": {
+      "$ref": "./product-specifications/product-specification-group.schema.json"
     }
   }
 }
