@@ -1,0 +1,105 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "children": {
+      "title": "Block's children",
+      "type": "array",
+      "items": {}
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "blockClass": { "$ref": "../blockClass.json" },
+        "category": {
+          "type": "string",
+          "description": "Category ID of the listed items. For subcategories, use '/' (example: '1/2/3')"
+        },
+        "specificationFilters": {
+          "anyOf": [
+            { "type": "string" },
+            { "type": "array", "items": { "type": "string" } }
+          ],
+          "description": "Specification filters of the listed items."
+        },
+        "collection": {
+          "type": "string",
+          "description": "Filter by collection."
+        },
+        "orderBy": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "",
+                "OrderByTopSaleDESC",
+                "OrderByReleaseDateDESC",
+                "OrderByBestDiscountDESC",
+                "OrderByPriceDESC",
+                "OrderByPriceASC",
+                "OrderByNameASC",
+                "OrderByNameDESC"
+              ]
+            }
+          ],
+          "description": "Sorting type of the items. Possible values are: '', OrderByTopSaleDESC, OrderByReleaseDateDESC, OrderByBestDiscountDESC, OrderByPriceDESC, OrderByPriceASC, OrderByNameASC, OrderByNameDESC.",
+          "default": "OrderByTopSaleDESC"
+        },
+        "hideUnavailableItems": {
+          "type": "boolean",
+          "description": "Hides unavailable items.",
+          "default": false
+        },
+        "maxItems": {
+          "type": "number",
+          "description": "Maximum items to be fetched.",
+          "default": 10
+        },
+        "skusFilter": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": ["FIRST_AVAILABLE", "ALL_AVAILABLE", "ALL"]
+            }
+          ],
+          "description": "Control SKUs returned for each product in the query. The fewer SKUs that need to be returned, the more efficient your shelf query will be.",
+          "default": "ALL_AVAILABLE"
+        },
+        "installmentCriteria": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": ["MAX_WITHOUT_INTEREST", "MAX_WITH_INTEREST"]
+            }
+          ],
+          "description": "Control the price that will be displayed when the price has different installment options.",
+          "default": "MAX_WITHOUT_INTEREST"
+        },
+        "listName": {
+          "type": "string",
+          "description": "Name of the list property in Google Analytics events."
+        },
+        "PreferredSKUEnum": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "FIRST_AVAILABLE",
+                "LAST_AVAILABLE",
+                "PRICE_ASC",
+                "PRICE_DESC"
+              ]
+            }
+          ],
+          "description": "Controls which SKU will be selected in the summary",
+          "default": "FIRST_AVAILABLE"
+        }
+      }
+    }
+  }
+}

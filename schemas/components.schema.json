@@ -131,6 +131,12 @@
     },
     "^(product-specification-group#)|^(product-specification-group)": {
       "$ref": "./product-specifications/product-specification-group.schema.json"
+    },
+    "^(product-specification-text#)|^(product-specification-text)": {
+      "$ref": "./product-specifications/product-specification-text.schema.json"
+    },
+    "^(list-context.product-list#)|^(list-context.product-list)": {
+      "$ref": "./product-summary/list-context-product-list.schema.json"
     }
   }
 }
