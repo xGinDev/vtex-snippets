@@ -6,7 +6,7 @@
       "type": "string",
       "description": "The title of the block see in Site Editor"
     },
-    "children": {
+    "blocks": {
       "title": "Block's children",
       "type": "array",
       "items": {}

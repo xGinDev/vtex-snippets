@@ -137,6 +137,9 @@
     },
     "^(list-context.product-list#)|^(list-context.product-list)": {
       "$ref": "./product-summary/list-context-product-list.schema.json"
+    },
+    "^(product-summary-buy-button#)|^(product-summary-buy-button)": {
+      "$ref": "./product-summary/buy-button.schema.json"
     }
   }
 }

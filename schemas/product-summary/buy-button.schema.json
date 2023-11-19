@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "blockClass": { "$ref": "../blockClass.json" },
+        "category": {
+          "type": "string",
+          "description": "Category ID of the listed items. For subcategories, use '/' (example: '1/2/3')"
+        },
+        "isOneClickBuy": {
+          "type": "boolean",
+          "description": "Whether the user should be redirected to Checkout after clicking on the Buy Button (true) or not (false).",
+          "default": false
+        },
+        "buyButtonText": {
+          "type": "string",
+          "description": "Custom text that overwrites the default Buy Button text."
+        },
+        "displayBuyButton": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "displayButtonAlways",
+                "displayButtonHover",
+                "displayButtonNone"
+              ]
+            }
+          ],
+          "description": "Sets the Buy Button display mode. Possivle values are: displayButtonAlways (it will always be displayed), displayButtonHover (only displayed on hover), or displayButtonNone (it will be hidden for users).",
+          "default": "displayButtonAlways"
+        },
+        "customToastURL": {
+          "type": "string",
+          "description": "Defines a redirect link to the Toast displayed when an item is added to your cart.",
+          "default": "/checkout/#/cart"
+        },
+        "buyButtonBehavior": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": ["alwaysGoToProduct", "default", "alwaysAddToTheCart"]
+            }
+          ],
+          "description": "Sets the Buy Button behavior when it is clicked on. Possible values are: alwaysGoToProduct (redirect users to the product page), default (redirect users to the minicart), or alwaysAddToTheCart (add the selected SKU to the minicart). When choosing this last option, be careful: use it only if there are SKU Selectors for each product variation. This way, users can properly select their desired SKU.",
+          "default": "default"
+        }
+      }
+    }
+  }
+}
