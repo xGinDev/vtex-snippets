@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "blockClass": { "$ref": "../blockClass.json" },
+        "category": {
+          "type": "string",
+          "description": "Category ID of the listed items. For subcategories, use '/' (example: '1/2/3')"
+        },
+        "showBadge": {
+          "type": "boolean",
+          "description": "Whether a discount badge should be displayed on the product image or not. Setting it to true will display the discount badge if there is any, while setting it to false will hide the discount badge.",
+          "default": true
+        },
+        "badgeText": {
+          "type": "string",
+          "description": "Text displayed on the discount badge (in case the badge is configured to be shown in the product image)."
+        },
+        "showCollections": {
+          "type": "boolean",
+          "description": "Whether collection badges, if any, will be displayed (true) or not (false).",
+          "default": false
+        },
+        "displayMode": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": ["normal", "inline"]
+            }
+          ],
+          "description": "Defines the Product Summary Image display mode. Possible values are: normal and inline.",
+          "default": "normal"
+        },
+        "placeholder": {
+          "type": "string",
+          "description": "Defines the Product Summary Image placeholder image."
+        }
+      }
+    }
+  }
+}

@@ -11,10 +11,6 @@
       "description": "The props of the block",
       "properties": {
         "blockClass": { "$ref": "../blockClass.json" },
-        "category": {
-          "type": "string",
-          "description": "Category ID of the listed items. For subcategories, use '/' (example: '1/2/3')"
-        },
         "isOneClickBuy": {
           "type": "boolean",
           "description": "Whether the user should be redirected to Checkout after clicking on the Buy Button (true) or not (false).",
