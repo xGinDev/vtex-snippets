@@ -36,7 +36,7 @@
               "enum": ["normal", "inline"]
             }
           ],
-          "description": "Defines the Product Summary Image display mode. Possible values are: normal and inline.",
+          "description": "Defines the Product Summary Image display mode.Possible values are: normal and inline.",
           "default": "normal"
         },
         "placeholder": {
