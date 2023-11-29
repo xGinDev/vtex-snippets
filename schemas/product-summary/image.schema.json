@@ -42,6 +42,147 @@
         "placeholder": {
           "type": "string",
           "description": "Defines the Product Summary Image placeholder image."
+        },
+        "mainImageLabel": {
+          "type": "string",
+          "default": "mainImageLabel"
+        },
+        "hoverImage": {
+          "type": "object",
+          "description": "Defines which criteria should determine the hover image based on the product images in the Admin Catalog.",
+          "properties": {
+            "label": {
+              "type": "string",
+              "description": "Text value that matches the value defined in the imageLabel field from the Admin Catalog. Once matched, it determines which product image will be displayed as the main image in the Product Summary component. If you set a label and no match is found, the main image of the product will be shown instead."
+            },
+
+            "mainImageLabel": {
+              "anyOf": [
+                { "type": "string" },
+                {
+                  "type": "object",
+                  "properties": {
+                    "label": {
+                      "type": "string",
+                      "description": "Text value that matches the value defined in the imageLabel field from the admin's Catalog. Once matched, it defines which product image will be the main image displayed in the Product Summary component.  If you set a label and no match is found, the main image of the product will be shown instead."
+                    },
+                    "labelMatchCriteria": {
+                      "type": "string",
+                      "oneOf": [
+                        {
+                          "const": "exact",
+                          "description": "finds the image that matches exactly the string filled in label field"
+                        },
+                        {
+                          "const": "contains",
+                          "description": "finds the first image that contains the substring filled in label field"
+                        }
+                      ],
+                      "description": "Criteria to define if the image's label searched value should be exactly as provided or if it just needs to contain the substring anywhere in the image's label. Possible values are: exact (finds the image that matches exactly the string filled in label field) and contains (finds the first image that contains the substring filled in label field).",
+                      "default": "exact"
+                    }
+                  }
+                }
+              ],
+              "description": "Matches the value defined in the imageLabel field from the admin's Catalog. Once matched, it defines which product image will be the main image displayed in the Product Summary component."
+            }
+          }
+        },
+        "width": {
+          "anyOf": [
+            { "type": ["string", "number"] },
+            {
+              "type": "object",
+              "properties": {
+                "desktop": {
+                  "type": ["string", "number"]
+                },
+                "mobile": {
+                  "type": ["string", "number"]
+                },
+                "tablet": {
+                  "type": ["string", "number"]
+                },
+                "phone": {
+                  "type": ["string", "number"]
+                }
+              }
+            }
+          ],
+          "description": "Defines the Product Summary Image width."
+        },
+        "height": {
+          "anyOf": [
+            { "type": ["string", "number"] },
+            {
+              "type": "object",
+              "properties": {
+                "desktop": {
+                  "type": ["string", "number"]
+                },
+                "mobile": {
+                  "type": ["string", "number"]
+                },
+                "tablet": {
+                  "type": ["string", "number"]
+                },
+                "phone": {
+                  "type": ["string", "number"]
+                }
+              }
+            }
+          ],
+          "description": "Defines the Product Summary Image height."
+        },
+        "aspectRatio": {
+          "anyOf": [
+            { "type": "string", "pattern": "[0-9]+:[0-9]+" },
+            {
+              "type": "object",
+              "properties": {
+                "desktop": {
+                  "type": "string",
+                  "pattern": "[0-9]+:[0-9]+"
+                },
+                "mobile": {
+                  "type": "string",
+                  "pattern": "[0-9]+:[0-9]+"
+                },
+                "tablet": {
+                  "type": "string",
+                  "pattern": "[0-9]+:[0-9]+"
+                },
+                "phone": {
+                  "type": "string",
+                  "pattern": "[0-9]+:[0-9]+"
+                }
+              }
+            }
+          ],
+          "description": "Aspect ratio of the Product Summary Image. It defines whether the image should be displayed in a square, portrait, landscape or in another format. The prop value should follow the, which gives two numbers separated by a colon. For example: 1:1 for a square format or 3:4 for an upright portrait. Note that this prop won't work if you've already configured the width or height props."
+        },
+        "maxHeight": {
+          "anyOf": [
+            { "type": ["string", "number"] },
+            {
+              "type": "object",
+              "properties": {
+                "desktop": {
+                  "type": ["string", "number"]
+                },
+                "mobile": {
+                  "type": ["string", "number"]
+                },
+                "tablet": {
+                  "type": ["string", "number"]
+                },
+                "phone": {
+                  "type": ["string", "number"]
+                }
+              }
+            }
+          ],
+          "description": "Defines the Product Summary Image max height. Note that this prop won't work if you've already configured the width or height props."
         }
       }
     }
