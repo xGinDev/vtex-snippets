@@ -1,0 +1,146 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "blockClass": { "$ref": "../blockClass.json" },
+        "disableUnavailableSelectOptions": {
+          "type": "boolean",
+          "description": "Whether a product variation that leads to an impossible product combination should be displayed with the disabled attribute when displayMode is set to select. By default, all select options are configured without the disabled attribute set based on the type of variation",
+          "default": false
+        },
+        "displayMode": {
+          "type": "string",
+          "oneOf": [
+            { "const": "default" },
+            { "const": "select" },
+            { "const": "slider" }
+          ],
+          "description": "Defines how the product variation names will be displayed (it does not apply to product variation images). Possible values are: default (displays all variation names), select (only displays the selected variation name), or slider (displays all variation names in a slider when the number of available options is greater than the value defined in the sliderDisplayThreshold prop). Please note that this prop is responsive, so you can declare an object as its value, specifying a value for each breakpoint (desktop and mobile).",
+          "default": "default"
+        },
+        "hideImpossibleCombinations": {
+          "type": "boolean",
+          "description": "Defines whether a product variation should be clickable (true) or (false). The variation will not be displayed if true. If false, the variation will be displayed with less opacity. For example, there are two colors for a pair of sneakers: pink and white. If the pink sneaker is only available in one size, the other sizes will not be displayed (true).",
+          "default": true
+        },
+        "sortVariationsByLabel": {
+          "type": "boolean",
+          "description": "Defines if the variations are to be sorted in alphabetical order.",
+          "default": false
+        },
+        "imageHeight": {
+          "type": "number"
+        },
+        "imageWidth": {
+          "type": "number"
+        },
+        "initialSelection": {
+          "type": "string",
+          "oneOf": [
+            { "const": "complete" },
+            { "const": "image" },
+            { "const": "empty" }
+          ],
+          "description": "Controls the user's initial selection for available variations when the product page is fully loaded. Possible values are: complete (selects the first available SKU variation values), image (selects the first available image variation), or empty (no variations will be selected when the page is loaded).",
+          "default": "complete"
+        },
+        "maxItems": {
+          "type": "number",
+          "description": "The maximum number of variation items to be displayed in the SKU selector before the See more button. The button will always be displayed 2 items before the number set in maxItems.",
+          "default": 10
+        },
+        "showValueForVariation": {
+          "type": "string",
+          "oneOf": [
+            { "const": "none" },
+            { "const": "image" },
+            { "const": "all" }
+          ],
+          "description": "Displays a value for the selected variation. This prop replaces the former showValueNameForImageVariation (deprecated). Possible values are: none (no values are displayed when the variation is selected), image (displays only the image value for the selected variation, if any), or all (all variation values are displayed).",
+          "default": "none"
+        },
+        "sliderArrowSize": {
+          "type": "number",
+          "description": "Controls the size (height and width) in pixels of the navigation arrows rendered when displayMode is set as slider.",
+          "default": 12
+        },
+        "sliderDisplayThreshold": {
+          "type": "number",
+          "description": "The minimum number of product variation names that should be displayed using slider display mode. This prop only works properly when displayMode is set as slider.",
+          "default": 3
+        },
+        "sliderItemsPerPage": {
+          "type": "object",
+          "properties": {
+            "desktop": {
+              "type": "number",
+              "default": 3
+            },
+            "mobile": {
+              "type": "number"
+            },
+            "tablet": {
+              "type": "number",
+              "default": 2
+            },
+            "phone": {
+              "type": "number",
+              "default": 2
+            }
+          },
+          "description": "Controls how many slides should be shown on each type of device when displayMode is set as slider. Check out more information regarding this prop structure below this table.",
+          "default": "{desktop: 3, tablet: 2, phone: 1}"
+        },
+        "showVariationsErrorMessage": {
+          "type": "boolean",
+          "description": "Whether an error message should be displayed when the BuyButton is clicked but no available variation was selected (true) or (false).",
+          "default": true
+        },
+        "showVariationsLabels": {
+          "type": "string",
+          "oneOf": [
+            { "const": "none" },
+            { "const": "variation" },
+            { "const": "itemValue" },
+            { "const": "variationAndItemValue" }
+          ],
+          "description": "Where variation names should be displayed. Possible values are: none (does not display the variation names). Replaces the previous false behavior), variation (displays the variation name as a header of the items. Replaces the previous true behavior), itemValue (displays the variation name before each item's value), and variationAndItemValue (behaves as variation and itemValue at the same time).",
+          "default": "variation"
+        },
+        "thumbnailImage": {
+          "type": "string",
+          "description": "The first image to be displayed. This prop value must be the same text string defined in the desired product image imageLabel field (from the Catalog module). If you use this prop and no image declaring the same text string in its imageLabel field is found, any product image will be randomly rendered. To apply the thumbnailImage configuration, please read the Configuring custom images for the SKU Selector documentation"
+        },
+        "variationsSpacing": {
+          "type": "number",
+          "description": "Defines the margin-bottom size to be applied in the rendered product variations. Possible values range from 0 to 11 (the prop value is not in px; every value represents a tachyon class).",
+          "default": 7
+        },
+        "visibility": {
+          "type": "string",
+          "oneOf": [{ "const": "always" }, { "const": "more-than-one" }],
+          "description": "Defines the scenarios in which the SKU selector should be displayed. Possible values are: always (it will always be displayed, even if the product has only one SKU option) or more-than-one (the SKU selector is only displayed when the product has more than one SKU option)..",
+          "default": "always"
+        },
+        "visibleVariations": {
+          "type": "array",
+          "items": {
+            "name": {
+              "type": "string"
+            }
+          },
+          "description": "Specifies which product variations should be displayed in the product details page. Notice the following: if you declare a name that doesn't represent a real product variation or an empty array, no variations will be displayed. Check out more information regarding this prop structure below this table.",
+          "default": []
+        }
+      }
+    }
+  }
+}

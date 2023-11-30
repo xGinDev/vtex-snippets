@@ -148,7 +148,10 @@
       "$ref": "./product-summary/name.schema.json"
     },
     "^(search-suggestions#)|^(search-suggestions)": {
-      "$ref": "./search/search-banner.schema.json"
+      "$ref": "./search/suggestions.schema.json"
+    },
+    "^(sku-selector#)|^(sku-selector)": {
+      "$ref": "./sku-selector/sku-selector.schema.json"
     }
   }
 }
