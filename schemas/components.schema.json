@@ -150,6 +150,9 @@
     "^(search-suggestions#)|^(search-suggestions)": {
       "$ref": "./search/suggestions.schema.json"
     },
+    "^(product-summary-sku-selector#)|^(product-summary-sku-selector)": {
+      "$ref": "./sku-selector/sku-selector.schema.json"
+    },
     "^(sku-selector#)|^(sku-selector)": {
       "$ref": "./sku-selector/sku-selector.schema.json"
     }
