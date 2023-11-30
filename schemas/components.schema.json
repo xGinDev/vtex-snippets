@@ -140,6 +140,9 @@
     },
     "^(product-summary-buy-button#)|^(product-summary-buy-button)": {
       "$ref": "./product-summary/buy-button.schema.json"
+    },
+    "^(product-summary-name#)|^(product-summary-name)": {
+      "$ref": "./product-summary/name.schema.json"
     }
   }
 }
