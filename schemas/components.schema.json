@@ -22,7 +22,7 @@
       "$ref": "./autocomplete-result-list/autocomplete-result-list.schema.json"
     },
     "^(search-banner#)|^(search-banner)": {
-      "$ref": "./search-banner/search-banner.schema.json"
+      "$ref": "./search/search-banner.schema.json"
     },
     "^(breadcrumb#)|^breadcrumb)|^(breadcrumb.search#)|^breadcrumb.search)": {
       "$ref": "./breadcrumb/breadcrumb.schema.json"
@@ -146,6 +146,9 @@
     },
     "^(product-summary-name#)|^(product-summary-name)": {
       "$ref": "./product-summary/name.schema.json"
+    },
+    "^(search-suggestions#)|^(search-suggestions)": {
+      "$ref": "./search/search-banner.schema.json"
     }
   }
 }
