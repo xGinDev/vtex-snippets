@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "priceBehavior": {
+          "type": "string",
+          "oneOf": [
+            {
+              "const": "async"
+            },
+            {
+              "const": "default"
+            }
+          ],
+          "description": "Determines whether the component should fetch the most up-to-date price (async) or (default). Remember to configure the Search Result's simulationBehavior prop to skip and use the Product Price product-price-suspense block to render a loading spinner while the price information is being fetched.",
+          "default": "default"
+        },
+        "trackListName": {
+          "type": "boolean",
+          "description": "Determines whether the component should send the list name to the product page when the product summary is clicked. Disabling it will prevent the productDetail GTM event sent on the PDP to identify from which list the user navigated.",
+          "default": true
+        }
+      }
+    }
+  }
+}
