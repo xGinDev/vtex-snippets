@@ -12,6 +12,14 @@
   "engines": {
     "vscode": "^1.82.0"
   },
+  "scripts": {
+    "lint-staged": "lint-staged",
+    "postinstall": "husky install",
+    "release": "standard-version",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch",
+    "release:major": "standard-version --release-as major"
+  },
   "categories": [
     "Snippets",
     "Linters",
@@ -50,5 +58,18 @@
         "url": "./schemas/components.schema.json"
       }
     ]
+  },
+  "lint-staged": {
+    "src/**/*.{json, jsonc}": "eslint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn run lint-staged"
+    }
+  },
+  "devDependencies": {
+    "standard-version": "^9.5.0",
+    "husky": "^7.0.0",
+    "lint-staged": "^11.0.0"
   }
 }
