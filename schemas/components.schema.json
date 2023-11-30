@@ -82,10 +82,10 @@
       "$ref": "./product-highlights/product-highlights.schema.json"
     },
     "^(product-highlight-text#)|^(product-highlight-text)": {
-      "$ref": "./product-highlights/product-highlight-text.schema.json"
+      "$ref": "./product-highlights/product-highlights-text.schema.json"
     },
     "^(product-highlight-wrapper#)|^(product-highlight-wrapper)": {
-      "$ref": "./product-highlights/product-highlight-wrapper.schema.json"
+      "$ref": "./product-highlights/product-highlights-wrapper.schema.json"
     },
     "^(product-identifier.product#)|^(product-identifier.product)": {
       "$ref": "./product-identifier/product-identifier.schema.json"
