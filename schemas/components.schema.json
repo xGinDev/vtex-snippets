@@ -155,6 +155,9 @@
     },
     "^(sku-selector#)|^(sku-selector)": {
       "$ref": "./sku-selector/sku-selector.schema.json"
+    },
+    "^(list-context.image-list#)|^(list-context.image-list)": {
+      "$ref": "./list-context.image-list/list-context.image-list.schema.json"
     }
   }
 }

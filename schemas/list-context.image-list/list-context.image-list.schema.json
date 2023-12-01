@@ -1,0 +1,117 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "children": {
+      "title": "Block's children",
+      "type": "array",
+      "items": {}
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "images": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "image": {
+              "type": "string",
+              "description": "Image URL."
+            },
+            "mobileImage": {
+              "type": "string",
+              "description": "Mobile image URL."
+            },
+            "link": {
+              "type": "object",
+              "properties": {
+                "url": {
+                  "type": "string",
+                  "description": "URL users will be redirected when clicking the image."
+                },
+                "noFollow": {
+                  "type": "boolean",
+                  "description": "Whether the page owner endorses the linked URL the user was navigating on, i.e., if there is a commercial relationship between both pages (true) or (false).",
+                  "default": false
+                },
+                "openNewTab": {
+                  "type": "boolean",
+                  "description": "Whether a new tab will be opened on the browser (true) or (false)."
+                },
+                "title": {
+                  "type": "string",
+                  "description": "Text label used to identify the image in the Admin Site Editor."
+                }
+              }
+            },
+            "width": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "description": "Image width (in '%' or 'px').",
+              "default": "100%"
+            },
+            "loading": {
+              "type": "string",
+              "description": "Loading strategy, either when the page loads ('eager') or when closer to the viewport ('lazy')",
+              "default": "eager"
+            },
+            "fetchpriority": {
+              "type": "string",
+              "description": "The fetch priority hint ('high', 'low' or 'auto')",
+              "default": "auto"
+            },
+            "analyticsProperties": {
+              "type": "string",
+              "description": "Whether analytics props should be set ('provided') or not ('none')",
+              "default": "none"
+            },
+            "promotionId": {
+              "type": "string",
+              "description": "The ID of the promotion associated with the event."
+            },
+            "promotionName": {
+              "type": "string",
+              "description": "The name of the promotion associated with the event."
+            },
+            "promotionPosition": {
+              "type": "string",
+              "description": "The name of the promotional creative slot associated with the event."
+            },
+            "promotionProductId": {
+              "type": "string",
+              "description": "The ID of the product associated with the event."
+            },
+            "promotionProductName": {
+              "type": "string",
+              "description": "The name of the product associated with the event."
+            }
+          }
+        },
+        "height": {
+          "type": "number",
+          "description": "Image height for all images declared in the image object (in px)."
+        },
+        "preload": {
+          "type": "boolean",
+          "description": "Preloads the first image in a list, prioritizing the image display over other assets.",
+          "default": false
+        },
+        "experimentalSetExplicitDimensions": {
+          "type": "boolean",
+          "description": "Sets explicit width and/or height attributes for an image, if width and/or height props are provided in px"
+        }
+      }
+    }
+  }
+}
