@@ -158,6 +158,9 @@
     },
     "^(list-context.image-list#)|^(list-context.image-list)": {
       "$ref": "./list-context.image-list/list-context.image-list.schema.json"
+    },
+    "^(back-to-top-button#)|^(back-to-top-button)": {
+      "$ref": "./back-to-top-button/back-to-top-button.schema.json"
     }
   }
 }

@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "display": {
+          "oneOf": [{ "const": "button" }, { "const": "caret-icon" }],
+          "description": "Defines the component rendering. Possible values are: button to display a button with a Back To Top label text or caret-icon to display just an icon.",
+          "default": "button"
+        },
+        "displayThreshold": {
+          "type": "number",
+          "description": "Defines the window Y pixel in which the button will be displayed.",
+          "default": 600
+        }
+      }
+    }
+  },
+  "required": ["title"]
+}
