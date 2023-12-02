@@ -1,4 +1,10 @@
 Changelog
+### [0.0.33](https://github.com/xGinDev/vtex-snippets/compare/v0.0.32...v0.0.33) (2023-12-02)
+
+
+### Bug Fixes
+
+* changelog ([bad0d19](https://github.com/xGinDev/vtex-snippets/commit/bad0d19ef4d1e3f390c1a1596657ce36f103f962))
 
 ### [0.0.32](https://github.com/xGinDev/vtex-snippets/compare/v0.0.31...v0.0.32) (2023-12-02)
 
