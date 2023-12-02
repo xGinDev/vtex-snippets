@@ -167,6 +167,9 @@
     },
     "^(info-card#)|^(info-card)": {
       "$ref": "./info-card/info-card.schema.json"
+    },
+    "^(logo#)|^(logo)": {
+      "$ref": "./logo/logo.schema.json"
     }
   }
 }

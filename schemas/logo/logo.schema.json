@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "blockClass": { "$ref": "../blockClass.json" },
+        "color": {
+          "type": "string",
+          "description": "The image fill color.",
+          "default": "#F71963"
+        },
+        "height": {
+          "type": "number",
+          "description": "The logo image height..",
+          "default": 177
+        },
+        "href": {
+          "type": "string",
+          "description": "The image hyperlink."
+        },
+        "showLabel": {
+          "type": "boolean",
+          "description": "The label visibility.",
+          "default": true
+        },
+        "title": {
+          "type": "string",
+          "description": "The image alt description.",
+          "default": "VTEX logo"
+        },
+        "url": {
+          "type": "string",
+          "description": "The image soure URL."
+        },
+        "width": {
+          "type": "number",
+          "description": "The logo image width.",
+          "default": 493
+        }
+      }
+    }
+  },
+  "required": ["title"]
+}
