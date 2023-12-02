@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "alt": {
+          "type": "string",
+          "description": "Alternate text for the image."
+        },
+        "link": {
+          "type": "object",
+          "properties": {
+            "attributeNofollow": {
+              "type": "boolean",
+              "description": "Guides the search engine not to track the link of the page indicated by the tag. If true, sets the rel=noFollow attribute to the link.",
+              "default": false
+            },
+            "newTab": {
+              "type": "boolean",
+              "description": "If true opens a new tab when you click the image.",
+              "default": false
+            },
+            "url": {
+              "type": "string",
+              "default": "Sets the URL to which the user will be redirected by clicking the image."
+            }
+          }
+        },
+        "maxHeight": {
+          "type": "string",
+          "description": "Maximum height of the image."
+        },
+        "maxWidth": {
+          "type": "string",
+          "description": "Maximum width of the image."
+        },
+        "sizes": {
+          "type": "string",
+          "description": "Different image sizes for each page layout."
+        },
+        "src": {
+          "type": "string",
+          "description": "Source URL of the image."
+        },
+        "srcSet": {
+          "type": "string",
+          "description": "URL of the image to use in different situations."
+        },
+        "title": {
+          "type": "string",
+          "description": "Image title displayed on hover."
+        }
+      }
+    }
+  },
+  "required": ["title"]
+}

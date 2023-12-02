@@ -11,5 +11,6 @@
       "description": "The props of the block",
       "properties": {}
     }
-  }
+  },
+  "required": ["title"]
 }
