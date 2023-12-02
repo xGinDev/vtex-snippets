@@ -1,4 +1,11 @@
 Changelog
+### [0.0.32](https://github.com/xGinDev/vtex-snippets/compare/v0.0.31...v0.0.32) (2023-12-02)
+
+
+### Features
+
+* logo ([7a5fe02](https://github.com/xGinDev/vtex-snippets/commit/7a5fe02fa0d33b83095df886db17b40808bc6af0))
+
 ### 0.0.31 (2023-12-02)
 
 
