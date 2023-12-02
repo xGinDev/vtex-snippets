@@ -161,6 +161,9 @@
     },
     "^(back-to-top-button#)|^(back-to-top-button)": {
       "$ref": "./back-to-top-button/back-to-top-button.schema.json"
+    },
+    "^(image#)|^(image)": {
+      "$ref": "./image/image.schema.json"
     }
   }
 }
