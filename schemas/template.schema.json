@@ -9,7 +9,9 @@
     "props": {
       "type": "object",
       "description": "The props of the block",
-      "properties": {}
+      "properties": {
+        "blockClass": { "$ref": "../blockClass.json" }
+      }
     }
   },
   "required": ["title"]

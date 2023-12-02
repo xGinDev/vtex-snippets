@@ -1,0 +1,113 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "blockClass": { "$ref": "../blockClass.json" },
+        "callToActionLinkTarget": {
+          "type": "string",
+          "oneOf": [
+            { "const": "_self" },
+            { "const": "_blank" },
+            { "const": "_parent" },
+            { "const": "_top" }
+          ],
+          "description": "Where to display the call-to-action component's linked URL, as the name for a browsing context (a tab, window, or iframe).",
+          "default": "_self"
+        },
+        "callToActionMode": {
+          "type": "string",
+          "oneOf": [
+            { "const": "none" },
+            { "const": "button" },
+            { "const": "link" }
+          ],
+          "description": "Mode of the call-to-action component.",
+          "default": "button"
+        },
+        "callToActionText": {
+          "type": "string",
+          "description": "Text displayed inside the call-to-action component."
+        },
+        "callToActionUrl": {
+          "type": "string",
+          "description": "URL of the call-to-action component."
+        },
+        "headline": {
+          "type": "string",
+          "description": "Headline of the Info Card."
+        },
+        "htmlId": {
+          "type": "string",
+          "description": "ID of the container element."
+        },
+        "imageUrl": {
+          "type": "string",
+          "description": "Path to the image used on desktop devices."
+        },
+        "imageActionUrl": {
+          "type": "string",
+          "description": "Redirect URL used when the image component is clicked.."
+        },
+        "isFullModeStyle": {
+          "type": "boolean",
+          "description": "Style of the Info Card component. If true, the image component is used as the background, and text is displayed over it.",
+          "default": false
+        },
+        "linkTarget": {
+          "type": "string",
+          "oneOf": [
+            { "const": "_self" },
+            { "const": "_blank" },
+            { "const": "_parent" },
+            { "const": "_top" }
+          ],
+          "description": "Where to display the linked URL when the Info Card component is clicked.",
+          "default": "_self"
+        },
+        "mobileImageUrl": {
+          "type": "string",
+          "description": "Path to the image used on mobile devices. If empty, the desktop image is used."
+        },
+        "subhead": {
+          "type": "string",
+          "description": "Text to be displayed underneath the headline. If not provided, it will not be rendered."
+        },
+        "textAlignment": {
+          "type": "string",
+          "oneOf": [
+            { "const": "left" },
+            { "const": "center" },
+            { "const": "right" }
+          ],
+          "description": "Text alignment inside the component: left, center or right. This prop is ignored if isFullModeStyle is true.",
+          "default": "left"
+        },
+        "textMode": {
+          "type": "string",
+          "oneOf": [{ "const": "html" }, { "const": "rich-text" }],
+          "description": "Text mode used to process the text from headline and subhead props.",
+          "default": "html"
+        },
+        "textPosition": {
+          "type": "string",
+          "oneOf": [
+            { "const": "left" },
+            { "const": "center" },
+            { "const": "right" }
+          ],
+          "description": "Position of the text component: left, center or right.",
+          "default": "left"
+        }
+      }
+    }
+  },
+  "required": ["title"]
+}

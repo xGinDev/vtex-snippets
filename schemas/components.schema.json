@@ -164,6 +164,9 @@
     },
     "^(image#)|^(image)": {
       "$ref": "./image/image.schema.json"
+    },
+    "^(info-card#)|^(info-card)": {
+      "$ref": "./info-card/info-card.schema.json"
     }
   }
 }
