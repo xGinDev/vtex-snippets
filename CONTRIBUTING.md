@@ -1,12 +1,12 @@
-# Contribución a [Nombre del Proyecto]
+# Contribución a VTEX-SNIPPETS
 
-¡Gracias por considerar contribuir a [Nombre del Proyecto]! Nos encanta recibir contribuciones de la comunidad. Antes de comenzar, por favor, toma un momento para leer nuestras pautas de contribución.
+¡Gracias por considerar contribuir a VTEX-SNIPPETS! Nos encanta recibir contribuciones de la comunidad. Antes de comenzar, por favor, toma un momento para leer nuestras pautas de contribución.
 
 ## Cómo Contribuir
 
 1. Asegúrate de tener una cuenta en GitHub.
 2. Fork el repositorio a tu cuenta.
-3. Clona tu repositorio fork en tu máquina local: `git clone https://github.com/tu-usuario/[Nombre del Proyecto].git`
+3. Clona tu repositorio fork en tu máquina local: `git clone https://github.com/xGinDev/vtex-snippets.git`
 4. Crea una rama para tu contribución: `git checkout -b mi-contribucion`
 5. Realiza tus cambios y asegúrate de seguir las pautas de estilo y formato (ver sección de Pautas de Codificación).
 6. Realiza pruebas locales para asegurarte de que tus cambios funcionan correctamente.
