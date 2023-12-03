@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "blockClass": { "$ref": "../blockClass.json" },
+        "brandId": {
+          "type": "number",
+          "description": "The brand ID. If no value is declared, the product context should provide the data."
+        },
+        "brandName": {
+          "type": "string",
+          "description": "The brand name. If no value is declared, the product context should provide the data."
+        },
+        "displayMode": {
+          "type": "string",
+          "oneOf": [{ "const": "logo" }, { "const": "text" }],
+          "description": "Defines if the product brand will be displayed by name or logo. Possible values are logo and text.",
+          "default": "logo"
+        },
+        "excludeBrands": {
+          "type": "array"
+        },
+        "fallbackToText": {
+          "type": "boolean",
+          "description": "Defines the behavior of the Product Brand block when set to display a brand logo but no image is registered in the VTEX admin's Catalog. If true, it allows the logo to be replaced with the brand name. If false, neither the brand name nor the brand logo are displayed. This prop is only available for the logo display mode.",
+          "default": true
+        },
+        "height": {
+          "type": "number",
+          "description": "The logo height. This prop is only available for the logo display mode.",
+          "default": 100
+        },
+        "loadingPlaceholder": {
+          "type": "string",
+          "default": "Defines if the loading placeholder should have the size of the logo or the text. Possible values are: logo and text."
+        },
+        "withLink": {
+          "type": "string",
+          "oneOf": [
+            { "const": "none" },
+            { "const": "logo" },
+            { "const": "text" },
+            { "const": "logoAndText" }
+          ],
+          "description": "Defines the scenarios in which the product brand should have a link that leads to its website. Possible values are: none (never includes the link), logo (includes the link whenever the brand logo is displayed), text (includes the link whenever the brand name is displayed), and logoAndText (includes the link whenever the brand logo or the brand name is displayed).",
+          "default": "none"
+        }
+      }
+    }
+  },
+  "required": ["title"]
+}

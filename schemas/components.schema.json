@@ -170,6 +170,9 @@
     },
     "^(logo#)|^(logo)": {
       "$ref": "./logo/logo.schema.json"
+    },
+    "^(product-brand#)|^(product-brand)": {
+      "$ref": "./product/product-brand.schema.json"
     }
   }
 }
