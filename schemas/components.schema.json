@@ -173,6 +173,9 @@
     },
     "^(product-brand#)|^(product-brand)": {
       "$ref": "./product/product-brand.schema.json"
+    },
+    "^(product-description#)|^(product-description)": {
+      "$ref": "./product/product-description.schema.json"
     }
   }
 }

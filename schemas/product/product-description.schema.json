@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "blockClass": { "$ref": "../blockClass.json" },
+        "collapseContent": {
+          "type": "boolean",
+          "description": "If true, whenever the product description is too big, it will collapse and show a 'Show More' button. When false, it will never collapse and will always show the whole description.",
+          "default": true
+        },
+        "showTitle": {
+          "type": "boolean",
+          "description": "Define whether or not to show the title.",
+          "default": true
+        },
+        "title": {
+          "type": "string",
+          "default": "Defines a custom title for the description section."
+        }
+      }
+    }
+  },
+  "required": ["title"]
+}
