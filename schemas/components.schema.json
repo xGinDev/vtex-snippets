@@ -176,6 +176,9 @@
     },
     "^(product-description#)|^(product-description)": {
       "$ref": "./product/product-description.schema.json"
+    },
+    "^(product-images#)|^(product-images)": {
+      "$ref": "./product/product-images.schema.json"
     }
   }
 }
