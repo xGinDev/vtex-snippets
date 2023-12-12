@@ -1,4 +1,13 @@
 Changelog
+### [0.0.34](https://github.com/xGinDev/vtex-snippets/compare/v0.0.33...v0.0.34) (2023-12-12)
+
+
+### Features
+
+* product brand ([074c021](https://github.com/xGinDev/vtex-snippets/commit/074c0219e8c41910a2a29daffddde36095ff3e27))
+* product description ([911d30f](https://github.com/xGinDev/vtex-snippets/commit/911d30f1ec14492c879677e7c975790920121c8a))
+* product image ([c3bf3a2](https://github.com/xGinDev/vtex-snippets/commit/c3bf3a27822284ad7baf88a3cd2e8ece1025d106))
+
 ### [0.0.33](https://github.com/xGinDev/vtex-snippets/compare/v0.0.32...v0.0.33) (2023-12-02)
 
 
