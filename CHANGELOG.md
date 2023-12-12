@@ -1,4 +1,11 @@
 Changelog
+### [0.0.35](https://github.com/xGinDev/vtex-snippets/compare/v0.0.34...v0.0.35) (2023-12-12)
+
+
+### Bug Fixes
+
+* logo extension ([b85fabc](https://github.com/xGinDev/vtex-snippets/commit/b85fabc96e670c5c405d4f50ab955f70125b4b34))
+
 ### [0.0.34](https://github.com/xGinDev/vtex-snippets/compare/v0.0.33...v0.0.34) (2023-12-12)
 
 
