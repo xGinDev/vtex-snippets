@@ -1,4 +1,12 @@
 Changelog
+### [0.0.36](https://github.com/xGinDev/vtex-snippets/compare/v0.0.35...v0.0.36) (2024-01-15)
+
+
+### Features
+
+* product name ([63dd0ca](https://github.com/xGinDev/vtex-snippets/commit/63dd0ca0ed7ab7b5592b28f541e358b507a9c603))
+* search bar ([fb80bc3](https://github.com/xGinDev/vtex-snippets/commit/fb80bc3b4741338b25f0519ab8b37fd0109eba8a))
+
 ### [0.0.35](https://github.com/xGinDev/vtex-snippets/compare/v0.0.34...v0.0.35) (2023-12-12)
 
 
