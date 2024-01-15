@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "blockClass": { "$ref": "../blockClass.json" },
+        "src": {
+          "type": "string",
+          "description": "Source address the iframe should render",
+          "default": null
+        },
+        "width": {
+          "type": "number",
+          "description": "Width attribute of the iframe",
+          "default": null
+        },
+        "height": {
+          "type": "number",
+          "description": "Height attribute of the iframe",
+          "default": null
+        },
+        "allow": {
+          "type": "string",
+          "description": "allow attribute of the iframe",
+          "default": null
+        }
+      }
+    }
+  },
+  "required": ["title"]
+}

@@ -194,6 +194,12 @@
     },
     "^(category-menu#)|^(category-menu)": {
       "$ref": "./category-menu/category-menu.schema.json"
+    },
+    "^(iframe#)|^(iframe)": {
+      "$ref": "./iframe/iframe.schema.json"
+    },
+    "^(iframe.dynamic-src#)|^(iframe.dynamic-src)": {
+      "$ref": "./iframe/iframe-dynamic.schema.json"
     }
   }
 }
