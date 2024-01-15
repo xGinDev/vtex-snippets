@@ -191,6 +191,9 @@
     },
     "^(shipping-simulator#)|^(shipping-simulator)": {
       "$ref": "./shipping-simulator/shipping-simulator.schema.json"
+    },
+    "^(category-menu#)|^(category-menu)": {
+      "$ref": "./category-menu/category-menu.schema.json"
     }
   }
 }
