@@ -185,6 +185,9 @@
     },
     "^(search-bar#)|^(search-bar)": {
       "$ref": "./search-bar/search-bar.schema.json"
+    },
+    "^(share#)|^(share)": {
+      "$ref": "./share/share.schema.json"
     }
   }
 }
