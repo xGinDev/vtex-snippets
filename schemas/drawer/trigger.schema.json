@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "customPixelEventId": {
+          "type": "string",
+          "description": "Defines the event ID to be sent whenever users interact with the Drawer component."
+        }
+      }
+    }
+  },
+  "required": ["title"]
+}

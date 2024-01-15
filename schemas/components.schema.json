@@ -203,6 +203,15 @@
     },
     "^(product-availability#)|^(product-availability)": {
       "$ref": "./product-availability/product-availability.schema.json"
+    },
+    "^(drawer#)|^(drawer)": {
+      "$ref": "./drawer/drawer.schema.json"
+    },
+    "^(drawer-close-button#)|^(drawer-close-button)": {
+      "$ref": "./drawer/close-button.schema.json"
+    },
+    "^(drawer-trigger#)|^(drawer-trigger)": {
+      "$ref": "./drawer/trigger.schema.json"
     }
   }
 }

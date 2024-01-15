@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "size": {
+          "type": "number",
+          "description": "Defines the size of the icon inside the button.",
+          "default": 30
+        },
+        "type": {
+          "type": "string",
+          "oneOf": [{ "const": "filled" }, { "const": "line" }],
+          "description": "Defines the type of the icon.",
+          "default": "line"
+        },
+        "text": {
+          "type": "string",
+          "description": "Defines the text inside the button. The icon will not be rendered if text is defined."
+        }
+      }
+    }
+  },
+  "required": ["title"]
+}

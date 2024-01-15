@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "blockClass": { "$ref": "../blockClass.json" },
+        "maxWidth": {
+          "type": ["number", "string"],
+          "description": "Defines the maximum width of the open drawer.",
+          "default": 450
+        },
+        "isFullWidth": {
+          "type": "boolean",
+          "description": "Controls whether the open drawer should occupy the full available width.",
+          "default": false
+        },
+        "slideDirection": {
+          "type": "string",
+          "oneOf": [
+            { "const": "horizontal" },
+            { "const": "vertical" },
+            { "const": "rightToLeft" },
+            { "const": "leftToRight" }
+          ],
+          "description": "Controls the direction of the opening animation for the drawer.",
+          "default": "horizontal"
+        },
+        "backdropMode": {
+          "type": "string",
+          "oneOf": [{ "const": "default" }, { "const": "none" }],
+          "description": "Controls whether the backdrop should be displayed when the drawer is open."
+        },
+        "renderingStrategy": {
+          "type": "string",
+          "oneOf": [{ "const": "lazy" }, { "const": "eager" }],
+          "description": "Controls the rendering strategy for the children of the drawer component. It determines whether the children should be rendered only when the drawer is clicked (lazy) or immediately when the page loads (eager). Enabling the eager strategy may improve SEO performance. However, it may also result in slower page rendering.",
+          "default": "lazy"
+        },
+        "customPixelEventId": {
+          "type": "string",
+          "description": "Defines the store event ID responsible for triggering the drawer to automatically open on the interface."
+        },
+        "customPixelEventName": {
+          "type": "string",
+          "description": "Defines the store event name responsible for triggering the drawer to automatically open on the interface. Some examples are: 'addToCart' and 'removeFromCart' events. Note that if no customPixelEventId is set, using this prop will cause the drawer to open in every event with the specified name."
+        }
+      }
+    }
+  },
+  "required": ["title"]
+}
