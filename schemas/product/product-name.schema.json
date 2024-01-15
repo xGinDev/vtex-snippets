@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "blockClass": { "$ref": "../blockClass.json" },
+        "displayMode": {
+          "type": "string",
+          "oneOf": [{ "const": "plainText" }, { "const": "linkToProductPage" }],
+          "description": "Displays the product name (plainText) or the link to the product page (linkToProductPage).",
+          "default": "plainText"
+        },
+        "showBrandName": {
+          "type": "boolean",
+          "description": "Displays the brand name.",
+          "default": false
+        },
+        "showProductReference": {
+          "type": "boolean",
+          "description": "Displays the product reference code.",
+          "default": false
+        },
+        "showSku": {
+          "type": "boolean",
+          "description": "Displays the SKU value.",
+          "default": false
+        },
+        "showSponsoredBadge": {
+          "type": "boolean",
+          "description": "Displays a sponsored badge above the product's name.",
+          "default": false
+        },
+        "sponsoredBadgeLabel": {
+          "type": "string",
+          "description": "Text of the sponsored badge if it's rendered."
+        },
+        "tag": {
+          "type": "string",
+          "description": "Defines the HTML tag of the product container. Possible values are: div, h1, h2, h3.",
+          "default": "div"
+        }
+      }
+    }
+  },
+  "required": ["title"]
+}

@@ -178,7 +178,10 @@
       "$ref": "./product/product-description.schema.json"
     },
     "^(product-images#)|^(product-images)": {
-      "$ref": "./product/product-images.schema.json"
+      "$ref": "./product/product-image.schema.json"
+    },
+    "^(product-name#)|^(product-name)": {
+      "$ref": "./product/product-name.schema.json"
     }
   }
 }
