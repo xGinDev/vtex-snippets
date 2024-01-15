@@ -1,4 +1,16 @@
 Changelog
+### [0.0.37](https://github.com/xGinDev/vtex-snippets/compare/v0.0.36...v0.0.37) (2024-01-15)
+
+
+### Features
+
+* category-menu ([dd7ee03](https://github.com/xGinDev/vtex-snippets/commit/dd7ee03b5d61d851f9e63912995585a4473c8e30))
+* drawer ([4b1a8d5](https://github.com/xGinDev/vtex-snippets/commit/4b1a8d5938f9ee3887eeee445cd82a796dece3e1))
+* iframe ([fd68a44](https://github.com/xGinDev/vtex-snippets/commit/fd68a4485eba02b2599024e1b17f8c170a59f683))
+* product-availability ([39a7fa0](https://github.com/xGinDev/vtex-snippets/commit/39a7fa0a88aed54df29d166638f0acf3beac2b2a))
+* share ([a20d3b8](https://github.com/xGinDev/vtex-snippets/commit/a20d3b8553d4f52d45183ead198a4cdf28f708ce))
+* shipping-simulator ([97c3c24](https://github.com/xGinDev/vtex-snippets/commit/97c3c248938b66766fd7102c80da7f7ac385bbf6))
+
 ### [0.0.36](https://github.com/xGinDev/vtex-snippets/compare/v0.0.35...v0.0.36) (2024-01-15)
 
 
