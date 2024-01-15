@@ -1,0 +1,107 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "blockClass": { "$ref": "../blockClass.json" },
+        "attemptPageTypeSearch": {
+          "type": "boolean",
+          "description": "If true when clicked on result link of brand, department or category will link to the corresponding brand, department or category page. When false will always go to a full text search page.",
+          "default": false
+        },
+        "autocompleteAlignment": {
+          "type": "string",
+          "oneOf": [
+            { "const": "left" },
+            { "const": "center" },
+            { "const": "right" }
+          ],
+          "description": "Autocomplete Horizontal alignment. Possible values are: left, center, right.",
+          "default": "left"
+        },
+        "autocompleteFullWidth": {
+          "type": "boolean",
+          "description": "If true, the autocomplete will fill the whole window horizontally.",
+          "default": false
+        },
+        "autoFocus": {
+          "type": "boolean",
+          "description": "Define if the search input should autofocus or not"
+        },
+        "blurOnSubmit": {
+          "type": "boolean",
+          "description": "Define if input should blur on submit.",
+          "default": false
+        },
+        "containerMode": {
+          "type": "string",
+          "oneOf": [{ "const": "overlay" }, { "const": "container" }],
+          "description": "Defines how the autocomplete component should be displayed. Possible values are: overlay (suggestions overlapping other components) and container (displays the suggestion within a container).",
+          "default": "overlay"
+        },
+        "compactMode": {
+          "type": "boolean",
+          "description": "Define when to use the compact version of the component"
+        },
+        "customSearchPageUrl": {
+          "type": "string",
+          "description": "Template for a custom url. It can have a substring ${term} used as placeholder to interpolate the searched term. (e.g. /search?query=${term})"
+        },
+        "disableBlurAndTouchEndHandler": {
+          "type": "boolean",
+          "description": "The autocomplete can have touchable/clickable components. Interacting with those components may trigger blur and touch events that will close the autocomplete. When set to true, this prop will disable those handlers.",
+          "default": false
+        },
+        "displayMode": {
+          "type": "string",
+          "oneOf": [
+            { "const": "clear-button" },
+            { "const": "search-and-clear-buttons" },
+            { "const": "search-button" }
+          ],
+          "description": "Define the component display mode, such as which buttons should be visible.",
+          "default": "clear-button"
+        },
+        "emptyPlaceholder": {
+          "type": "string",
+          "description": "Shows a placeholder when the ResultList hasn't results to displayed"
+        },
+        "hasIconLeft": {
+          "type": "boolean",
+          "description": "Define if the search icon is on left or right position"
+        },
+        "inputType": {
+          "type": "string",
+          "oneOf": [{ "const": "search" }, { "const": "text" }],
+          "description": "Defines the value for the type HTML attribute (from the <input> field). Possible values are: search and text. We strongly recommend you to use search as it fixes some iOS issues. The text value is only kept as default for backwards compatibility.",
+          "default": "text"
+        },
+        "maxWidth": {
+          "type": ["number", "string"],
+          "description": "Max width of the search bar"
+        },
+        "minSearchTermLength": {
+          "type": "number",
+          "description": "If defined, it will block searches where the term length is lesser than minSearchTermLength."
+        },
+        "openAutocompleteOnFocus": {
+          "type": "boolean",
+          "description": "Defines if autocomplete should be open on input focus or not.",
+          "default": false
+        },
+        "placeholder": {
+          "type": "string",
+          "description": "Placeholder to be used on the input"
+        }
+      }
+    }
+  },
+  "required": ["title"]
+}

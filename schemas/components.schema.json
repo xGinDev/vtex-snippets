@@ -182,6 +182,9 @@
     },
     "^(product-name#)|^(product-name)": {
       "$ref": "./product/product-name.schema.json"
+    },
+    "^(search-bar#)|^(search-bar)": {
+      "$ref": "./search-bar/search-bar.schema.json"
     }
   }
 }
