@@ -188,6 +188,9 @@
     },
     "^(share#)|^(share)": {
       "$ref": "./share/share.schema.json"
+    },
+    "^(shipping-simulator#)|^(shipping-simulator)": {
+      "$ref": "./shipping-simulator/shipping-simulator.schema.json"
     }
   }
 }
