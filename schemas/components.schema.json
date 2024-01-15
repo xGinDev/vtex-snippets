@@ -200,6 +200,9 @@
     },
     "^(iframe.dynamic-src#)|^(iframe.dynamic-src)": {
       "$ref": "./iframe/iframe-dynamic.schema.json"
+    },
+    "^(product-availability#)|^(product-availability)": {
+      "$ref": "./product-availability/product-availability.schema.json"
     }
   }
 }
