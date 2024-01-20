@@ -105,7 +105,7 @@
           "default": true
         },
         "showVariationsLabels": {
-          "type": "string",
+          "type": ["string", "boolean"],
           "oneOf": [
             { "const": "none" },
             { "const": "variation" },

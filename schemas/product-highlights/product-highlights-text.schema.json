@@ -29,8 +29,8 @@
             "description": "If set, creates a link to the string passed. You can interpolate the variables: highlightText and highlightId. Example: /collection/{highlightId}."
           }
         }
-      },
-      "required": ["title"]
+      }
     }
-  }
+  },
+  "required": ["title"]
 }
