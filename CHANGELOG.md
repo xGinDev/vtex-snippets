@@ -1,4 +1,11 @@
 Changelog
+### [0.0.38](https://github.com/xGinDev/vtex-snippets/compare/v0.0.37...v0.0.38) (2024-01-20)
+
+
+### Bug Fixes
+
+* props and form ([3c00b9f](https://github.com/xGinDev/vtex-snippets/commit/3c00b9faceeb0c6fc447dd043d66168f44f668b3))
+
 ### [0.0.37](https://github.com/xGinDev/vtex-snippets/compare/v0.0.36...v0.0.37) (2024-01-15)
 
 
