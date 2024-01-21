@@ -272,6 +272,9 @@
     },
     "^(condition-layout.telemarketing#)|^(condition-layout.telemarketing)": {
       "$ref": "./conditional-layout/conditional-layout.schema.json"
+    },
+    "^(disclosure-layout#)|^(disclosure-layout)": {
+      "$ref": "./disclosure-layout/disclosure.schema.json"
     }
   }
 }

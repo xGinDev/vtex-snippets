@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "blockClass": { "$ref": "../blockClass.json" },
+        "initialVisibility": {
+          "type": "string",
+          "oneOf": [
+            {
+              "const": "visible"
+            },
+            {
+              "const": "hidden"
+            }
+          ],
+          "description": "Defines the initial visibility of the layout content. Possible values are: visible (content initially open) or hidden (content is only displayed with user interaction).",
+          "default": "hidden"
+        },
+        "animated": {
+          "type": "boolean",
+          "description": "Defines if the layout content should have animations. When set as true, this prop will enable additional data-\\* attributes on the content, which you can use as selectors in CSS. It will also ensure that the element will be hidden once the transition has ended.",
+          "default": false
+        }
+      }
+    }
+  },
+  "required": ["title"]
+}
