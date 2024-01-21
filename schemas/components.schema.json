@@ -233,6 +233,9 @@
     },
     "^(form-input.upload#)|^(form-input.upload)": {
       "$ref": "./form/input-upload.schema.json"
+    },
+    "^(link#)|^(link)": {
+      "$ref": "./link/link.schema.json"
     }
   }
 }

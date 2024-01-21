@@ -1,0 +1,75 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "blockClass": { "$ref": "../blockClass.json" },
+        "label": {
+          "type": "string",
+          "description": "Link text."
+        },
+        "href": {
+          "type": "string",
+          "description": "Link URL."
+        },
+        "scrollTo": {
+          "type": "string",
+          "description": "Element anchor to scroll after navigation. (E.g. \"#footer\")"
+        },
+        "target": {
+          "type": "string",
+          "description": "Where the linked URL will be displayed. This prop works the same way as the target from HTML <a> element. Since the anchor element's target default is _self, this prop will be set to _self if it is undefined."
+        },
+        "displayMode": {
+          "type": "string",
+          "oneOf": [
+            { "const": "anchor" },
+            { "const": "button" }
+          ],
+          "description": "How the link will be displayed. Possible values are: anchor (displays a normal link with no styles) or button (displays a button that can be customized using the buttonProps prop).",
+          "default": "anchor"
+        },
+        "buttonProps": {
+          "type": "object",
+          "properties": {
+            "variant": {
+              "type": "string",
+              "oneOf": [
+                { "const": "primary" },
+                { "const": "secondary" }
+              ],
+              "description": "Link button that has visual prominence. Possible values are: primary or secondary (values are set following the VTEX Styleguide).",
+              "default": "primary"
+            },
+            "size": {
+              "type": "string",
+              "oneOf": [
+                { "const": "small" },
+                { "const": "regular" },
+                { "const": "large" }
+              ],
+              "description": "Link button size. Possible values are: small, regular or large (values are set following the VTEX Styleguide).",
+              "default": "regular"
+            }
+          }
+        },
+        "escapeLinkRegex": {
+          "type": "string",
+          "description": "RegExp, with global match, used to remove special characters within product specifications (e.g., if you want to use /[%]/g then escapeLinkRegex = [%])."
+        },
+        "rel": {
+          "type": "string",
+          "description": "This prop specifies the relationship between the current document and linked ones for better SEO. This prop works the same way as the rel attribute from <a>, the HTML anchor element. You can see supported values here."
+        }
+      }
+    }
+  },
+  "required": ["title"]
+}
