@@ -28,7 +28,7 @@
   "Create vitrine related PDP": {
     "prefix": "srpdp",
     "body": [
-      "  \"shelf.relatedProducts#productRelated\": {",
+      "  \"shelf.relatedProducts#${1}\": {",
       "    \"blocks\": [\"product-summary.shelf\"],",
       "    \"props\": {",
       "      \"recommendation\": \"similars\",",
@@ -60,6 +60,41 @@
       "  }"
     ],
     "description": "Create Share Social Media",
+    "scope": "json, jsonc"
+  },
+  "Create BreadCrumb Custom": {
+    "prefix": "bc",
+    "body": [
+      "    \"breadcrumb#${1}\": {",
+      "        \"title\": \"${1}\",",
+      "        \"props\": {",
+      "            \"showOnMobile\": true,",
+      "            \"breadcrumb\": [",
+      "                {",
+      "                    \"name\": \"${2}\",",
+      "                    \"href\": \"${3}\"",
+      "                }",
+      "            ]",
+      "        }",
+      "    }"
+    ],
+    "description": "Create BreadCrumb Custom",
+    "scope": "json, jsonc"
+  },
+  "Create Toggle Layout": {
+    "prefix": "tl",
+    "body": [
+      "    \"toggle-layout#${1}\": {",
+      "        \"title\": \"${1}\",",
+      "        \"children\": [",
+      "            ",
+      "        ],",
+      "        \"props\": {",
+      "            \"renderChildren\": false",
+      "        }",
+      "    },"
+    ],
+    "description": "Create Toggle Layout",
     "scope": "json, jsonc"
   }
 }

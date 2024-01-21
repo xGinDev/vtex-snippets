@@ -47,6 +47,10 @@
       {
         "language": "jsonc",
         "path": "./snippets/components.code-snippets"
+      },
+      {
+        "language": "css",
+        "path": "./snippets/styles.code-snippets"
       }
     ],
     "jsonValidation": [

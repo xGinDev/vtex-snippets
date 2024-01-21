@@ -1,0 +1,22 @@
+{
+    "Create Media Query Tablet": {
+      "prefix": "min40em",
+      "body": [
+        "@media screen and (min-width: 40em) {",
+        "    ",
+        "}"
+      ],
+      "description": "Create Media Query Tablet",
+        "scope": "css"
+    },
+        "Create Media Query Desktop": {
+          "prefix": "min64em",
+          "body": [
+            "@media screen and (min-width: 40em) {",
+            "    ",
+            "}"
+          ],
+          "description": "Create Media Query Desktop",
+            "scope": "css"
+        }
+}

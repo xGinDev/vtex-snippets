@@ -2,6 +2,10 @@
 
 VTEX IO Snippets are concise, reusable code fragments tailored for VTEX IO. These code blocks serve as building blocks for customizing and extending your VTEX e-commerce store with ease. Whether it's adding new features, tweaking design, or optimizing performance, VTEX IO Snippets provide the flexibility to streamline development tasks, helping you create unique shopping experiences for your customers.
 
+### Create pre-made components
+
+![extension-ezgif com-video-to-gif-converter](https://github.com/xGinDev/vtex-snippets/assets/57797652/f5e295d9-456f-4f02-b98f-2fd9b65f9970)
+
 ## Commands
 
 | Blocks Snippets            |
