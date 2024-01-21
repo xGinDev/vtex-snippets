@@ -1,4 +1,19 @@
 Changelog
+### [0.0.40](https://github.com/xGinDev/vtex-snippets/compare/v0.0.39...v0.0.40) (2024-01-21)
+
+
+### Features
+
+* conditional layout ([49e4245](https://github.com/xGinDev/vtex-snippets/commit/49e42453d642a9763fe8189b7f283befb07322e8))
+* disclosure layout ([ddc4d88](https://github.com/xGinDev/vtex-snippets/commit/ddc4d8844974e3c5f2e431997b8a4f2d30703898))
+* layout, header and close modal ([e6a7f0b](https://github.com/xGinDev/vtex-snippets/commit/e6a7f0b25bc6724fe6e5931ac03dbf80aecda67b))
+* modal trigger ([2794b3a](https://github.com/xGinDev/vtex-snippets/commit/2794b3a5942958592b90d2b50d82cf3aa5a0be7e))
+
+
+### Bug Fixes
+
+* flex row ([dfb1734](https://github.com/xGinDev/vtex-snippets/commit/dfb173443acfb953ef7a153d855b9665d1341aa5))
+
 ### [0.0.39](https://github.com/xGinDev/vtex-snippets/compare/v0.0.38...v0.0.39) (2024-01-21)
 
 
