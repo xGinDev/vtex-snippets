@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "blockClass": { "$ref": "../blockClass.json" },
+        "dynamicFields": {
+          "type": "string",
+          "oneOf": [
+            { "const": "bindingUrl" },
+            { "const": "bindingId" }
+          ],
+          "description": "Desired hidden fields responsible for saving the user's custom data on Master Data once the newsletter form is submitted. Notice that the name of the fields must be written in an array and represent which user data they save. Possible values are: bindingUrl and bindingId. Caution: To properly save the data, you must also create the desired filters in the Master Data's Client entity."
+        }
+      }
+    }
+  },
+  "required": ["title"]
+}

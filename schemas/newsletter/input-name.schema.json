@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "blockClass": { "$ref": "../blockClass.json" },
+        "placeholderText": {
+          "type": "string",
+          "description": "Placeholder text for the email input.",
+          "default": "Enter your email address (translated according to the store's locale)."
+        },
+        "inputLabel": {
+          "type": "string",
+          "description": "Label for the email input."
+        },
+        "errorMessage": {
+          "type": "string",
+          "description": "Error message to be shown if email is invalid.",
+          "default": "Invalid email address (translated according to the store's locale)."
+        }
+      }
+    }
+  },
+  "required": ["title"]
+}

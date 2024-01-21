@@ -236,6 +236,24 @@
     },
     "^(link#)|^(link)": {
       "$ref": "./link/link.schema.json"
+    },
+    "^(newsletter-input-email#)|^(newsletter-input-email)": {
+      "$ref": "./newsletter/input-name.schema.json"
+    },
+    "^(newsletter-input-name#)|^(newsletter-input-name)": {
+      "$ref": "./newsletter/input-name.schema.json"
+    },
+    "^(newsletter-input-phone#)|^(newsletter-input-phone)": {
+      "$ref": "./newsletter/input-name.schema.json"
+    },
+    "^(newsletter-checkbox-confirmation#)|^(newsletter-checkbox-confirmation)": {
+      "$ref": "./newsletter/input-checkbox-confirmation.schema.json"
+    },
+    "^(newsletter-hidden-field#)|^(newsletter-hidden-field)": {
+      "$ref": "./newsletter/hidden-field.schema.json"
+    },
+    "^(newsletter-submit#)|^(newsletter-submit)": {
+      "$ref": "./newsletter/submit.schema.json"
     }
   }
 }
