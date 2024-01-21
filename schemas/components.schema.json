@@ -296,6 +296,9 @@
     },
     "^(stack-layout#)|^(stack-layout)": {
       "$ref": "./stack-layout/stack-layout.schema.json"
+    },
+    "^(sticky-layout#)|^(sticky-layout)": {
+      "$ref": "./sticky-layout/sticky-layout.schema.json"
     }
   }
 }

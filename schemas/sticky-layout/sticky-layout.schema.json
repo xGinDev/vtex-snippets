@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "blockClass": { "$ref": "../blockClass.json" },
+        "position": {
+          "type": "string",
+          "oneOf": [
+            {
+              "const": "top"
+            },
+            {
+              "const": "bottom"
+            }
+          ],
+          "description": "Indicates where the component should stick"
+        },
+        "verticalSpacing": {
+          "type": "number",
+          "description": "Indicates the distance in pixels from the position chosen in the position prop",
+          "default": 0
+        }
+      }
+    }
+  },
+  "required": ["title"]
+}
