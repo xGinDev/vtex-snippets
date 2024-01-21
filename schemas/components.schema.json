@@ -278,6 +278,15 @@
     },
     "^(modal-trigger#)|^(modal-trigger)": {
       "$ref": "./modal/trigger.schema.json"
+    },
+    "^(modal-layout#)|^(modal-layout)": {
+      "$ref": "./modal/layout.schema.json"
+    },
+    "^(modal-header#)|^(modal-header)": {
+      "$ref": "./modal/header.schema.json"
+    },
+    "^(modal-actions.close#)|^(modal-actions.close)": {
+      "$ref": "./modal/actions-close.schema.json"
     }
   }
 }

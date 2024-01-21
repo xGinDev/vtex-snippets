@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "blockClass": { "$ref": "../blockClass.json" },
+        "scroll": {
+          "type": "string",
+          "oneOf": [
+            {
+              "const": "body"
+            },
+            {
+              "const": "content"
+            }
+          ],
+          "description": "Defines how users should scroll the modal. Possible values are: body (users can scroll the whole modal by normally scrolling the page) and content (users can scroll the modal content when hovering over it).",
+          "default": "content"
+        },
+        "disableEscapeKeyDown": {
+          "type": "boolean",
+          "description": "Defines whether the modal should be closed when pressing the Esc key (true) or not (false).",
+          "default": false
+        },
+        "fullScreen": {
+          "type": "boolean",
+          "description": "Defines whether the modal should fill the whole screen (true) or not (false). This prop is responsive, i.e., it adapts to the device breakpoints.",
+          "default": false
+        },
+        "backdrop": {
+          "type": "string",
+          "oneOf": [
+            {
+              "const": "clickable"
+            },
+            {
+              "const": "none"
+            }
+          ],
+          "description": "Defines whether the modal will have a clickable backdrop (clickable) or no backdrop at all (none). This prop is responsive, i.e., it adapts to the device breakpoints.",
+          "default": "clickable"
+        },
+        "customPixelEventId": {
+          "type": "string",
+          "description": "Store event ID that triggers the modal-trigger block (hence triggering the opening of modal-layout blocks on the interface as well)."
+        },
+        "customPixelEventName": {
+          "type": "string",
+          "description": "Store event name that triggers the modal-trigger block (hence triggering the opening of modal-layout blocks on the interface as well). Some event examples are 'addToCart' and 'removeFromCart'. Note that using this prop will make the associated modal-layout open in every event with the specified name if no customPixelEventId is set."
+        }
+      }
+    }
+  },
+  "required": ["title"]
+}

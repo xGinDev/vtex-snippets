@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "blockClass": { "$ref": "../blockClass.json" },
+        "label": {
+          "type": "string",
+          "description": "Defines the text to be rendered in the close button. The default value of this prop depends on the store's default language, which is set according to the website binding.",
+          "default": "Cancel, Cancelar, or Cancelar for stores whose default language is, respectively, English, Spanish, or Portuguese."
+        }
+      }
+    }
+  },
+  "required": ["title"]
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "blockClass": { "$ref": "../blockClass.json" },
+        "showCloseButton": {
+          "type": "boolean",
+          "description": "Defines whether the close icon button should be rendered in the modal header (true) or not (false).",
+          "default": true
+        },
+        "iconCloseSize": {
+          "type": "number",
+          "description": "Size (in pixels) of the close icon button in the modal header.",
+          "default": 32
+        }
+      }
+    }
+  },
+  "required": ["title"]
+}
