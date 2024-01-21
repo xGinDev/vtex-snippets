@@ -12,5 +12,6 @@ VTEX IO Snippets are concise, reusable code fragments tailored for VTEX IO. Thes
 ## Components
 
 | Blocks Snippets                                  |
-| :----------------------------------------------- |
+|:-------------------------------------------------|
 | "carrousel" => "Context Product List And Slider" |
+| "srpdp" => "Shelf Related PDP"                   |

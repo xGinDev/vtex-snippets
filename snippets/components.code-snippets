@@ -9,20 +9,57 @@
       "            \"images\": []",
       "        }",
       "   },",
-      "\"slider-layout#${4}\":{",
-      "        \"title\": \"${5}\",",
+      "\"slider-layout#${3}\":{",
+      "        \"title\": \"${2}\",",
       "        \"props\": {",
       "            \"itemsPerPage\": {",
       "                \"desktop\": 5,",
       "                \"tablet\": 2,",
       "                \"phone\": 1",
       "            },",
-      "            \"blockClass\": [${6}]",
+      "            \"blockClass\": [${4}]",
       "        }",
       "   }",
       ""
     ],
     "description": "Create slider to images",
+    "scope": "json, jsonc"
+  },
+  "Create vitrine related PDP": {
+    "prefix": "srpdp",
+    "body": [
+      "  \"shelf.relatedProducts#productRelated\": {",
+      "    \"blocks\": [\"product-summary.shelf\"],",
+      "    \"props\": {",
+      "      \"recommendation\": \"similars\",",
+      "      \"productList\": {",
+      "        \"arrows\": true,",
+      "        \"titleText\": \"Productos Recomendados\",",
+      "        \"minItemsPerPage\": 1,",
+      "        \"itemsPerPage\": 4",
+      "      }",
+      "    }",
+      "  }"
+    ],
+    "description": "Create vitrine related PDP",
+    "scope": "json, jsonc"
+  },
+  "Create Share Social Media": {
+    "prefix": "ssm",
+    "body": [
+      "  \"share\": {",
+      "    \"title\": \"Compartir En Redes Sociales\",",
+      "    \"props\": {",
+      "      \"social\": {",
+      "        \"Facebook\": true,",
+      "        \"Twitter\": true,",
+      "        \"WhatsApp\": true,",
+      "        \"Pinterest\": false",
+      "      }",
+      "    }",
+      "  }"
+    ],
+    "description": "Create Share Social Media",
     "scope": "json, jsonc"
   }
 }
