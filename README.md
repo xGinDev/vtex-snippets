@@ -5,9 +5,12 @@ VTEX IO Snippets are concise, reusable code fragments tailored for VTEX IO. Thes
 ## Commands
 
 | Blocks Snippets            |
-| :------------------------- |
+|:---------------------------|
 | "flr" => "flex-layout.row" |
 | "flc" => "flex-layout.col" |
+| "rt" => "rich-text"        |
+| "sl" => "slider-layout"    |
+| "atc" => "add-to-cart-button"    |
 
 ## Components
 
@@ -15,3 +18,4 @@ VTEX IO Snippets are concise, reusable code fragments tailored for VTEX IO. Thes
 |:-------------------------------------------------|
 | "carrousel" => "Context Product List And Slider" |
 | "srpdp" => "Shelf Related PDP"                   |
+| "ssm" => "Share Social Media"                    |
