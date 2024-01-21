@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "blockClass": { "$ref": "../blockClass.json" },
+        "trigger": {
+          "type": "string",
+          "oneOf": [
+            {
+              "const": "click"
+            },
+            {
+              "const": "load"
+            },
+            {
+              "const": "load-session"
+            }
+          ],
+          "description": "Defines whether the modal content should be triggered by user click (click), when the page is fully loaded (load), or when the page is fully loaded, but the modal will appear just once per session (load-session).",
+          "default": "click"
+        },
+        "customPixelEventId": {
+          "type": "string",
+          "description": "Store event ID that triggers the modal-trigger block (hence triggering the opening of modal-layout blocks on the interface as well)."
+        },
+        "customPixelEventName": {
+          "type": "string",
+          "description": "Store event name that triggers the modal-trigger block (hence triggering the opening of modal-layout blocks on the interface as well). Some event examples are 'addToCart' and 'removeFromCart'. Note that using this prop will make the associated modal-layout open in every event with the specified name if no customPixelEventId is set."
+        }
+      }
+    }
+  },
+  "required": ["title"]
+}

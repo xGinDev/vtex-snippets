@@ -275,6 +275,9 @@
     },
     "^(disclosure-layout#)|^(disclosure-layout)": {
       "$ref": "./disclosure-layout/disclosure.schema.json"
+    },
+    "^(modal-trigger#)|^(modal-trigger)": {
+      "$ref": "./modal/trigger.schema.json"
     }
   }
 }
