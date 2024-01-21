@@ -10,14 +10,17 @@
       "type": "object",
       "description": "The props of the block",
       "properties": {
-        "blockClass": { "$ref": "../blockClass.json" },
-        "entity": {
+        "pointer": {
           "type": "string",
-          "description": "The entity in Master Data where the document will be saved."
+          "description": "JSON schema pointer, i.e., the JSON schema path (for example: #/properties/firstName) in which the form block inputs should be validated against."
         },
-        "schema": {
+        "label": {
           "type": "string",
-          "description": "The JSON schema name will be used. The schema name is set in the API request to create it in Master Data."
+          "description": "Field name when rendered."
+        },
+        "placeholder": {
+          "type": "string",
+          "description": "Placeholder for the text input."
         }
       }
     }

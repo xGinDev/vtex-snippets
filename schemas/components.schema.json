@@ -24,7 +24,7 @@
     "^(search-banner#)|^(search-banner)": {
       "$ref": "./search/search-banner.schema.json"
     },
-    "^(breadcrumb#)|^breadcrumb)|^(breadcrumb.search#)|^breadcrumb.search)": {
+    "^(breadcrumb#)|^(breadcrumb)|^(breadcrumb.search#)|^(breadcrumb.search)": {
       "$ref": "./breadcrumb/breadcrumb.schema.json"
     },
     "^(footer-layout.desktop#)|^(footer-layout.desktop)": {
@@ -212,6 +212,27 @@
     },
     "^(drawer-trigger#)|^(drawer-trigger)": {
       "$ref": "./drawer/trigger.schema.json"
+    },
+    "^(form#)|^(form)": {
+      "$ref": "./form/form.schema.json"
+    },
+    "^(form-input.text#)|^(form-input.text)": {
+      "$ref": "./form/input-text.schema.json"
+    },
+    "^(form-input.checkbox#)|^(form-input.checkbox)": {
+      "$ref": "./form/input-checkbox.schema.json"
+    },
+    "^(form-input.dropdown#)|^(form-input.dropdown)": {
+      "$ref": "./form/input-dropdown.schema.json"
+    },
+    "^(form-input.radiogroup#)|^(form-input.radiogroup)": {
+      "$ref": "./form/input-radiogroup.schema.json"
+    },
+    "^(form-input.textarea#)|^(form-input.textarea)": {
+      "$ref": "./form/input-textarea.schema.json"
+    },
+    "^(form-input.upload#)|^(form-input.upload)": {
+      "$ref": "./form/input-upload.schema.json"
     }
   }
 }

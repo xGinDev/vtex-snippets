@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "pointer": {
+          "type": "string",
+          "description": "JSON schema pointer, i.e., the JSON schema path (for example: #/properties/firstName) in which the form block inputs should be validated against."
+        },
+        "label": {
+          "type": "string",
+          "description": "Field name when rendered."
+        },
+        "accept": {
+          "type": "string",
+          "description": "By default, the upload input only supports image and PDF format files. If you want to customize it, you can use the format type you want by following this pattern: *.TYPEFILE. Learn more about the accept field."
+        }
+      }
+    }
+  },
+  "required": ["title"]
+}

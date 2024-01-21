@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "pointer": {
+          "type": "string",
+          "description": "JSON schema pointer, i.e., the JSON schema path (for example: #/properties/firstName) in which the form block inputs should be validated against."
+        },
+        "label": {
+          "type": "string",
+          "description": "Field name when rendered."
+        },
+        "inputType": {
+          "type": "string",
+          "oneOf": [
+            { "const": "input" },
+            { "const": "hidden" }
+          ],
+          "description": "Defines the type of the text field. Possible values are: input - renders a regular text field; hidden - renders a hidden text field used for pre-defining an editable value to be submitted to the form; password - renders a password text field."
+        },
+        "value": {
+          "type": "string",
+          "description": "\tDisplays a pre-defined text to be submitted when the inputType is set as hidden."
+        },
+        "placeholder": {
+          "type": "string",
+          "description": "Placeholder for the text input."
+        }
+      }
+    }
+  },
+  "required": ["title"]
+}
