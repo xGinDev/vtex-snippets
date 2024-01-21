@@ -111,5 +111,43 @@
     ],
     "description": "Create Icon",
     "scope": "json, jsonc"
+  },
+  "Create Shelf": {
+    "prefix": "shelf",
+    "body": [
+      "\"product-summary.shelf\": {",
+      "    \"title\": \"${1}\",",
+      "    \"children\": [",
+      "      \"stack-layout#${2}\",",
+      "      \"vtex.store-components:product-brand\",",
+      "      \"product-summary-name\",",
+      "      \"product-summary-space\",",
+      "      \"product-selling-price\",",
+      "      \"product-list-price\",",
+      "      \"add-to-cart-button\"",
+      "    ],",
+      "    \"props\": {",
+      "      \"blockClass\": [\"\"]",
+      "    }",
+      "  },",
+      "  \"stack-layout#${2}\": {",
+      "    \"title\": \"${3}\",",
+      "    \"children\": [",
+      "      \"product-summary-image#${3}\"",
+      "    ]",
+      "  },",
+      "  \"product-summary-image#${3}\": {",
+      "    \"title\": \"${4}\",",
+      "    \"props\": {",
+      "      \"showBadge\": false,",
+      "      \"hoverImage\": {",
+      "        \"criteria\": \"index\",",
+      "        \"index\": 1",
+      "      }",
+      "    }",
+      "  }"
+    ],
+    "description": "Create Shelf",
+    "scope": "json, jsonc"
   }
 }
