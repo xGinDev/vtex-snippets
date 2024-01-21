@@ -113,7 +113,7 @@
     "scope": "json, jsonc"
   },
   "Create Shelf": {
-    "prefix": "shelf",
+    "prefix": "pss",
     "body": [
       "\"product-summary.shelf\": {",
       "    \"title\": \"${1}\",",
@@ -148,6 +148,38 @@
       "  }"
     ],
     "description": "Create Shelf",
+    "scope": "json, jsonc"
+  },
+  "Create Search": {
+    "prefix": "ss",
+    "body": [
+      "\"store.search\": {",
+      "    \"blocks\": [\"search-result-layout\"],",
+      "    \"props\": {",
+      "      \"context\": {",
+      "        \"skusFilter\": \"ALL\",",
+      "        \"simulationBehavior\": \"skip\",",
+      "        \"maxItemsPerPage\": 12,",
+      "        \"__unstableProductOriginVtex\": true,",
+      "        \"hideUnavailableItems\": false,",
+      "        \"orderByField\": \"OrderByReleaseDateDESC\"",
+      "      }",
+      "    }",
+      "  },",
+      "  \"search-result-layout\": {",
+      "    \"blocks\": [",
+      "      \"search-result-layout.desktop\",",
+      "      \"search-result-layout.mobile\",",
+      "      \"search-not-found-layout\"",
+      "    ],",
+      "    \"props\": {",
+      "      \"pagination\": \"show-more\",",
+      "      \"__unstableProductOriginVtex\": true,",
+      "      \"orderByField\": \"OrderByReleaseDateDESC\"",
+      "    }",
+      "  }"
+    ],
+    "description": "Create Search",
     "scope": "json, jsonc"
   }
 }
