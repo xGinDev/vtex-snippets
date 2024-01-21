@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "blockClass": { "$ref": "../blockClass.json" },
+        "conditions": {
+          "type": "object",
+          "properties": {
+            "subject": {
+              "type": "string",
+              "description": "Defines, based on the product context where the block is declared, which information is needed from the UI to validate the value chosen in the object prop. See below the possible values for this prop."
+            },
+            "arguments": {
+              "type": "object",
+              "description": "Defines the condition parameters. Note that the value of this prop varies depending on the value set for the subject prop. See below the table with the possible values for the subject prop and their expected arguments."
+            },
+            "toBe": {
+              "type": "boolean",
+              "description": "Determines whether the data fetched in the subject prop must meet the predefined conditions to render the new layout (true) or not (false).",
+              "default": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "required": ["title"]
+}

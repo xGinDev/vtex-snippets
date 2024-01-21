@@ -260,6 +260,18 @@
     },
     "^(sandbox#)|^(sandbox)": {
       "$ref": "./sandbox/sandbox.schema.json"
+    },
+    "^(condition-layout.product#)|^(condition-layout.product)": {
+      "$ref": "./conditional-layout/conditional-layout.schema.json"
+    },
+    "^(condition-layout.binding#)|^(condition-layout.binding)": {
+      "$ref": "./conditional-layout/conditional-layout.schema.json"
+    },
+    "^(condition-layout.category#)|^(condition-layout.category)": {
+      "$ref": "./conditional-layout/conditional-layout.schema.json"
+    },
+    "^(condition-layout.telemarketing#)|^(condition-layout.telemarketing)": {
+      "$ref": "./conditional-layout/conditional-layout.schema.json"
     }
   }
 }
