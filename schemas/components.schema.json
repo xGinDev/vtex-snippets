@@ -299,6 +299,9 @@
     },
     "^(sticky-layout#)|^(sticky-layout)": {
       "$ref": "./sticky-layout/sticky-layout.schema.json"
+    },
+    "^(icon#)|^(icon)": {
+      "$ref": "./icon/icon.schema.json"
     }
   }
 }

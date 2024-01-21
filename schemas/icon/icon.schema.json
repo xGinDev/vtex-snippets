@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "blockClass": { "$ref": "../blockClass.json" },
+        "id": {
+          "type": "string"
+        },
+        "viexBox": {
+          "type": "string"
+        },
+        "size": {
+          "type": "number"
+        }
+      }
+    }
+  },
+  "required": ["title"]
+}
