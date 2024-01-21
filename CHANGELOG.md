@@ -1,4 +1,11 @@
 Changelog
+### [0.0.42](https://github.com/xGinDev/vtex-snippets/compare/v0.0.41...v0.0.42) (2024-01-21)
+
+
+### Features
+
+* new snippets ([9ea76fd](https://github.com/xGinDev/vtex-snippets/commit/9ea76fdc76587bf98728d8f89c926f9b4d9fc3ca))
+
 ### [0.0.41](https://github.com/xGinDev/vtex-snippets/compare/v0.0.40...v0.0.41) (2024-01-21)
 
 
