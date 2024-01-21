@@ -1,4 +1,11 @@
 Changelog
+### [0.0.43](https://github.com/xGinDev/vtex-snippets/compare/v0.0.42...v0.0.43) (2024-01-21)
+
+
+### Bug Fixes
+
+* change name extension ([57a6036](https://github.com/xGinDev/vtex-snippets/commit/57a6036e3f013226e70dc473ede25d94d682080d))
+
 ### [0.0.42](https://github.com/xGinDev/vtex-snippets/compare/v0.0.41...v0.0.42) (2024-01-21)
 
 
