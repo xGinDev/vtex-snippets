@@ -112,7 +112,7 @@
     "description": "Create Icon",
     "scope": "json, jsonc"
   },
-  "Create Shelf": {
+  "Create Product Summary Shelf": {
     "prefix": "pss",
     "body": [
       "\"product-summary.shelf\": {",
@@ -147,7 +147,7 @@
       "    }",
       "  }"
     ],
-    "description": "Create Shelf",
+    "description": "Create Product Summary Shelf",
     "scope": "json, jsonc"
   },
   "Create Search": {
