@@ -1,4 +1,19 @@
 Changelog
+### [0.0.45](https://github.com/xGinDev/vtex-snippets/compare/v0.0.44...v0.0.45) (2024-01-21)
+
+
+### Features
+
+* icon ([75b3123](https://github.com/xGinDev/vtex-snippets/commit/75b31234c501faa73f0200a077dbf857699fc4f1))
+* snippet breadcrumb custom, toggle layout and css media querys ([af690e2](https://github.com/xGinDev/vtex-snippets/commit/af690e2550a37b5a167d0c7930ed3b832423f0fa))
+* snippets component search ([72a6cb9](https://github.com/xGinDev/vtex-snippets/commit/72a6cb9dc7bdcdc03eaceb560cb8d7ccfe34ff09))
+* snippets component shelf ([e71bb6e](https://github.com/xGinDev/vtex-snippets/commit/e71bb6ef46aba6dc49e68d1535afd7b313e38587))
+
+
+### Bug Fixes
+
+* update readme ([cb1fed3](https://github.com/xGinDev/vtex-snippets/commit/cb1fed342652f7ef719b3eea144a59b4640e2c3b))
+
 ### [0.0.44](https://github.com/xGinDev/vtex-snippets/compare/v0.0.43...v0.0.44) (2024-01-21)
 
 
