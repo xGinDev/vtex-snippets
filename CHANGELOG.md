@@ -1,4 +1,11 @@
 Changelog
+### [0.0.44](https://github.com/xGinDev/vtex-snippets/compare/v0.0.43...v0.0.44) (2024-01-21)
+
+
+### Bug Fixes
+
+* new logo ([437e5dc](https://github.com/xGinDev/vtex-snippets/commit/437e5dcae6ba60569ef289ce4a4b9e7a0dbd668e))
+
 ### [0.0.43](https://github.com/xGinDev/vtex-snippets/compare/v0.0.42...v0.0.43) (2024-01-21)
 
 
