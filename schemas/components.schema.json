@@ -293,6 +293,9 @@
     },
     "^(overlay-layout#)|^(overlay-layout)": {
       "$ref": "./overlay/layout.schema.json"
+    },
+    "^(stack-layout#)|^(stack-layout)": {
+      "$ref": "./stack-layout/stack-layout.schema.json"
     }
   }
 }
