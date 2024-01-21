@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "blockClass": { "$ref": "../blockClass.json" },
+        "as": {
+          "type": "string",
+          "description": "HTML tag to be applied to the component when rendered on the UI.",
+          "default": "button"
+        }
+      }
+    }
+  },
+  "required": ["title"]
+}

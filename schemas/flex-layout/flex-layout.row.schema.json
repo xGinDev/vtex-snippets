@@ -60,8 +60,19 @@
         "horizontalAlign": {
           "anyOf": [
             {
-              "type": "string",
-              "enum": ["left", "right", "center", "between", "around"]
+              "const": "left"
+            },
+            {
+              "const": "right"
+            },
+            {
+              "const": "center"
+            },
+            {
+              "const": "between"
+            },
+            {
+              "const": "around"
             }
           ],
           "description": "Controls horizontal alignment for the items inside the flex-layout.row.",
@@ -70,8 +81,19 @@
         "colJustify": {
           "anyOf": [
             {
-              "type": "string",
-              "enum": ["left", "right", "center", "between", "around"]
+              "const": "left"
+            },
+            {
+              "const": "right"
+            },
+            {
+              "const": "center"
+            },
+            {
+              "const": "between"
+            },
+            {
+              "const": "around"
             }
           ],
           "description": "Controls the automatic space between columns and borders of the `flex-layout.row` (work when colSizing is 'auto')",
