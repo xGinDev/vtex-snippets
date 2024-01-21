@@ -287,6 +287,12 @@
     },
     "^(modal-actions.close#)|^(modal-actions.close)": {
       "$ref": "./modal/actions-close.schema.json"
+    },
+    "^(overlay-trigger#)|^(overlay-trigger)": {
+      "$ref": "./overlay/trigger.schema.json"
+    },
+    "^(overlay-layout#)|^(overlay-layout)": {
+      "$ref": "./overlay/layout.schema.json"
     }
   }
 }

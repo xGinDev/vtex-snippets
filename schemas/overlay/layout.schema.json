@@ -1,0 +1,84 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the block see in Site Editor"
+    },
+    "props": {
+      "type": "object",
+      "description": "The props of the block",
+      "properties": {
+        "blockClass": { "$ref": "../blockClass.json" },
+        "placement": {
+          "type": "string",
+          "oneOf": [
+            {
+              "const": "bottom"
+            },
+            {
+              "const": "left"
+            },
+            {
+              "const": "right"
+            },
+            {
+              "const": "top"
+            }
+          ],
+          "description": "Defines the Overlay Layout content placement when it is triggered according to the Trigger component positioning. Possible values are: bottom, left, right or top. If there is no page space in the placement that you choose, it will fit in a fallback position.",
+          "default": "bottom"
+        },
+        "scrollBehavior": {
+          "type": "string",
+          "oneOf": [
+            {
+              "const": "lock-page-scroll"
+            },
+            {
+              "const": "close-on-scroll"
+            },
+            {
+              "const": "default"
+            }
+          ],
+          "description": "Defines the Overlay Layout content behavior when users try to scroll the page. Possible values are: lock-page-scroll (in which users can't scroll), close-on-scroll (the block is closed when users start scrolling) or default (Scroll does not affect the Overlay Layout content).",
+          "default": "default"
+        },
+        "backdrop": {
+          "type": "string",
+          "oneOf": [
+            {
+              "const": "visible"
+            },
+            {
+              "const": "none"
+            }
+          ],
+          "description": "Once the Overlay Layout content is rendered, it defines whether a backdrop overlay will be displayed (visible) or not (none). When set as visible, the backdrop will close Overlay Layout content when clicked on. Otherwise, the content will be closed only if any component from the page is clicked on.",
+          "default": "none"
+        },
+        "showArrow": {
+          "type": "boolean",
+          "description": "Whether an arrow pointing to the overlay-trigger component should be displayed on UI(true) or not (false).",
+          "default": false
+        },
+        "offsets": {
+          "type": "object",
+          "properties": {
+            "skidding": {
+              "type": "number",
+              "description": "Defines the overlay-layout component positioning side by side with the overlay-trigger."
+            },
+            "distance": {
+              "type": "number",
+              "description": "Defines the distance between the overlay-layout and the overlay-trigger components in the UI. A positive number places the overlay-layout component farther, while a negative number lets it overlap the overlay-trigger."
+            }
+          }
+        }
+      }
+    }
+  },
+  "required": ["title"]
+}
