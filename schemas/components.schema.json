@@ -257,6 +257,9 @@
     },
     "^(video#)|^(video)": {
       "$ref": "./video/video.schema.json"
+    },
+    "^(sandbox#)|^(sandbox)": {
+      "$ref": "./sandbox/sandbox.schema.json"
     }
   }
 }
