@@ -1,4 +1,13 @@
 Changelog
+### [0.0.41](https://github.com/xGinDev/vtex-snippets/compare/v0.0.40...v0.0.41) (2024-01-21)
+
+
+### Features
+
+* overlay ([d7cdb7d](https://github.com/xGinDev/vtex-snippets/commit/d7cdb7dbb29fd1107f6db8b7e3313c3f6baab904))
+* stack layout ([fa7021d](https://github.com/xGinDev/vtex-snippets/commit/fa7021dc8576859820cdf8a49ac325f63ac222fb))
+* sticky layout ([ae6d2df](https://github.com/xGinDev/vtex-snippets/commit/ae6d2dfe583d0c28d81084d96e81c8426450b6fa))
+
 ### [0.0.40](https://github.com/xGinDev/vtex-snippets/compare/v0.0.39...v0.0.40) (2024-01-21)
 
 
