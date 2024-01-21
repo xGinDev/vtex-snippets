@@ -254,6 +254,9 @@
     },
     "^(newsletter-submit#)|^(newsletter-submit)": {
       "$ref": "./newsletter/submit.schema.json"
+    },
+    "^(video#)|^(video)": {
+      "$ref": "./video/video.schema.json"
     }
   }
 }
