@@ -1,4 +1,15 @@
 Changelog
+### [0.0.39](https://github.com/xGinDev/vtex-snippets/compare/v0.0.38...v0.0.39) (2024-01-21)
+
+
+### Features
+
+* form ([666845e](https://github.com/xGinDev/vtex-snippets/commit/666845e44bd091b2d260ba66469d2bab5b329230))
+* link ([610a2b4](https://github.com/xGinDev/vtex-snippets/commit/610a2b4fe09aa386e1c958b51883303f3702368f))
+* newsletter ([69d0191](https://github.com/xGinDev/vtex-snippets/commit/69d0191f84d6fd172e4d8011f4981f776d34cc5b))
+* sandbox ([f273004](https://github.com/xGinDev/vtex-snippets/commit/f273004660c52cb74a04bbc0ddef6a3bf9927d9d))
+* video ([547b1f3](https://github.com/xGinDev/vtex-snippets/commit/547b1f3be3e587560278ef0a22bca145b8c8c4f3))
+
 ### [0.0.38](https://github.com/xGinDev/vtex-snippets/compare/v0.0.37...v0.0.38) (2024-01-20)
 
 
