@@ -116,17 +116,17 @@
           "description": "A number or string magnitude for the pt Tachyons token to be applied to the row."
         },
         "preserveLayoutOnMobile": {
-          "anyOf": [{ "type": "boolean" }],
+          "type": "boolean",
           "description": "Whether or not the flex-layout.row should break into a column layout on mobile.",
           "default": false
         },
         "preventHorizontalStretch": {
-          "anyOf": [{ "type": "boolean" }],
+          "type": "boolean",
           "description": "Prevents the row from stretching horizontally to fill its parent width.",
           "default": false
         },
         "preventVerticalStretch": {
-          "anyOf": [{ "type": "boolean" }],
+          "type": "boolean",
           "description": "Prevents the row from stretching vertically to fill its parent height with items-stretch token.",
           "default": false
         },
