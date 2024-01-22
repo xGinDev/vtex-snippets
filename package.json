@@ -2,7 +2,7 @@
   "name": "vtex-snippet-io",
   "displayName": "VTEX IO CodeBits",
   "description": "Snippets to improve performance when developing in VTEX IO",
-  "version": "0.0.45",
+  "version": "0.0.46",
   "repository": {
     "type": "git",
     "url": "https://github.com/xGinDev/vtex-snippets"

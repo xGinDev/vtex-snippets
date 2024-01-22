@@ -1,4 +1,11 @@
 Changelog
+### [0.0.46](https://github.com/xGinDev/vtex-snippets/compare/v0.0.45...v0.0.46) (2024-01-22)
+
+
+### Bug Fixes
+
+* props flex row ([6813f64](https://github.com/xGinDev/vtex-snippets/commit/6813f646fced1d0e1e912659ee3faf44a76f8752))
+
 ### [0.0.45](https://github.com/xGinDev/vtex-snippets/compare/v0.0.44...v0.0.45) (2024-01-21)
 
 
