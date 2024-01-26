@@ -1,4 +1,11 @@
 Changelog
+### [0.0.48](https://github.com/xGinDev/vtex-snippets/compare/v0.0.47...v0.0.48) (2024-01-26)
+
+
+### Bug Fixes
+
+* media query 64em ([8b9289d](https://github.com/xGinDev/vtex-snippets/commit/8b9289dc4897c57a8856947378eb7742cb2f519d))
+
 ### [0.0.47](https://github.com/xGinDev/vtex-snippets/compare/v0.0.46...v0.0.47) (2024-01-26)
 
 
