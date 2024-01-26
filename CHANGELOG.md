@@ -1,4 +1,11 @@
 Changelog
+### [0.0.47](https://github.com/xGinDev/vtex-snippets/compare/v0.0.46...v0.0.47) (2024-01-26)
+
+
+### Bug Fixes
+
+* prueba custom ([257fb36](https://github.com/xGinDev/vtex-snippets/commit/257fb36149256d564b6cc6d41e3d4954880a73b8))
+
 ### [0.0.46](https://github.com/xGinDev/vtex-snippets/compare/v0.0.45...v0.0.46) (2024-01-22)
 
 
