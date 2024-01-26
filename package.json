@@ -51,6 +51,22 @@
       {
         "language": "css",
         "path": "./snippets/styles.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/customs/template.code-snippets"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/customs/template.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/customs/template.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/customs/template.code-snippets"
       }
     ],
     "jsonValidation": [
@@ -60,6 +76,14 @@
           "**/store/**/*.json"
         ],
         "url": "./schemas/components.schema.json"
+      },
+      {
+        "fileMatch": [
+          "**/react/**/*.js",
+          "**/react/**/*.jsx",
+          "**/react/**/*.ts",
+          "**/react/**/*.tsx"
+        ]
       }
     ]
   },

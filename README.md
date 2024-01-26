@@ -14,18 +14,17 @@ VTEX IO Snippets are concise, reusable code fragments tailored for VTEX IO. Thes
 | "flc" => "flex-layout.col"      |
 | "rt" => "rich-text"             |
 | "sl" => "slider-layout"         |
+| "i" => "Icon"                                    |
 | "atc" => "add-to-cart-button"   |
 
 ## Components
 
-| Blocks Snippets                                  |
-|:-------------------------------------------------|
-| "carrousel" => "Context Product List And Slider" |
-| "srpdp" => "Shelf Related PDP"                   |
-| "ssm" => "Share Social Media"                    |
-| "ssm" => "Share Social Media"                    |
-| "bc" => "BreadCrumb Custom"                      |
-| "tl" => "Toggle Layout"                          |
-| "i" => "Icon"                                    |
-| "pss" => "Product Summary Shelf"                 |
-| "ss" => "Store Search"                           |
+| Blocks Snippets                                |
+|:-----------------------------------------------|
+| "carrousel" => "Context Image List And Slider" |
+| "srpdp" => "Shelf Related PDP"                 |
+| "ssm" => "Share Social Media"                  |
+| "bc" => "BreadCrumb Custom"                    |
+| "tl" => "Toggle Layout"                        |
+| "pss" => "Product Summary Shelf"               |
+| "ss" => "Store Search"                         |
