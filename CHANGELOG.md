@@ -1,4 +1,11 @@
 Changelog
+### [0.0.50](https://github.com/xGinDev/vtex-snippets/compare/v0.0.49...v0.0.50) (2024-01-31)
+
+
+### Features
+
+* schema router ([44be9ab](https://github.com/xGinDev/vtex-snippets/commit/44be9ab521155ec473370a8c5a0801c460e1aa8e))
+
 ### [0.0.49](https://github.com/xGinDev/vtex-snippets/compare/v0.0.48...v0.0.49) (2024-01-31)
 
 
