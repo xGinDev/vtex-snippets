@@ -166,5 +166,19 @@
     ],
     "description": "Create Search",
     "scope": "json, jsonc"
+  },
+  "Back To Top": {
+    "prefix": "btt",
+    "body": [
+      "  \"back-to-top-button\": {",
+      "    \"title\": \"Botón Volver Arriba\",",
+      "    \"props\": {",
+      "      \"display\": \"caret-icon\",",
+      "      \"displayThreshold\": 600",
+      "    }",
+      "  }"
+    ],
+    "description": "Back To Top",
+    "scope": "json, jsonc"
   }
 }
