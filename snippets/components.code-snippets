@@ -180,5 +180,20 @@
     ],
     "description": "Back To Top",
     "scope": "json, jsonc"
+  },
+  "Create Vitrine": {
+    "prefix": "vitrine",
+    "body": [
+      "  \"list-context.product-list#${1}\": {",
+      "    \"title\": \"\",",
+      "    \"blocks\": [\"product-summary.shelf\"],",
+      "    \"children\": [\"slider-layout\"],",
+      "    \"props\": {",
+      "      \"category\": \"\"",
+      "    }",
+      "  }"
+    ],
+    "description": "Create Vitrine",
+    "scope": "json, jsonc"
   }
 }

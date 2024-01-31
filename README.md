@@ -28,3 +28,5 @@ VTEX IO Snippets are concise, reusable code fragments tailored for VTEX IO. Thes
 | "tl" => "Toggle Layout"                        |
 | "pss" => "Product Summary Shelf"               |
 | "ss" => "Store Search"                         |
+| "btt" => "Button Back To Top"                  |
+| "vitrine" => "Context Product List And Slide"  |
