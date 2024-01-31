@@ -110,7 +110,9 @@
             { "const": "none" },
             { "const": "variation" },
             { "const": "itemValue" },
-            { "const": "variationAndItemValue" }
+            { "const": "variationAndItemValue" },
+            { "const": true },
+            { "const": false }
           ],
           "description": "Where variation names should be displayed. Possible values are: none (does not display the variation names). Replaces the previous false behavior), variation (displays the variation name as a header of the items. Replaces the previous true behavior), itemValue (displays the variation name before each item's value), and variationAndItemValue (behaves as variation and itemValue at the same time).",
           "default": "variation"
