@@ -195,5 +195,30 @@
     ],
     "description": "Create Vitrine",
     "scope": "json, jsonc"
+  },
+  "Create Tag": {
+    "prefix": "tag",
+    "body": [
+      "  \"vtex.product-highlights@2.x:product-highlights#${1}\": {",
+      "    \"title\": \"Tag ${2}\",",
+      "    \"children\": [\"product-highlight-text#${1}\"],",
+      "    \"props\": {",
+      "      \"type\": \"collection\",",
+      "      \"filter\": {",
+      "        \"type\": \"show\",",
+      "        \"highlightNames\": [\"\"]",
+      "      },",
+      "      \"blockClass\": \"highlight\"",
+      "    }",
+      "  },",
+      "  \"product-highlight-text#${1}\": {",
+      "    \"title\": \"Texto ${2}\",",
+      "    \"props\": {",
+      "      \"message\": \"{highlightName}\"",
+      "    }",
+      "  }"
+    ],
+    "description": "Create Tag",
+    "scope": "json, jsonc"
   }
 }
