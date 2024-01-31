@@ -1,4 +1,11 @@
 Changelog
+### [0.0.53](https://github.com/xGinDev/vtex-snippets/compare/v0.0.52...v0.0.53) (2024-01-31)
+
+
+### Bug Fixes
+
+* ref flr ([58a3e6d](https://github.com/xGinDev/vtex-snippets/commit/58a3e6d437f1cd2ba172e05c3bc22645f6099c0c))
+
 ### [0.0.52](https://github.com/xGinDev/vtex-snippets/compare/v0.0.51...v0.0.52) (2024-01-31)
 
 
