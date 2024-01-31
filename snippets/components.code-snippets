@@ -220,5 +220,29 @@
     ],
     "description": "Create Tag",
     "scope": "json, jsonc"
+  },
+  "Create Template Footer": {
+    "prefix": "foo",
+    "body": [
+      "    \"footer\": {",
+      "        \"blocks\": [",
+      "            \"footer-layout.desktop\",",
+      "            \"footer-layout.mobile\"",
+      "        ]",
+      "    },",
+      "    \"footer-layout.desktop\": {",
+      "        \"title\": \"Footer Desktop\",",
+      "        \"children\": [",
+      "        ]",
+      "    },",
+      "",
+      "    \"footer-layout.mobile\": {",
+      "        \"title\": \"Footer Mobile\",",
+      "        \"children\": [",
+      "        ]",
+      "    }"
+    ],
+    "description": "Create Template Footer",
+    "scope": "json, jsonc"
   }
 }

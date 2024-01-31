@@ -31,3 +31,4 @@ VTEX IO Snippets are concise, reusable code fragments tailored for VTEX IO. Thes
 | "btt" => "Button Back To Top"                  |
 | "vitrine" => "Context Product List And Slide"  |
 | "tag" => "Product Highlights"                  |
+| "foo" => "Create Template Footer"              |
