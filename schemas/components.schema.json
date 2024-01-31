@@ -7,7 +7,7 @@
       "$ref": "./flex-layout/flex-layout.col.schema.json"
     },
     "^(flex-layout.row#)|^(flex-layout.row)": {
-      "$ref": "./flex-layout/flex-layout.col.schema.json"
+      "$ref": "./flex-layout/flex-layout.row.schema.json"
     },
     "^(rich-text#)|^(rich-text)": {
       "$ref": "./rich-text/rich-text.schema.json"
