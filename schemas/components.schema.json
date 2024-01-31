@@ -302,6 +302,9 @@
     },
     "^(icon#)|^(icon)": {
       "$ref": "./icon/icon.schema.json"
+    },
+    "^(store.custom#)|^(store.custom)": {
+      "$ref": "./routes/routes.schema.json"
     }
   }
 }

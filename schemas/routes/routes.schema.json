@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "props": {
+      "type": "object",
+      "description": "The props of the route",
+      "properties": {
+        "title": {
+          "type": "string",
+          "markdownDescription": "The name of the custom route used as an identifier in CMS > Pages and HTML Page title"
+        },
+        "path": {
+          "type": "string",
+          "markdownDescription": "path for page"
+        },
+        "isSitemapEntry": {
+          "type": "boolean",
+          "markdownDescription": "Makes the route available in the store sitemap when set as `TRUE`."
+        }
+      },
+      "required": ["path"]
+    }
+  }
+}
