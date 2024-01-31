@@ -1,4 +1,16 @@
 Changelog
+### [0.0.52](https://github.com/xGinDev/vtex-snippets/compare/v0.0.51...v0.0.52) (2024-01-31)
+
+
+### Features
+
+* snippet footer ([3abd94c](https://github.com/xGinDev/vtex-snippets/commit/3abd94cf6217c35bfccf08d3dbc037f683be9f3a))
+
+
+### Bug Fixes
+
+* readme ([e150248](https://github.com/xGinDev/vtex-snippets/commit/e150248fb70599bbf40d185adaa04d8e1485f6e9))
+
 ### [0.0.51](https://github.com/xGinDev/vtex-snippets/compare/v0.0.50...v0.0.51) (2024-01-31)
 
 
