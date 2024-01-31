@@ -1,4 +1,17 @@
 Changelog
+### [0.0.49](https://github.com/xGinDev/vtex-snippets/compare/v0.0.48...v0.0.49) (2024-01-31)
+
+
+### Features
+
+* snippet back to top ([b3f051b](https://github.com/xGinDev/vtex-snippets/commit/b3f051b40f483227597ab47960cd8aca5a87a857))
+* snippet vitrine ([68b7d21](https://github.com/xGinDev/vtex-snippets/commit/68b7d21025df0d142579144abf5631150906c3cd))
+
+
+### Bug Fixes
+
+* showVariationsLabels (Sku selector) ([e368ac4](https://github.com/xGinDev/vtex-snippets/commit/e368ac4d9431d49692b725fb5eb44d9df247ebf5))
+
 ### [0.0.48](https://github.com/xGinDev/vtex-snippets/compare/v0.0.47...v0.0.48) (2024-01-26)
 
 
