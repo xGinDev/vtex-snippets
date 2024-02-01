@@ -244,5 +244,35 @@
     ],
     "description": "Create Template Footer",
     "scope": "json, jsonc"
+  },
+  "Create Menú With SubMenu Accordion": {
+    "prefix": "misa",
+    "body": [
+      "    \"menu-item#${1}\": {",
+      "        \"title\": \"${2}\",",
+      "        \"blocks\": [",
+      "            \"vtex.menu@2.x:submenu.accordion#${1}\"",
+      "        ],",
+      "        \"props\": {",
+      "            \"text\": \"\",",
+      "            \"blockClass\": [",
+      "                \"\"",
+      "            ]",
+      "        }",
+      "    },",
+      "    \"vtex.menu@2.x:submenu.accordion#${1}\": {",
+      "        \"title\": \"${2}\",",
+      "        \"children\": [",
+      "            ",
+      "        ],",
+      "        \"props\": {",
+      "            \"blockClass\": [",
+      "                \"\"",
+      "            ]",
+      "        }",
+      "    },"
+    ],
+    "description": "Create Menú With SubMenu Accordion",
+     "scope": "json, jsonc"
   }
 }

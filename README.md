@@ -8,14 +8,17 @@ VTEX IO Snippets are concise, reusable code fragments tailored for VTEX IO. Thes
 
 ## Commands
 
-| Blocks Snippets                 |
-|:--------------------------------|
-| "flr" => "flex-layout.row"      |
-| "flc" => "flex-layout.col"      |
-| "rt" => "rich-text"             |
-| "sl" => "slider-layout"         |
-| "i" => "Icon"                                    |
-| "atc" => "add-to-cart-button"   |
+| Blocks Snippets               |
+|:------------------------------|
+| "flr" => "flex-layout.row"    |
+| "flc" => "flex-layout.col"    |
+| "rt" => "rich-text"           |
+| "sl" => "slider-layout"       |
+| "i" => "Icon"                 |
+| "atc" => "add-to-cart-button" |
+| "mi" => "menu-item"           |
+| "m" => "menu"                 |
+
 
 ## Components
 
@@ -32,3 +35,4 @@ VTEX IO Snippets are concise, reusable code fragments tailored for VTEX IO. Thes
 | "vitrine" => "Context Product List And Slide"  |
 | "tag" => "Product Highlights"                  |
 | "foo" => "Create Template Footer"              |
+| "misa" => "Menu Item With SubMenu Accordion"   |
