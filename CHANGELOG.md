@@ -1,4 +1,11 @@
 Changelog
+### [0.0.54](https://github.com/xGinDev/vtex-snippets/compare/v0.0.53...v0.0.54) (2024-02-01)
+
+
+### Features
+
+* meu item, menu, menu with submenu ([1e012b7](https://github.com/xGinDev/vtex-snippets/commit/1e012b721e259b8e595f087622d3bd9ea7348fbf))
+
 ### [0.0.53](https://github.com/xGinDev/vtex-snippets/compare/v0.0.52...v0.0.53) (2024-01-31)
 
 
