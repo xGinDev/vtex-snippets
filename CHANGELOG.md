@@ -1,4 +1,11 @@
 Changelog
+### [0.0.55](https://github.com/xGinDev/vtex-snippets/compare/v0.0.54...v0.0.55) (2024-02-03)
+
+
+### Features
+
+* create snippet quickview ([c331af7](https://github.com/xGinDev/vtex-snippets/commit/c331af75726641f1e9ff4fe57a8083b18033e2df))
+
 ### [0.0.54](https://github.com/xGinDev/vtex-snippets/compare/v0.0.53...v0.0.54) (2024-02-01)
 
 
