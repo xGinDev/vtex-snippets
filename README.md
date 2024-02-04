@@ -36,4 +36,4 @@ VTEX IO Snippets are concise, reusable code fragments tailored for VTEX IO. Thes
 | "tag" => "Product Highlights"                  |
 | "foo" => "Create Template Footer"              |
 | "misa" => "Menu Item With SubMenu Accordion"   |
-| "quickview" => "Create QuickView"              |
+| "quickview" => "Create QuickView "             |
