@@ -1,4 +1,17 @@
 Changelog
+### [0.0.56](https://github.com/xGinDev/vtex-snippets/compare/v0.0.55...v0.0.56) (2024-02-05)
+
+
+### Features
+
+* promises component ([335bc69](https://github.com/xGinDev/vtex-snippets/commit/335bc694277365a9b77653fe3b1a48bf87d1a913))
+* route custom ([6f33848](https://github.com/xGinDev/vtex-snippets/commit/6f338485b1fb327a96ebf1ed1cc246eb51e6f848))
+
+
+### Bug Fixes
+
+* readme ([d228676](https://github.com/xGinDev/vtex-snippets/commit/d2286767bd5d5a86950813e903d8519354d644ef))
+
 ### [0.0.55](https://github.com/xGinDev/vtex-snippets/compare/v0.0.54...v0.0.55) (2024-02-03)
 
 
