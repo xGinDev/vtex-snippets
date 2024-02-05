@@ -94,5 +94,15 @@
     ],
     "description": "Create Menu For Props",
     "scope": "json, jsonc"
+  },
+  "Create Route Custom": {
+    "prefix": "routec",
+    "body": [
+      "    \"store.custom#${1}\": {",
+      "        \"path\": \"/${2}\"",
+      "    }"
+    ],
+    "description": "Create Route Custom",
+    "scope": "json, jsonc"
   }
 }

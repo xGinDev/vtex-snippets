@@ -19,7 +19,6 @@ VTEX IO Snippets are concise, reusable code fragments tailored for VTEX IO. Thes
 | "mi" => "menu-item"           |
 | "m" => "menu"                 |
 
-
 ## Components
 
 | Blocks Snippets                                |
@@ -37,3 +36,5 @@ VTEX IO Snippets are concise, reusable code fragments tailored for VTEX IO. Thes
 | "foo" => "Create Template Footer"              |
 | "misa" => "Menu Item With SubMenu Accordion"   |
 | "quickview" => "Create QuickView "             |
+| "promises" => "Create Promises Brand "             |
+| "rc" => "Route Custom"             |
