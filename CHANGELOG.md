@@ -1,4 +1,11 @@
 Changelog
+### [0.0.57](https://github.com/xGinDev/vtex-snippets/compare/v0.0.56...v0.0.57) (2024-02-05)
+
+
+### Features
+
+* breadcrumb search and pdp ([1f86b99](https://github.com/xGinDev/vtex-snippets/commit/1f86b9985400c71ab529a99b265366955150a66b))
+
 ### [0.0.56](https://github.com/xGinDev/vtex-snippets/compare/v0.0.55...v0.0.56) (2024-02-05)
 
 
