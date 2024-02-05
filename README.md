@@ -9,7 +9,7 @@ VTEX IO Snippets are concise, reusable code fragments tailored for VTEX IO. Thes
 ## Commands
 
 | Blocks Snippets               |
-|:------------------------------|
+| :---------------------------- |
 | "flr" => "flex-layout.row"    |
 | "flc" => "flex-layout.col"    |
 | "rt" => "rich-text"           |
@@ -22,13 +22,13 @@ VTEX IO Snippets are concise, reusable code fragments tailored for VTEX IO. Thes
 ## Components
 
 | Blocks Snippets                                |
-|:-----------------------------------------------|
+| :--------------------------------------------- |
 | "carrousel" => "Context Image List And Slider" |
 | "srpdp" => "Shelf Related PDP"                 |
 | "ssm" => "Share Social Media"                  |
-| "bcc" => "BreadCrumb Custom"                    |
-| "bcs" => "Create Breadcrumb Search"                    |
-| "bcp" => "Create Breadcrumb PDP"                    |
+| "bcc" => "BreadCrumb Custom"                   |
+| "bcs" => "Create Breadcrumb Search"            |
+| "bcp" => "Create Breadcrumb PDP"               |
 | "tl" => "Toggle Layout"                        |
 | "pss" => "Product Summary Shelf"               |
 | "ss" => "Store Search"                         |
@@ -38,5 +38,5 @@ VTEX IO Snippets are concise, reusable code fragments tailored for VTEX IO. Thes
 | "foo" => "Create Template Footer"              |
 | "misa" => "Menu Item With SubMenu Accordion"   |
 | "quickview" => "Create QuickView "             |
-| "promises" => "Create Promises Brand "             |
-| "rc" => "Route Custom"             |
+| "promises" => "Create Promises Brand "         |
+| "rc" => "Route Custom"                         |
