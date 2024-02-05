@@ -26,7 +26,9 @@ VTEX IO Snippets are concise, reusable code fragments tailored for VTEX IO. Thes
 | "carrousel" => "Context Image List And Slider" |
 | "srpdp" => "Shelf Related PDP"                 |
 | "ssm" => "Share Social Media"                  |
-| "bc" => "BreadCrumb Custom"                    |
+| "bcc" => "BreadCrumb Custom"                    |
+| "bcs" => "Create Breadcrumb Search"                    |
+| "bcp" => "Create Breadcrumb PDP"                    |
 | "tl" => "Toggle Layout"                        |
 | "pss" => "Product Summary Shelf"               |
 | "ss" => "Store Search"                         |

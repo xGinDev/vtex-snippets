@@ -63,7 +63,7 @@
     "scope": "json, jsonc"
   },
   "Create BreadCrumb Custom": {
-    "prefix": "bc",
+    "prefix": "bcc",
     "body": [
       "    \"breadcrumb#${1}\": {",
       "        \"title\": \"${1}\",",
@@ -381,5 +381,41 @@
     ],
     "description": "Create Promises Brand",
     "scope": "json, jsonc"
+  },
+  "Create Breadcrumb Search": {
+    "prefix": "bcs",
+    "body": [
+      "  \"flex-layout.row#bread-crumb\": {",
+      "    \"title\": \"Contenedor Miga De Pan\",",
+      "    \"children\": [\"breadcrumb.search\"],",
+      "    \"props\": {",
+      "      \"blockClass\": []",
+      "    }",
+      "  },",
+      "  \"breadcrumb.search\": {",
+      "    \"props\": {",
+      "      \"showOnMobile\": true",
+      "    }",
+      "  }"
+    ],
+    "description": "Create Breadcrumb Search"
+  },
+  "Create Breadcrumb PDP": {
+    "prefix": "bcp",
+    "body": [
+      "  \"flex-layout.row#bread-crumb-product\": {",
+      "    \"title\": \"Contenedor Miga De Pan Producto\",",
+      "    \"children\": [\"breadcrumb\"],",
+      "    \"props\": {",
+      "      \"blockClass\": []",
+      "    }",
+      "  },",
+      "  \"breadcrumb\": {",
+      "    \"props\": {",
+      "      \"showOnMobile\": true",
+      "    }",
+      "  }"
+    ],
+    "description": "Create Breadcrumb PDP"
   }
 }
