@@ -42,57 +42,57 @@
     "scope": "json,jsonc",
     "description": "Generate add to cart button"
   },
-    "Create Icon": {
-      "prefix": "i",
-      "body": [
-        "  \"icon#${1}\": {",
-        "    \"title\": \"${1}\",",
-        "    \"props\": {",
-        "      \"id\": \"${2}\",",
-        "      \"viewBox\": \"${3}\",",
-        "      \"size\": ${4}",
-        "    }",
-        "  },"
-      ],
-      "description": "Create Icon",
-      "scope": "json, jsonc"
-    },
-    "Create Menu Item": {
-      "prefix": "mi",
-      "body": [
-        "    \"menu-item#${1}\": {",
-        "        \"title\": \"${2},",
-        "        \"props\": {",
-        "            \"text\": \"${2}\",",
-        "            \"blockClass\": [",
-        "                \"\"",
-        "            ]",
-        "        }",
-        "    },"
-      ],
-      "description": "Create Menu Item",
-      "scope": "json, jsonc"
-    },
-    "Create Menu For Props": {
-      "prefix": "m",
-      "body": [
-        "    \"vtex.menu@2.x:menu#${1}\": {",
-        "        \"title\": \"Menú ${2}\",",
-        "        \"props\": {",
-        "            \"items\": [",
-        "                {",
-        "                    \"itemProps\": {",
-        "                        \"text\": \"\",",
-        "                        \"href\": \"\"",
-        "                    }",
-        "                }",
-        "            ],",
-        "            \"orientation\": \"vertical\",",
-        "            \"blockClass\": [\"\"]",
-        "        }",
-        "    }"
-      ],
-      "description": "Create Menu For Props",
-                                                  "scope": "json, jsonc"
-    }
+  "Create Icon": {
+    "prefix": "i",
+    "body": [
+      "  \"icon#${1}\": {",
+      "    \"title\": \"${1}\",",
+      "    \"props\": {",
+      "      \"id\": \"${2}\",",
+      "      \"viewBox\": \"${3}\",",
+      "      \"size\": ${4}",
+      "    }",
+      "  },"
+    ],
+    "description": "Create Icon",
+    "scope": "json, jsonc"
+  },
+  "Create Menu Item": {
+    "prefix": "mi",
+    "body": [
+      "    \"menu-item#${1}\": {",
+      "        \"title\": \"${2},",
+      "        \"props\": {",
+      "            \"text\": \"${2}\",",
+      "            \"blockClass\": [",
+      "                \"\"",
+      "            ]",
+      "        }",
+      "    },"
+    ],
+    "description": "Create Menu Item",
+    "scope": "json, jsonc"
+  },
+  "Create Menu For Props": {
+    "prefix": "m",
+    "body": [
+      "    \"vtex.menu@2.x:menu#${1}\": {",
+      "        \"title\": \"Menú ${2}\",",
+      "        \"props\": {",
+      "            \"items\": [",
+      "                {",
+      "                    \"itemProps\": {",
+      "                        \"text\": \"\",",
+      "                        \"href\": \"\"",
+      "                    }",
+      "                }",
+      "            ],",
+      "            \"orientation\": \"vertical\",",
+      "            \"blockClass\": [\"\"]",
+      "        }",
+      "    }"
+    ],
+    "description": "Create Menu For Props",
+    "scope": "json, jsonc"
+  }
 }
