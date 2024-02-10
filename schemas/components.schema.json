@@ -305,6 +305,9 @@
     },
     "^(store.custom#)|^(store.custom)": {
       "$ref": "./routes/routes.schema.json"
+    },
+    "^(notification.bar#)|^(notification.bar)": {
+      "$ref": "./notification/notification.schema.json"
     }
   }
 }
