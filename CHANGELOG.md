@@ -1,4 +1,19 @@
 Changelog
+### [0.0.58](https://github.com/xGinDev/vtex-snippets/compare/v0.0.57...v0.0.58) (2024-02-12)
+
+
+### Features
+
+* how to create snippet ([e7b8c9e](https://github.com/xGinDev/vtex-snippets/commit/e7b8c9ef5155417f1ea5282766e7d22b698559cd))
+* notification ([499cc0c](https://github.com/xGinDev/vtex-snippets/commit/499cc0c2b10fbbb887580cdbe9a023db2c0eed88))
+* shelf ([9cdc7dc](https://github.com/xGinDev/vtex-snippets/commit/9cdc7dcabddba4afec1c837af2d0812a82f52c3d))
+
+
+### Bug Fixes
+
+* order asc ([656b4a2](https://github.com/xGinDev/vtex-snippets/commit/656b4a245952df3be9f79ff65f406c00d182fbe4))
+* readme ([033b15f](https://github.com/xGinDev/vtex-snippets/commit/033b15fd520f3d6d85a3b6a1da0554b66a5e5c10))
+
 ### [0.0.57](https://github.com/xGinDev/vtex-snippets/compare/v0.0.56...v0.0.57) (2024-02-05)
 
 
