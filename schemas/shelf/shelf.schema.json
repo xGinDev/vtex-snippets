@@ -1,0 +1,186 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "title": {
+            "type": "string",
+            "description": "The title of the block see in Site Editor"
+        },
+        "blocks": {
+            "title": "Block's",
+            "type": "array",
+            "items": [
+                {}
+            ]
+        },
+        "props": {
+            "type": "object",
+            "description": "The props of the block",
+            "properties": {
+                "blockClass": {
+                    "$ref": "../blockClass.json"
+                },
+                "category": {
+                    "type": "string",
+                    "description": "The category ID"
+                },
+                "collection": {
+                    "type": "string",
+                    "description": "The collection ID"
+                },
+                "orderBy": {
+                    "type": "string",
+                    "oneOf": [
+                        {
+                            "const": "OrderByTopSaleDESC"
+                        },
+                        {
+                            "const": "OrderByPriceDESC"
+                        },
+                        {
+                            "const": "OrderByPriceASC"
+                        },
+                        {
+                            "const": "OrderByNameASC"
+                        },
+                        {
+                            "const": "OrderByNameDESC"
+                        },
+                        {
+                            "const": "OrderByReleaseDateDESC"
+                        },
+                        {
+                            "const": "OrderByBestDiscountDESC"
+                        }
+                    ]
+                },
+                "hideUnavailableItems": {
+                    "type": "boolean",
+                    "description": "Whether out of stock items should be hidden (true) or not (false)",
+                    "default": false
+                },
+                "paginationDotsVisibility": {
+                    "type": "string",
+                    "oneOf": [
+                        {
+                            "const": "visible"
+                        },
+                        {
+                            "const": "hidden"
+                        },
+                        {
+                            "const": "mobileOnly"
+                        },
+                        {
+                            "const": "desktopOnly"
+                        }
+                    ]
+                },
+                "trackingId": {
+                    "type": "string",
+                    "description": "Name to show in the Google Analytics. If nothing is passed it will use the name of the block instead"
+                },
+                "maxItems": {
+                    "type": "number",
+                    "description": "Max items"
+                },
+                "recommendation": {
+                    "type": "string",
+                    "oneOf": [
+                        {
+                            "const": "similars"
+                        },
+                        {
+                            "const": "suggestions"
+                        },
+                        {
+                            "const": "accessories"
+                        },
+                        {
+                            "const": "view"
+                        },
+                        {
+                            "const": "buy"
+                        },
+                        {
+                            "const": "viewandBought"
+                        }
+                    ],
+                    "default": "similars"
+                },
+                "hideOutOfStockItems": {
+                    "type": "boolean",
+                    "description": "Whether out of stock items should be hidden (true) or not (false)",
+                    "default": false
+                },
+                "productList": {
+                    "type": "object",
+                    "properties": {
+                        "maxItems": {
+                            "type": "number",
+                            "description": "Maximum number of items to be displayed on the related product shelf.",
+                            "default": 10
+                        },
+                        "scroll": {
+                            "type": "string",
+                            "oneOf": [
+                                {
+                                    "const": "BY_PAGE"
+                                },
+                                {
+                                    "const": "ONE_BY_ONE"
+                                }
+                            ],
+                            "default": "BY_PAGE"
+                        },
+                        "arrows": {
+                            "type": "boolean",
+                            "description": "Whether the arrows should be displayed on the shelf (true) or not (false).",
+                            "default": true
+                        },
+                        "showTitle": {
+                            "type": "boolean",
+                            "description": "Whether a title should be displayed in the product related shelf (true) or not (false).",
+                            "default": true
+                        },
+                        "titleText": {
+                            "type": "string",
+                            "description": "Related product shelf title."
+                        },
+                        "gap": {
+                            "type": "string",
+                            "oneOf": [
+                                {
+                                    "const": "ph0"
+                                },
+                                {
+                                    "const": "ph3"
+                                },
+                                {
+                                    "const": "ph5"
+                                },
+                                {
+                                    "const": "ph7"
+                                }
+                            ],
+                            "default": "ph3"
+                        },
+                        "minItemsPerPage": {
+                            "type": "number",
+                            "description": "Minimum number of items per shelf slides. This prop can be used to control how many items will be displayed on the related product shelf even in the smallest screen size. Its value can be a float, which means that you can choose a multiple of 0.5 to indicate that you want to show a peek of the next slide on the shelf.",
+                            "default": 1
+                        },
+                        "itemsPerPage": {
+                            "type": "number",
+                            "description": "Maximum number of items per shelf slides. This prop can be used to control how many items will be displayed on the related product shelf even in the biggest screen size. Its value can be a float, which means that you can choose a multiple of 0.5 to indicate that you want to show a peek of the next slide on the Shelf.",
+                            "default": 5
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "required": [
+        "title"
+    ]
+}
