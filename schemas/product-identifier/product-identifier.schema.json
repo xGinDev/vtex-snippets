@@ -26,18 +26,14 @@
           "type": "string"
         },
         "idField": {
-          "anyOf": [
-            {
-              "type": "string",
-              "enum": [
-                "itemId",
-                "productId",
-                "productReference",
-                "skuEan",
-                "skuReferenceId"
-              ]
-            }
-          ]
+          "oneOf": [
+            {"const": "itemId"},
+            {"const": "productId"},
+            {"const": "productReference"},
+            {"const": "skuEan"},
+            {"const": "skuReferenceId"}
+          ],
+          "default": "productId"
         }
       },
       "required": ["title"]
