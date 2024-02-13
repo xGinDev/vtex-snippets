@@ -1,4 +1,11 @@
 Changelog
+### [0.0.59](https://github.com/xGinDev/vtex-snippets/compare/v0.0.58...v0.0.59) (2024-02-13)
+
+
+### Bug Fixes
+
+* product identifier ([6353c3f](https://github.com/xGinDev/vtex-snippets/commit/6353c3f01dad04047726a287cc8398594cb1bde9))
+
 ### [0.0.58](https://github.com/xGinDev/vtex-snippets/compare/v0.0.57...v0.0.58) (2024-02-12)
 
 
