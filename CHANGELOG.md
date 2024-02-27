@@ -1,4 +1,6 @@
 Changelog
+### [0.0.60](https://github.com/xGinDev/vtex-snippets/compare/v0.0.59...v0.0.60) (2024-02-27)
+
 ### [0.0.59](https://github.com/xGinDev/vtex-snippets/compare/v0.0.58...v0.0.59) (2024-02-13)
 
 
