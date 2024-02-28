@@ -104,5 +104,39 @@
     ],
     "description": "Create Route Custom",
     "scope": "json, jsonc"
-  }
+  },
+  "Create Basic iframe": {
+  "prefix": "ifb",
+  "body": [
+    "\"iframe#${1}\": {",
+    "    \"title\": \"${2}\",",
+    "        \"props\": {",
+    "      \"src\": \"${3:Source address the iframe should render}\",",
+    "      \"width\": \"${4}\",",
+    "      \"height\": \"${5}\",",
+    "      \"allow\" : \"${6:allow attribute of the iframe}\",",
+    "      \"blockClass\": \"${7}\"",
+    "    }",
+    "  }",
+  ],
+  "description": "Create Basic iframe"
+},
+"Create Dynaamic src iframe": {
+  "prefix": "ifds",
+  "body": [
+    "\"iframe.dynamic-src#${1}\": {",
+    "    \"title\": \"${2}\",",
+    "    \"props\": {",
+    "      \"dynamicSrc\": \"${3:iframe src with dynamic parameters from page URL}\",",
+    "      \"width\": \"${4}\",",
+    "      \"height\": \"${5}\",",
+    "      \"title\": \"${1}\",",
+    "      \"allow\": \"${6:allow attribute of the iframe}\",",
+    "      \"id\": \"${1}\"",
+    "    }",
+    "  }",
+    ""
+  ],
+  "description": "Create Dynaamic src iframe"
+}
 }
