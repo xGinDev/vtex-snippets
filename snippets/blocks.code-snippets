@@ -108,7 +108,7 @@
   "Create Responsive Layout Desktop": {
     "prefix": "rld",
     "body": [
-      "\"responsive-layout.desktop\": {",
+      "\"responsive-layout.desktop#${1}\": {",
       "    \"children\": [\"\"]",
       "  },"
     ],
@@ -118,7 +118,7 @@
   "Create Responsive Layout Tablet": {
     "prefix": "rlt",
     "body": [
-      "\"responsive-layout.tablet\": {",
+      "\"responsive-layout.tablet#${1}\": {",
       "    \"children\": [\"\"]",
       "  },"
     ],
@@ -128,7 +128,7 @@
   "Create Responsive Layout Phone": {
     "prefix": "rlp",
     "body": [
-      "\"responsive-layout.phone\": {",
+      "\"responsive-layout.phone#${1}\": {",
       "    \"children\": [\"\"]",
       "  },"
     ],
