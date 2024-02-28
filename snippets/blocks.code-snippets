@@ -109,6 +109,7 @@
     "prefix": "ic",
     "body": [
       "  \"info-card#${1}\": {",
+      "    \"title\": \"${1}\",",
       "    \"props\": {",
       "      \"id\": \"info-card-${1}\",",
       "      \"isFullModeStyle\": false,",
