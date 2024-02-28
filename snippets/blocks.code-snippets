@@ -104,5 +104,21 @@
     ],
     "description": "Create Route Custom",
     "scope": "json, jsonc"
+  },
+  "Product Identifier": {
+    "prefix": "pi",
+    "body": [
+      "\"product-identifier.product#${1}\": {",
+      "  \"props\": {",
+      "    \"title\": \"${1}\"",
+      "    \"label\": \"\",",
+      "    \"customLabel\": \"\",",
+      "    \"idField\": \"\",",
+      "    \"blockClass\": \"\"",
+      "  }",
+      "}"
+    ],
+    "description": "Product Identifier",
+    "scope": "json, jsonc"
   }
 }
