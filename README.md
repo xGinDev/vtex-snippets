@@ -40,3 +40,4 @@ VTEX IO Snippets are concise, reusable code fragments tailored for VTEX IO. Thes
 | "quickview" => "Create QuickView "             |
 | "promises" => "Create Promises Brand "         |
 | "rc" => "Route Custom"                         |
+| "ic" => "simple info card"                     |
