@@ -105,6 +105,28 @@
     "description": "Create Route Custom",
     "scope": "json, jsonc"
   },
+  "Create simple info card": {
+    "prefix": "ic",
+    "body": [
+      "  \"info-card#${1}\": {",
+      "    \"title\": \"${1}\",",
+      "    \"props\": {",
+      "      \"id\": \"info-card-${1}\",",
+      "      \"isFullModeStyle\": false,",
+      "      \"textPosition\": \"left\",",
+      "      \"imageUrl\": \"${5: https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png}\",",
+      "      \"headline\": \"${2: texto de la card}\",",
+      "      \"callToActionText\": \"${3:Texto del botón}\",",
+      "      \"callToActionUrl\": \"${4:/tu/url}\",",
+      "      \"blockClass\": \"info-card-${1}\",",
+      "      \"textAlignment\": \"center\"",
+      "    }",
+      "  },",
+      ""
+    ],
+    "description": "Create simple info card, with image, headline and call to action",
+"scope": "json, jsonc"
+  }
   "Stack layout": {
     "prefix": "sl",
     "body": [
