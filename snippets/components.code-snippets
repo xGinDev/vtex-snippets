@@ -417,5 +417,41 @@
       "  }"
     ],
     "description": "Create Breadcrumb PDP"
+  },
+  "Create a container that should be fixed relative to the viewport ": {
+    "prefix": "stl",
+    "body": [
+      "  \"sticky-layout#${1}\": {",
+      "    \"title\": \"Sticky Layout - ${1}\",",
+      "    \"props\": {",
+      "      \"position\": \"bottom\"",
+      "    },",
+      "    \"children\": [${2}]",
+      "  }"
+    ],
+    "description": "Create a container that should be fixed relative to the viewport "
+  },
+  "Create a container that wrap a list of sticky elements": {
+    "prefix": "sls",
+    "body": [
+      "  \"sticky-layout.stack-container#${1}\": {",
+      "    \"title\": \"Sticky layout stack - ${1}\",",
+      "    \"props\": {",
+      "      \"position\": \"top\"",
+      "    },",
+      "    \"children\": [",
+      "      \"sticky-layout#${2}\",",
+      "      \"sticky-layout#${3}\"",
+      "    ]",
+      "  },",
+      "  \"sticky-layout#${2}\": {",
+      "    \"children\": []",
+      "  },",
+      "  \"sticky-layout#${3}\": {",
+      "    \"children\": []",
+      "  }",
+      ""
+    ],
+    "description": "Create a container that wrap a list of sticky elements"
   }
 }
