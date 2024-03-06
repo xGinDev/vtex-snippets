@@ -5,6 +5,7 @@ VTEX IO Snippets are concise, reusable code fragments tailored for VTEX IO. Thes
 ### Create pre-made components
 
 ![extension-ezgif com-video-to-gif-converter](https://github.com/xGinDev/vtex-snippets/assets/57797652/f5e295d9-456f-4f02-b98f-2fd9b65f9970)
+![Reference app: Snippet generator](https://snippet-generator.app/)
 
 ## Commands
 
@@ -19,6 +20,7 @@ VTEX IO Snippets are concise, reusable code fragments tailored for VTEX IO. Thes
 | "mi" => "menu-item"           |
 | "m" => "menu"                 |
 | "ic" => "simple info card"    |
+| "img" => "image"              |
 
 ## Components
 

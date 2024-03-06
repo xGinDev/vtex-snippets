@@ -125,6 +125,51 @@
       ""
     ],
     "description": "Create simple info card, with image, headline and call to action",
+"scope": "json, jsonc"
+  }
+  "Stack layout": {
+    "prefix": "sl",
+    "body": [
+      "\"stack-layout\": {",
+      "  \"children\": [${1}]",
+      "}"
+    ],
+    "description": "Stack layout",
+    "scope": "json, jsonc"
+  },
+  "Product Identifier": {
+    "prefix": "pi",
+    "body": [
+      "\"product-identifier.product#${1}\": {",
+      "  \"props\": {",
+      "    \"title\": \"${1}\"",
+      "    \"label\": \"\",",
+      "    \"customLabel\": \"\",",
+      "    \"idField\": \"\",",
+      "    \"blockClass\": \"\"",
+      "  }",
+      "}"
+    ],
+    "description": "Product Identifier",
+      
+    "scope": "json, jsonc"
+  }
+  "Create image component": {
+    "prefix": "img",
+    "body": [
+      "\"image#${1}\": {",
+      "        \"title\": \"\",",
+      "        \"props\": {",
+      "            \"src\": \"\",",
+      "            \"link\": {",
+      "                \"url\": \"/\",",
+      "                \"attributeTitle\": \"\"",
+      "            },",
+      "            \"blockClass\": \"${1}\"",
+      "        }",
+      "    }"
+    ],
+    "description": "Create image component",
     "scope": "json, jsonc"
   }
 }
