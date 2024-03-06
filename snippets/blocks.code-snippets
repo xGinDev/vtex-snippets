@@ -105,6 +105,16 @@
     "description": "Create Route Custom",
     "scope": "json, jsonc"
   },
+  "Stack layout": {
+    "prefix": "sl",
+    "body": [
+      "\"stack-layout\": {",
+      "  \"children\": [${1}]",
+      "}"
+    ],
+    "description": "Stack layout",
+    "scope": "json, jsonc"
+  },
   "Product Identifier": {
     "prefix": "pi",
     "body": [
