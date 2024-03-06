@@ -1,4 +1,21 @@
 Changelog
+### [0.0.61](https://github.com/xGinDev/vtex-snippets/compare/v0.0.60...v0.0.61) (2024-03-06)
+
+
+### Features
+
+* add snippet info-card ([6b104e3](https://github.com/xGinDev/vtex-snippets/commit/6b104e389c450f0cc43700b777b7209d1155b2c8))
+* add the sticky layout snippets ([5c38dcf](https://github.com/xGinDev/vtex-snippets/commit/5c38dcf3e2c0fb07392b7a7cbc777a9c7eef16df))
+* create snippet img ([778e486](https://github.com/xGinDev/vtex-snippets/commit/778e4861e39dbff82ec2948a4e515dde44db3083))
+* Se agrega el bloque de Product idnetifier: https://developers.vtex.com/docs/apps/vtex.product-identifier ([fc3e9d8](https://github.com/xGinDev/vtex-snippets/commit/fc3e9d85d259a54aef80ede766da21ecce8b2d13))
+* Update comando ([2353c1b](https://github.com/xGinDev/vtex-snippets/commit/2353c1b93bcdee0e0b380b07cd008fd557980876))
+
+
+### Bug Fixes
+
+* position documentation ([cf73499](https://github.com/xGinDev/vtex-snippets/commit/cf734998d97d59d00250e4b69a68997b01e29b96))
+* PR's ([d8e6b06](https://github.com/xGinDev/vtex-snippets/commit/d8e6b06966c4fda5b9c4a744a39b434d6033fbe2))
+
 ### [0.0.60](https://github.com/xGinDev/vtex-snippets/compare/v0.0.59...v0.0.60) (2024-02-27)
 
 ### [0.0.59](https://github.com/xGinDev/vtex-snippets/compare/v0.0.58...v0.0.59) (2024-02-13)
