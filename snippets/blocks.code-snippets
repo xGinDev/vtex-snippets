@@ -105,6 +105,36 @@
     "description": "Create Route Custom",
     "scope": "json, jsonc"
   },
+  "Create Responsive Layout Desktop": {
+    "prefix": "rld",
+    "body": [
+      "\"responsive-layout.desktop#${1}\": {",
+      "    \"children\": [\"\"]",
+      "  },"
+    ],
+    "description": "Create Responsive Layout Desktop",
+    "scope": "json, jsonc"
+  },
+  "Create Responsive Layout Tablet": {
+    "prefix": "rlt",
+    "body": [
+      "\"responsive-layout.tablet#${1}\": {",
+      "    \"children\": [\"\"]",
+      "  },"
+    ],
+    "description": "Create Responsive Layout Tablet",
+    "scope": "json, jsonc"
+  },
+  "Create Responsive Layout Phone": {
+    "prefix": "rlp",
+    "body": [
+      "\"responsive-layout.phone#${1}\": {",
+      "    \"children\": [\"\"]",
+      "  },"
+    ],
+    "description": "Create Responsive Layout Phone",
+"scope": "json, jsonc"
+  }
   "Create simple info card": {
     "prefix": "ic",
     "body": [
