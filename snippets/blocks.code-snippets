@@ -119,7 +119,8 @@
     "    }",
     "  }",
   ],
-  "description": "Create Basic iframe"
+  "description": "Create Basic iframe",
+    "scope": "json, jsonc"
 },
 "Create Dynaamic src iframe": {
   "prefix": "ifds",
@@ -137,6 +138,104 @@
     "  }",
     ""
   ],
-  "description": "Create Dynaamic src iframe"
+  "description": "Create Dynaamic src iframe",
+    "scope": "json, jsonc"
 }
+  "Create Responsive Layout Desktop": {
+    "prefix": "rld",
+    "body": [
+      "\"responsive-layout.desktop#${1}\": {",
+      "    \"children\": [\"\"]",
+      "  },"
+    ],
+    "description": "Create Responsive Layout Desktop",
+    "scope": "json, jsonc"
+  },
+  "Create Responsive Layout Tablet": {
+    "prefix": "rlt",
+    "body": [
+      "\"responsive-layout.tablet#${1}\": {",
+      "    \"children\": [\"\"]",
+      "  },"
+    ],
+    "description": "Create Responsive Layout Tablet",
+    "scope": "json, jsonc"
+  },
+  "Create Responsive Layout Phone": {
+    "prefix": "rlp",
+    "body": [
+      "\"responsive-layout.phone#${1}\": {",
+      "    \"children\": [\"\"]",
+      "  },"
+    ],
+    "description": "Create Responsive Layout Phone",
+"scope": "json, jsonc"
+  }
+  "Create simple info card": {
+    "prefix": "ic",
+    "body": [
+      "  \"info-card#${1}\": {",
+      "    \"title\": \"${1}\",",
+      "    \"props\": {",
+      "      \"id\": \"info-card-${1}\",",
+      "      \"isFullModeStyle\": false,",
+      "      \"textPosition\": \"left\",",
+      "      \"imageUrl\": \"${5: https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png}\",",
+      "      \"headline\": \"${2: texto de la card}\",",
+      "      \"callToActionText\": \"${3:Texto del botón}\",",
+      "      \"callToActionUrl\": \"${4:/tu/url}\",",
+      "      \"blockClass\": \"info-card-${1}\",",
+      "      \"textAlignment\": \"center\"",
+      "    }",
+      "  },",
+      ""
+    ],
+    "description": "Create simple info card, with image, headline and call to action",
+"scope": "json, jsonc"
+  }
+  "Stack layout": {
+    "prefix": "sl",
+    "body": [
+      "\"stack-layout\": {",
+      "  \"children\": [${1}]",
+      "}"
+    ],
+    "description": "Stack layout",
+    "scope": "json, jsonc"
+  },
+  "Product Identifier": {
+    "prefix": "pi",
+    "body": [
+      "\"product-identifier.product#${1}\": {",
+      "  \"props\": {",
+      "    \"title\": \"${1}\"",
+      "    \"label\": \"\",",
+      "    \"customLabel\": \"\",",
+      "    \"idField\": \"\",",
+      "    \"blockClass\": \"\"",
+      "  }",
+      "}"
+    ],
+    "description": "Product Identifier",
+      
+    "scope": "json, jsonc"
+  }
+  "Create image component": {
+    "prefix": "img",
+    "body": [
+      "\"image#${1}\": {",
+      "        \"title\": \"\",",
+      "        \"props\": {",
+      "            \"src\": \"\",",
+      "            \"link\": {",
+      "                \"url\": \"/\",",
+      "                \"attributeTitle\": \"\"",
+      "            },",
+      "            \"blockClass\": \"${1}\"",
+      "        }",
+      "    }"
+    ],
+    "description": "Create image component",
+    "scope": "json, jsonc"
+  }
 }
