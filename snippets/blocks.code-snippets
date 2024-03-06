@@ -119,6 +119,25 @@
       "}"
     ],
     "description": "Product Identifier",
+      
+    "scope": "json, jsonc"
+  }
+  "Create image component": {
+    "prefix": "img",
+    "body": [
+      "\"image#${1}\": {",
+      "        \"title\": \"\",",
+      "        \"props\": {",
+      "            \"src\": \"\",",
+      "            \"link\": {",
+      "                \"url\": \"/\",",
+      "                \"attributeTitle\": \"\"",
+      "            },",
+      "            \"blockClass\": \"${1}\"",
+      "        }",
+      "    }"
+    ],
+    "description": "Create image component",
     "scope": "json, jsonc"
   }
 }

@@ -18,6 +18,7 @@ VTEX IO Snippets are concise, reusable code fragments tailored for VTEX IO. Thes
 | "atc" => "add-to-cart-button" |
 | "mi" => "menu-item"           |
 | "m" => "menu"                 |
+| "img" => "image"              |
 
 ## Components
 
