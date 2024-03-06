@@ -1,13 +1,21 @@
 {
   "Create flex-layout-row": {
     "prefix": "flr",
-    "body": ["\"flex-layout.row#${1}\":{", "  \"title\": \"${2}\"", "},"],
+    "body": [
+      "\"flex-layout.row#${1}\":{",
+      "  \"title\": \"${2}\"",
+      "},"
+    ],
     "description": "Create Flex Layout Row",
     "scope": "json, jsonc"
   },
   "Create flex-layout-col": {
     "prefix": "flc",
-    "body": ["\"flex-layout.col#${1}\":{", "  \"title\": \"${2}\"", "},"],
+    "body": [
+      "\"flex-layout.col#${1}\":{",
+      "  \"title\": \"${2}\"",
+      "},"
+    ],
     "description": "Create Flex Layout Col",
     "scope": "json, jsonc"
   },
@@ -38,7 +46,9 @@
   },
   "Create add-to-cart": {
     "prefix": "atc",
-    "body": ["\"add-to-cart-button\""],
+    "body": [
+      "\"add-to-cart-button\""
+    ],
     "scope": "json,jsonc",
     "description": "Generate add to cart button"
   },
@@ -106,41 +116,41 @@
     "scope": "json, jsonc"
   },
   "Create Basic iframe": {
-  "prefix": "ifb",
-  "body": [
-    "\"iframe#${1}\": {",
-    "    \"title\": \"${2}\",",
-    "        \"props\": {",
-    "      \"src\": \"${3:Source address the iframe should render}\",",
-    "      \"width\": \"${4}\",",
-    "      \"height\": \"${5}\",",
-    "      \"allow\" : \"${6:allow attribute of the iframe}\",",
-    "      \"blockClass\": \"${7}\"",
-    "    }",
-    "  }",
-  ],
-  "description": "Create Basic iframe",
+    "prefix": "ifb",
+    "body": [
+      "\"iframe#${1}\": {",
+      "    \"title\": \"${2}\",",
+      "        \"props\": {",
+      "      \"src\": \"${3:Source address the iframe should render}\",",
+      "      \"width\": \"${4}\",",
+      "      \"height\": \"${5}\",",
+      "      \"allow\" : \"${6:allow attribute of the iframe}\",",
+      "      \"blockClass\": \"${7}\"",
+      "    }",
+      "  }",
+    ],
+    "description": "Create Basic iframe",
     "scope": "json, jsonc"
-},
-"Create Dynaamic src iframe": {
-  "prefix": "ifds",
-  "body": [
-    "\"iframe.dynamic-src#${1}\": {",
-    "    \"title\": \"${2}\",",
-    "    \"props\": {",
-    "      \"dynamicSrc\": \"${3:iframe src with dynamic parameters from page URL}\",",
-    "      \"width\": \"${4}\",",
-    "      \"height\": \"${5}\",",
-    "      \"title\": \"${1}\",",
-    "      \"allow\": \"${6:allow attribute of the iframe}\",",
-    "      \"id\": \"${1}\"",
-    "    }",
-    "  }",
-    ""
-  ],
-  "description": "Create Dynaamic src iframe",
+  },
+  "Create Dynaamic src iframe": {
+    "prefix": "ifds",
+    "body": [
+      "\"iframe.dynamic-src#${1}\": {",
+      "    \"title\": \"${2}\",",
+      "    \"props\": {",
+      "      \"dynamicSrc\": \"${3:iframe src with dynamic parameters from page URL}\",",
+      "      \"width\": \"${4}\",",
+      "      \"height\": \"${5}\",",
+      "      \"title\": \"${1}\",",
+      "      \"allow\": \"${6:allow attribute of the iframe}\",",
+      "      \"id\": \"${1}\"",
+      "    }",
+      "  }",
+      ""
+    ],
+    "description": "Create Dynaamic src iframe",
     "scope": "json, jsonc"
-}
+  },
   "Create Responsive Layout Desktop": {
     "prefix": "rld",
     "body": [
@@ -169,8 +179,8 @@
       "  },"
     ],
     "description": "Create Responsive Layout Phone",
-"scope": "json, jsonc"
-  }
+    "scope": "json, jsonc"
+  },
   "Create simple info card": {
     "prefix": "ic",
     "body": [
@@ -191,8 +201,8 @@
       ""
     ],
     "description": "Create simple info card, with image, headline and call to action",
-"scope": "json, jsonc"
-  }
+    "scope": "json, jsonc"
+  },
   "Stack layout": {
     "prefix": "sl",
     "body": [
@@ -217,9 +227,8 @@
       "}"
     ],
     "description": "Product Identifier",
-      
     "scope": "json, jsonc"
-  }
+  },
   "Create image component": {
     "prefix": "img",
     "body": [
