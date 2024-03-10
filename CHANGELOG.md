@@ -1,4 +1,11 @@
 Changelog
+### [0.0.62](https://github.com/xGinDev/vtex-snippets/compare/v0.0.61...v0.0.62) (2024-03-10)
+
+
+### Bug Fixes
+
+* link schema ref ([a41a2a3](https://github.com/xGinDev/vtex-snippets/commit/a41a2a386ae951df077cf892070fb42c4026f6a9))
+
 ### [0.0.61](https://github.com/xGinDev/vtex-snippets/compare/v0.0.60...v0.0.61) (2024-03-06)
 
 
