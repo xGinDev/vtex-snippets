@@ -111,6 +111,9 @@
     "^(info-card#)|^(info-card)": {
       "$ref": "./info-card/info-card.schema.json"
     },
+    "^(link#)|^(link)": {
+      "$ref": "./link/link.schema.json"
+    },
     "^(list-context.image-list#)|^(list-context.image-list)": {
       "$ref": "./list-context.image-list/list-context.image-list.schema.json"
     },
