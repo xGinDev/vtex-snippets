@@ -31,6 +31,22 @@
     "scope": "json,jsonc",
     "description": "Generate rich text block"
   },
+  "Create rich text with props": {
+    "prefix": "rtp",
+    "body": [
+      "    \"rich-text#${1}\": {",
+      "        \"title\": \"${2}\",",
+      "        \"props\": {",
+      "            \"text\": \"\",",
+      "            \"blockClass\": [",
+      "                \"${2}\"",
+      "            ]",
+      "        }",
+      "    }"
+    ],
+    "scope": "json,jsonc",
+    "description": "Generate rich text block with props"
+  },
   "Create slider-layout": {
     "prefix": "sl",
     "body": [
