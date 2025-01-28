@@ -10,7 +10,7 @@
 4. Crea una rama para tu contribución: `git checkout -b feature/name-snippet`
 5. Ten en cuenta esta documentación [¿Cómo crear un snippet?](CREATE_SNIPPET.md)
 6. Realiza tus cambios y asegúrate de seguir las [pautas de codificación](#pautas-de-codificación).
-7. Realiza pruebas locales para asegurarte de que tus cambios funcionan correctamente.
+7. [Realiza pruebas locales](#cómo-realizar-las-pruebas) para asegurarte de que tus cambios funcionan correctamente.
 8. Realiza un commit con un mensaje descriptivo: `git commit -m "Añade [nombre del snippet]"`
 9. Sube tus cambios a tu repositorio fork: `git push origin feature/name-snippet`
 10. Abre una solicitud de extracción (Pull Request) en GitHub.
