@@ -1,4 +1,17 @@
 Changelog
+### [0.0.64](https://github.com/xGinDev/vtex-snippets/compare/v0.0.63...v0.0.64) (2025-01-28)
+
+
+### Features
+
+* rich text with props ([33704b4](https://github.com/xGinDev/vtex-snippets/commit/33704b4205cbe6c14a3051f5c31cf0a24ff6f3b8))
+
+
+### Bug Fixes
+
+* doc ([81b18db](https://github.com/xGinDev/vtex-snippets/commit/81b18db5c8b6d30c60397eced9ee2f42645aa4bd))
+* doc ([3c75dba](https://github.com/xGinDev/vtex-snippets/commit/3c75dba6dce47f070e054a374fbfdd5d254d4d9d))
+
 ### [0.0.63](https://github.com/xGinDev/vtex-snippets/compare/v0.0.62...v0.0.63) (2024-10-24)
 
 ### [0.0.62](https://github.com/xGinDev/vtex-snippets/compare/v0.0.61...v0.0.62) (2024-03-10)
