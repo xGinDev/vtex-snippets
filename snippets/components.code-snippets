@@ -273,7 +273,7 @@
       "    },"
     ],
     "description": "Create Menú With SubMenu Accordion",
-     "scope": "json, jsonc"
+    "scope": "json, jsonc"
   },
   "Create QuickView": {
     "prefix": "quickview",
@@ -312,7 +312,7 @@
       "    }"
     ],
     "description": "Create QuickView",
-     "scope": "json, jsonc"
+    "scope": "json, jsonc"
   },
   "Create Promises Brand": {
     "prefix": "promises",

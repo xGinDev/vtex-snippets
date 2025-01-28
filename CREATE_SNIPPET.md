@@ -31,6 +31,7 @@ En este caso lo pondremos dentro de ```blocks.code-snippets```.
 **¡SUPER IMPORTANTE!**
 
 Cada snippet debe tener el: ```"scope": "json,jsonc"```
+
 ![image](https://github.com/xGinDev/vtex-snippets/assets/57797652/c97ac644-38c5-4603-be79-00f4bfa0d81c)
 
 Con esto ya el snippet queda creado!

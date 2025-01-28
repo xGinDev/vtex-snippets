@@ -1,18 +1,18 @@
 {
-    "Create Template App Custom": {
-      "prefix": "tac",
-      "body": [
-        "import React from 'react'",
-        "",
-        "const ${1}: StorefrontFunctionComponent<any> = () => {",
-        "  return (",
-        "    <div>NameComponent</div>",
-        "  )",
-        "}",
-        "",
-        "export default ${1}"
-      ],
-      "description": "",
-      "scope": "javascript,javascriptreact, typescript, typescriptreact"
-    }
+  "Create Template App Custom": {
+    "prefix": "tac",
+    "body": [
+      "import React from 'react'",
+      "",
+      "const ${1}: StorefrontFunctionComponent<any> = () => {",
+      "  return (",
+      "    <div>NameComponent</div>",
+      "  )",
+      "}",
+      "",
+      "export default ${1}"
+    ],
+    "description": "",
+    "scope": "javascript,javascriptreact, typescript, typescriptreact"
+  }
 }
