@@ -42,3 +42,17 @@ VTEX IO Snippets are concise, reusable code fragments tailored for VTEX IO. Thes
 | "quickview" => "Create QuickView "             |
 | "promises" => "Create Promises Brand "         |
 | "rc" => "Route Custom"                         |
+
+
+## Configuración de snippets en la terminal
+
+Después de instalar la extensión, configura los aliases de terminal ejecutando el siguiente comando desde la paleta de comandos de VSCode:
+
+1. Abre la paleta de comandos (`Ctrl + Shift + P` o `Cmd + Shift + P`).
+2. Busca y selecciona `Setup VTEX Snippets Aliases`.
+3. ¡Listo! Los aliases estarán disponibles en tu terminal.
+
+| Terminal Snippets                                |
+| :--------------------------------------------- |
+| "vl" => "vtex link" |
+| "yd" => "yarn dev"                 |
