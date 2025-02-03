@@ -1,4 +1,5 @@
 {
+  "main": "./extension.js",
   "name": "vtex-snippet-io",
   "displayName": "VTEX IO CodeBits",
   "description": "Snippets to improve performance when developing in VTEX IO",
@@ -14,12 +15,15 @@
   },
   "scripts": {
     "lint-staged": "lint-staged",
-    "postinstall": "husky install",
+    "postinstall": "husky install && node cli/setup-aliases.js",
     "release": "standard-version",
     "release:minor": "standard-version --release-as minor",
     "release:patch": "standard-version --release-as patch",
     "release:major": "standard-version --release-as major"
   },
+  "activationEvents": [
+    "onCommand:vtex-snippets.setupAliases"
+  ],
   "categories": [
     "Snippets",
     "Linters",
@@ -84,6 +88,12 @@
           "**/react/**/*.ts",
           "**/react/**/*.tsx"
         ]
+      }
+    ],
+    "commands": [
+      {
+        "command": "vtex-snippets.setupAliases",
+        "title": "Setup VTEX Snippets Aliases"
       }
     ]
   },
