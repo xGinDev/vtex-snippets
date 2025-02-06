@@ -6,7 +6,7 @@
   "version": "0.0.66",
   "repository": {
     "type": "git",
-    "url": "https://github.com/xGinDev/vtex-snippets"
+    "url": "git+https://github.com/xGinDev/vtex-snippets.git"
   },
   "publisher": "xGinDev",
   "icon": "logo.jpg",

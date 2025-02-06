@@ -1,10 +1,28 @@
-# Agregar aliases al perfil de PowerShell
-Add-Content -Path $PROFILE -Value "Set-Alias -Name vl -Value vtex link"
-Add-Content -Path $PROFILE -Value "Set-Alias -Name vli -Value vtex login"
-Add-Content -Path $PROFILE -Value "Set-Alias -Name vlo -Value vtex logout"
-Add-Content -Path $PROFILE -Value "Set-Alias -Name yd -Value yarn dev"
+# Agregar funciones en lugar de alias
+Add-Content -Path $PROFILE -Value @"
+function vl { vtex link }
+function vli { vtex login }
+function vlo { vtex logout }
+function vw { vtex whoami }
+function yd { yarn dev }
 
-# Recargar el perfil de PowerShell
-. $PROFILE
+function vs {
+    param (
+        [string]`$account,
+        [string]`$workspace
+    )
+    if (-not `$account -or -not `$workspace) {
+        Write-Host "Uso: vs <account> <workspace>"
+        return
+    }
+    vtex switch `$account -w `$workspace
+}
+"@
 
-Write-Host "Aliases configurados correctamente."
+# Recargar el perfil correctamente
+if (Test-Path $PROFILE) {
+    . $PROFILE
+    Write-Host "El perfil de PowerShell se ha recargado correctamente."
+} else {
+    Write-Host "El perfil de PowerShell no existe."
+}
