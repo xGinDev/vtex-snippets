@@ -1,4 +1,11 @@
 Changelog
+### [0.0.67](https://github.com/xGinDev/vtex-snippets/compare/v0.0.66...v0.0.67) (2025-02-06)
+
+
+### Features
+
+* new snippet ([ffbe061](https://github.com/xGinDev/vtex-snippets/commit/ffbe061637ea60577d498ee901483e2a660ef67e))
+
 ### [0.0.66](https://github.com/xGinDev/vtex-snippets/compare/v0.0.65...v0.0.66) (2025-02-05)
 
 
