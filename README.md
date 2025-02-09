@@ -60,4 +60,9 @@ Después de instalar la extensión, configura los aliases de terminal ejecutando
 | "vlo" => "vtex logout" |
 | "vw" => "vtex whoami" |
 | "vs" => "vtex switch {account} -w {workspace}" |
+| "ga" => "git add ." |
+| "gc" => "git commit -m" |
+| "gph" => "git push" |
+| "gpl" => "git pull" |
+| "gs" => "git status" |
 | "yd" => "yarn dev"                 |
