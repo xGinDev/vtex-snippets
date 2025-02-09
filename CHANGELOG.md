@@ -1,4 +1,16 @@
 Changelog
+### [0.0.68](https://github.com/xGinDev/vtex-snippets/compare/v0.0.67...v0.0.68) (2025-02-09)
+
+
+### Features
+
+* new commands cli ([09fbb5f](https://github.com/xGinDev/vtex-snippets/commit/09fbb5fd67f5fb722a6ebe06c48a47258b6ff625))
+
+
+### Bug Fixes
+
+* readme ([b0200b8](https://github.com/xGinDev/vtex-snippets/commit/b0200b8e3f386a789ec00e06ee984422580e74e7))
+
 ### [0.0.67](https://github.com/xGinDev/vtex-snippets/compare/v0.0.66...v0.0.67) (2025-02-06)
 
 
