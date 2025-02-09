@@ -50,9 +50,14 @@ Después de instalar la extensión, configura los aliases de terminal ejecutando
 
 1. Abre la paleta de comandos (`Ctrl + Shift + P` o `Cmd + Shift + P`).
 2. Busca y selecciona `Setup VTEX Snippets Aliases`.
-3. ¡Listo! Los aliases estarán disponibles en tu terminal.
+3. **(Solo para Windows).** Se debe ejecutar el siguiente comando en PowerShell: `Add-Content -Path $PROFILE -Value '$env:PATH += ";C:\ruta\a\vtex"'`
+4. ¡Listo! Los aliases estarán disponibles en tu terminal.
 
 | Terminal Snippets                                |
 | :--------------------------------------------- |
 | "vl" => "vtex link" |
+| "vli" => "vtex login" |
+| "vlo" => "vtex logout" |
+| "vw" => "vtex whoami" |
+| "vs" => "vtex switch {account} -w {workspace}" |
 | "yd" => "yarn dev"                 |
