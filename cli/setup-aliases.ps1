@@ -8,6 +8,19 @@ Add-Content -Path $PROFILE -Value "function vl { vtex link @args }"
 Add-Content -Path $PROFILE -Value "function vli { vtex login @args }"
 Add-Content -Path $PROFILE -Value "function vlo { vtex logout @args }"
 Add-Content -Path $PROFILE -Value "function vw { vtex whoami @args }"
+Add-Content -Path $PROFILE -Value "function vu { vtex use @args }"
+Add-Content -Path $PROFILE -Value "function vst { vtex setup @args }"
+Add-Content -Path $PROFILE -Value "function vls { vtex list @args }"
+Add-Content -Path $PROFILE -Value "function vup { vtex update @args }"
+Add-Content -Path $PROFILE -Value "function vwd { vtex workspace delete @args }"
+Add-Content -Path $PROFILE -Value "function vsl { vtex workspace list @args }"
+Add-Content -Path $PROFILE -Value "function vsr { vtex workspace reset @args }"
+Add-Content -Path $PROFILE -Value "function vrms { vtex release major stable @args }"
+Add-Content -Path $PROFILE -Value "function vrms { vtex release minor stable @args }"
+Add-Content -Path $PROFILE -Value "function vrps { vtex release patch stable @args }"
+Add-Content -Path $PROFILE -Value "function vwp { vtex workspace promote @args }"
+Add-Content -Path $PROFILE -Value "function vpv { vtex publish --verbose @args }"
+Add-Content -Path $PROFILE -Value "function vdf { vtex deploy --force @args }"
 Add-Content -Path $PROFILE -Value "function yd { yarn dev @args }"
 Add-Content -Path $PROFILE -Value "function ga { git add . @args }"
 Add-Content -Path $PROFILE -Value "function gc { git commit -m @args }"
@@ -27,6 +40,21 @@ function vs {
         return
     }
     vtex switch `$account -w `$workspace
+}
+"@
+
+# Función para vtex link con account y workspace
+Add-Content -Path $PROFILE -Value @"
+function vsl {
+    param (
+        [string]`$account,
+        [string]`$workspace
+    )
+    if (-not `$account -or -not `$workspace) {
+        Write-Host "Uso: vsl <account> <workspace>"
+        return
+    }
+    vtex link -a `$account -w `$workspace
 }
 "@
 

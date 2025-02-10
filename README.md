@@ -53,16 +53,40 @@ Después de instalar la extensión, configura los aliases de terminal ejecutando
 3. **(Solo para Windows).** Se debe ejecutar el siguiente comando en PowerShell: `Add-Content -Path $PROFILE -Value '$env:PATH += ";C:\ruta\a\vtex"'`
 4. ¡Listo! Los aliases estarán disponibles en tu terminal.
 
-| Terminal Snippets                                |
-| :--------------------------------------------- |
-| "vl" => "vtex link" |
-| "vli" => "vtex login" |
-| "vlo" => "vtex logout" |
-| "vw" => "vtex whoami" |
-| "vs" => "vtex switch {account} -w {workspace}" |
-| "ga" => "git add ." |
-| "gc" => "git commit -m" |
-| "gph" => "git push" |
-| "gpl" => "git pull" |
-| "gs" => "git status" |
-| "yd" => "yarn dev"                 |
+## Alias de VTEX
+
+| Alias | Comando                     | Descripción                                      |
+|-------|-----------------------------|--------------------------------------------------|
+| `vls`  | `vtex list`                 | Muestra el listado de dependencias del proyecto actual con VTEX.             |
+| `vl`  | `vtex link`                 | Linkea el proyecto actual con VTEX.             |
+| `vli` | `vtex login`                | Inicia sesión en VTEX.                          |
+| `vlo` | `vtex logout`               | Cierra sesión en VTEX.                          |
+| `vw`  | `vtex whoami`               | Muestra la información del usuario actual.      |
+| `vu`  | `vtex use`                  | Cambia a un workspace específico.               |
+| `vst` | `vtex setup`                | Configura el entorno de VTEX.                   |
+| `vup` | `vtex update`               | Actualiza las dependencias de VTEX o componentes personalizados que se hayan hecho deploy.                       |
+| `vwd` | `vtex workspace delete`     | Elimina un workspace.                           |
+| `vsl` | `vtex workspace list`       | Lista todos los workspaces disponibles.         |
+| `vsr` | `vtex workspace reset`      | Reinicia un workspace.                          |
+| `vrms`| `vtex release major stable` | Publica una versión mayor estable.              |
+| `vrms`| `vtex release minor stable` | Publica una versión menor estable.              |
+| `vrps`| `vtex release patch stable` | Publica una versión de parche estable.          |
+| `vwp` | `vtex workspace promote`    | Promueve un workspace a producción.             |
+| `vpv` | `vtex publish --verbose`    | Publica con mensajes detallados.                |
+| `vdf` | `vtex deploy --force`       | Despliega forzadamente.                         |
+
+## Alias de Git
+
+| Alias | Comando          | Descripción                                      |
+|-------|------------------|--------------------------------------------------|
+| `ga`  | `git add .`      | Agrega todos los cambios al staging area.        |
+| `gc`  | `git commit -m`  | Realiza un commit con un mensaje.                |
+| `gph` | `git push`       | Sube los cambios al repositorio remoto.          |
+| `gpl` | `git pull`       | Obtiene los cambios del repositorio remoto.      |
+| `gs`  | `git status`     | Muestra el estado del repositorio.               |
+
+## Alias de Yarn
+
+| Alias | Comando    | Descripción                                      |
+|-------|------------|--------------------------------------------------|
+| `yd`  | `yarn dev` | Inicia el servidor de desarrollo.                |
