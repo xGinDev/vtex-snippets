@@ -6,7 +6,7 @@
 
 1. Asegúrate de tener una cuenta en GitHub.
 2. Fork el repositorio a tu cuenta.
-3. Clona tu repositorio fork en tu máquina local: `git clone https://github.com/xGinDev/vtex-snippets.git`
+3. Clona tu repositorio fork en tu máquina local **(Recomendación por SSH)**: `git clone https://github.com/xGinDev/vtex-snippets.git`
 4. Crea una rama para tu contribución: `git checkout -b feature/name-snippet`
 5. Ten en cuenta esta documentación [¿Cómo crear un snippet?](CREATE_SNIPPET.md)
 6. Realiza tus cambios y asegúrate de seguir las [pautas de codificación](#pautas-de-codificación).
@@ -63,6 +63,23 @@ Dentro de esta nueva ventana en el debug, seleccionamos el idioma al cual coloca
 Ahora probamos el **prefix** que definimos en el snippet.
 
 ![Test Snippet](https://github.com/user-attachments/assets/5012ed1d-d440-46a2-b376-f9fe706368d8)
+
+
+## Crear Snippet CLI
+
+Para ello, debemos hacerlo en dos archivos dentro de la siguiente estructura:
+
+```
+├── cli
+  ├── setup-aliases.sh
+  ├── setup-aliases.ps1
+```
+
+.sh es para el sistema operativo de MacOS y Linux
+.ps1 es para el sistema operativo de Windows
+
+
+Viendo estos archivos, es solo duplicar algún comando y adaptarlo al que deseas!!
 
 ## Comunicación
 

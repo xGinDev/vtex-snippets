@@ -51,7 +51,8 @@ Después de instalar la extensión, configura los aliases de terminal ejecutando
 1. Abre la paleta de comandos (`Ctrl + Shift + P` o `Cmd + Shift + P`).
 2. Busca y selecciona `Setup VTEX Snippets Aliases`.
 3. **(Solo para Windows).** Se debe ejecutar el siguiente comando en PowerShell: `Add-Content -Path $PROFILE -Value '$env:PATH += ";C:\ruta\a\vtex"'`
-4. ¡Listo! Los aliases estarán disponibles en tu terminal.
+4. Reinicia tu editor de código.
+5. ¡Listo! Los snippets estarán disponibles en tu terminal.
 
 ## Alias de VTEX
 
@@ -66,8 +67,8 @@ Después de instalar la extensión, configura los aliases de terminal ejecutando
 | `vst` | `vtex setup`                | Configura el entorno de VTEX.                   |
 | `vup` | `vtex update`               | Actualiza las dependencias de VTEX o componentes personalizados que se hayan hecho deploy.                       |
 | `vwd` | `vtex workspace delete`     | Elimina un workspace.                           |
-| `vsl` | `vtex workspace list`       | Lista todos los workspaces disponibles.         |
-| `vsr` | `vtex workspace reset`      | Reinicia un workspace.                          |
+| `vwl` | `vtex workspace list`       | Lista todos los workspaces disponibles.         |
+| `vwr` | `vtex workspace reset`      | Reinicia un workspace.                          |
 | `vrms`| `vtex release major stable` | Publica una versión mayor estable.              |
 | `vrms`| `vtex release minor stable` | Publica una versión menor estable.              |
 | `vrps`| `vtex release patch stable` | Publica una versión de parche estable.          |
