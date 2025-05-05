@@ -1,4 +1,11 @@
 Changelog
+### [0.0.71](https://github.com/xGinDev/vtex-snippets/compare/v0.0.70...v0.0.71) (2025-05-05)
+
+
+### Features
+
+* new commands ([04e251f](https://github.com/xGinDev/vtex-snippets/commit/04e251fad203a9c5f823be8840de0ea4f159769c))
+
 ### [0.0.70](https://github.com/xGinDev/vtex-snippets/compare/v0.0.69...v0.0.70) (2025-05-05)
 
 
