@@ -25,6 +25,12 @@ echo 'alias gc="git commit -m"' >> ~/.zshrc
 echo 'alias gph="git push"' >> ~/.zshrc
 echo 'alias gpl="git pull"' >> ~/.zshrc
 echo 'alias gs="git status"' >> ~/.zshrc
+echo 'alias gb="git branch"' >> ~/.zshrc
+echo 'alias gba="git branch -a"' >> ~/.zshrc
+echo 'alias gbd="git branch -d"' >> ~/.zshrc
+echo 'alias gc="git checkout"' >> ~/.zshrc
+echo 'alias gcb="git checkout -b"' >> ~/.zshrc
+echo 'alias gcba="git checkout -"' >> ~/.zshrc
 echo 'vs() {
     if [ $# -ne 2 ]; then
         echo "Uso: vs <account> <workspace>"

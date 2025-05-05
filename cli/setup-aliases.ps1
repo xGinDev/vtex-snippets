@@ -28,6 +28,12 @@ Add-Content -Path $PROFILE -Value "function gc { git commit -m @args }"
 Add-Content -Path $PROFILE -Value "function gph { git push @args }"
 Add-Content -Path $PROFILE -Value "function gpl { git pull @args }"
 Add-Content -Path $PROFILE -Value "function gs { git status @args }"
+Add-Content -Path $PROFILE -Value "function gb { git branch @args }"
+Add-Content -Path $PROFILE -Value "function gba { git branch -a @args }"
+Add-Content -Path $PROFILE -Value "function gbd { git branch -d @args }"
+Add-Content -Path $PROFILE -Value "function gc { git checkout @args }"
+Add-Content -Path $PROFILE -Value "function gcb { git checkout -b @args }"
+Add-Content -Path $PROFILE -Value "function gcba { git checkout - @args }"
 
 # Función para vtex switch
 Add-Content -Path $PROFILE -Value @"
