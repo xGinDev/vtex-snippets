@@ -101,7 +101,7 @@
     ]
   },
   "lint-staged": {
-    "src/**/*.{json, jsonc}": "eslint"
+    "src/**/*.{json,jsonc}": "eslint"
   },
   "husky": {
     "hooks": {
@@ -110,16 +110,10 @@
   },
   "devDependencies": {
     "@types/node": "^24.8.1",
-    "@types/vscode": "^1.105.0",
+    "@types/vscode": "1.82.0",
     "husky": "^7.0.0",
     "lint-staged": "^11.0.0",
     "standard-version": "^9.5.0",
     "typescript": "^5.9.3"
-  },
-  "dependencies": {
-    "fs": "^0.0.1-security",
-    "os": "^0.1.2",
-    "path": "^0.12.7",
-    "vscode": "^1.1.37"
   }
 }
