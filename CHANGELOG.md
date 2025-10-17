@@ -1,4 +1,11 @@
 Changelog
+### [0.0.72](https://github.com/xGinDev/vtex-snippets/compare/v0.0.71...v0.0.72) (2025-10-17)
+
+
+### Bug Fixes
+
+* all ([a60d134](https://github.com/xGinDev/vtex-snippets/commit/a60d1343e574e939d40f6dafb5af1d589fb98efb))
+
 ### [0.0.71](https://github.com/xGinDev/vtex-snippets/compare/v0.0.70...v0.0.71) (2025-05-05)
 
 
