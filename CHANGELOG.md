@@ -1,4 +1,12 @@
 Changelog
+### [0.0.73](https://github.com/xGinDev/vtex-snippets/compare/v0.0.72...v0.0.73) (2025-10-17)
+
+
+### Bug Fixes
+
+* all ([dc2f607](https://github.com/xGinDev/vtex-snippets/commit/dc2f6074d582ef606d7b554e6f549ec2edbc3f91))
+* status bar ([4ab937f](https://github.com/xGinDev/vtex-snippets/commit/4ab937f1d710fb63a85ec600b5f7c7723c59d8e2))
+
 ### [0.0.72](https://github.com/xGinDev/vtex-snippets/compare/v0.0.71...v0.0.72) (2025-10-17)
 
 
