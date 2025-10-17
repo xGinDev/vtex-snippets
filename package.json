@@ -24,7 +24,11 @@
     "watch": "tsc -w"
   },
   "activationEvents": [
-    "onCommand:vtex-snippets.setupAliases"
+    "onStartupFinished",
+    "onLanguage:javascript",
+    "onLanguage:typescript",
+    "onLanguage:json",
+    "onLanguage:jsonc"
   ],
   "categories": [
     "Snippets",
