@@ -44,7 +44,7 @@ VTEX IO Snippets are concise, reusable code fragments tailored for VTEX IO. Thes
 | "rc" => "Route Custom"                         |
 
 
-## Configuración de snippets en la terminal
+## Config snippets to CLI
 
 Después de instalar la extensión, configura los aliases de terminal ejecutando el siguiente comando desde la paleta de comandos de VSCode:
 
@@ -56,7 +56,7 @@ Después de instalar la extensión, configura los aliases de terminal ejecutando
 
 ## Alias de VTEX
 
-| Alias | Comando                     | Descripción                                      |
+| Alias | Command                     | Description                                      |
 |-------|-----------------------------|--------------------------------------------------|
 | `vls`  | `vtex list`                 | Muestra el listado de dependencias del proyecto actual con VTEX.             |
 | `vl`  | `vtex link`                 | Linkea el proyecto actual con VTEX.             |
@@ -76,7 +76,7 @@ Después de instalar la extensión, configura los aliases de terminal ejecutando
 | `vpv` | `vtex publish --verbose`    | Publica con mensajes detallados.                |
 | `vdf` | `vtex deploy --force`       | Despliega forzadamente.                         |
 
-## Alias de Git
+## Alias Git
 
 | Alias | Comando          | Descripción                                      |
 |-------|------------------|--------------------------------------------------|
@@ -86,7 +86,7 @@ Después de instalar la extensión, configura los aliases de terminal ejecutando
 | `gpl` | `git pull`       | Obtiene los cambios del repositorio remoto.      |
 | `gs`  | `git status`     | Muestra el estado del repositorio.               |
 
-## Alias de Yarn
+## Alias Yarn
 
 | Alias | Comando    | Descripción                                      |
 |-------|------------|--------------------------------------------------|
