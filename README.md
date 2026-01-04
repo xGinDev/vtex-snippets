@@ -46,7 +46,7 @@ VTEX IO Snippets are concise, reusable code fragments tailored for VTEX IO. Thes
 
 ## Config snippets to CLI
 
-Después de instalar la extensión, configura los aliases de terminal ejecutando el siguiente comando desde la paleta de comandos de VSCode:
+After to install la extensión, configura los aliases de terminal ejecutando el siguiente comando desde la paleta de comandos de VSCode:
 
 1. Abre la paleta de comandos (`Ctrl + Shift + P` o `Cmd + Shift + P`).
 2. Busca y selecciona `Setup VTEX Snippets Aliases`.
