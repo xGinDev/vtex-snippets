@@ -1,16 +1,15 @@
-# Crear el perfil si no existe
 if (-not (Test-Path $PROFILE)) {
     New-Item -ItemType File -Path $PROFILE -Force
 }
 
-# Agregar funciones en lugar de aliases
+#VTEX
+Add-Content -Path $PROFILE -Value "function vls { vtex list @args }"
 Add-Content -Path $PROFILE -Value "function vl { vtex link @args }"
 Add-Content -Path $PROFILE -Value "function vli { vtex login @args }"
 Add-Content -Path $PROFILE -Value "function vlo { vtex logout @args }"
 Add-Content -Path $PROFILE -Value "function vw { vtex whoami @args }"
 Add-Content -Path $PROFILE -Value "function vu { vtex use @args }"
 Add-Content -Path $PROFILE -Value "function vst { vtex setup @args }"
-Add-Content -Path $PROFILE -Value "function vls { vtex list @args }"
 Add-Content -Path $PROFILE -Value "function vup { vtex update @args }"
 Add-Content -Path $PROFILE -Value "function vwd { vtex workspace delete @args }"
 Add-Content -Path $PROFILE -Value "function vwl { vtex workspace list @args }"
@@ -22,11 +21,13 @@ Add-Content -Path $PROFILE -Value "function vwp { vtex workspace promote @args }
 Add-Content -Path $PROFILE -Value "function vpv { vtex publish --verbose @args }"
 Add-Content -Path $PROFILE -Value "function vdf { vtex deploy --force @args }"
 Add-Content -Path $PROFILE -Value "function vi { vtex install @args }"
-Add-Content -Path $PROFILE -Value "function yd { yarn dev @args }"
-Add-Content -Path $PROFILE -Value "function ys { yarn start @args }"
-Add-Content -Path $PROFILE -Value "function yb { yarn build @args }"
+Add-Content -Path $PROFILE -Value "function vuni { vtex uninstall @args }"
+Add-Content -Path $PROFILE -Value "function vunl { vtex unlink @args }"
+
+
+#Git
+Add-Content -Path $PROFILE -Value "function gint { git init @args }"
 Add-Content -Path $PROFILE -Value "function ga { git add . @args }"
-Add-Content -Path $PROFILE -Value "function gc { git commit -m @args }"
 Add-Content -Path $PROFILE -Value "function gph { git push @args }"
 Add-Content -Path $PROFILE -Value "function gpl { git pull @args }"
 Add-Content -Path $PROFILE -Value "function gs { git status @args }"
@@ -36,7 +37,17 @@ Add-Content -Path $PROFILE -Value "function gbd { git branch -d @args }"
 Add-Content -Path $PROFILE -Value "function gcb { git checkout -b @args }"
 Add-Content -Path $PROFILE -Value "function gcba { git checkout - @args }"
 
-# Función para vtex switch
+
+#Yarn
+Add-Content -Path $PROFILE -Value "function yi { yarn install @args }"
+Add-Content -Path $PROFILE -Value "function yst { yarn start @args }"
+Add-Content -Path $PROFILE -Value "function yd { yarn dev @args }"
+Add-Content -Path $PROFILE -Value "function ys { yarn start @args }"
+Add-Content -Path $PROFILE -Value "function yb { yarn build @args }"
+Add-Content -Path $PROFILE -Value "function yss { yarn sass @args }"
+
+
+#Functions
 Add-Content -Path $PROFILE -Value @"
 function vs {
     param (
@@ -51,25 +62,18 @@ function vs {
 }
 "@
 
-# Función para vtex link con account y workspace
+Add-Content -Path $PROFILE -Value "Remove-Item alias:gcm -Force -ErrorAction SilentlyContinue"
 Add-Content -Path $PROFILE -Value @"
-function vsl {
-    param (
-        [string]`$account,
-        [string]`$workspace
-    )
-    if (-not `$account -or -not `$workspace) {
-        Write-Host "Uso: vsl <account> <workspace>"
-        return
-    }
-    vtex link -a `$account -w `$workspace
+function gcmm {
+    `$message = `$args -join ' '
+    git commit -m `$message
 }
 "@
 
-# Recargar el perfil
+# Reload the profile
 try {
     . $PROFILE
-    Write-Host "Funciones configuradas correctamente."
+    Write-Host "Functions configured successfully."
 } catch {
-    Write-Host "Error al recargar el perfil: $_"
+    Write-Host "Error reloading the profile: $_"
 }

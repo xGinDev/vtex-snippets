@@ -15,7 +15,7 @@
   },
   "scripts": {
     "lint-staged": "lint-staged",
-    "postinstall": "husky install && node cli/setup-aliases.js",
+    "postinstall": "node cli/setup-aliases.js",
     "release": "standard-version",
     "release:minor": "standard-version --release-as minor",
     "release:patch": "standard-version --release-as patch",
@@ -107,15 +107,9 @@
   "lint-staged": {
     "src/**/*.{json,jsonc}": "eslint"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn run lint-staged"
-    }
-  },
   "devDependencies": {
     "@types/node": "^24.8.1",
     "@types/vscode": "1.82.0",
-    "husky": "^7.0.0",
     "lint-staged": "^11.0.0",
     "standard-version": "^9.5.0",
     "typescript": "^5.9.3"

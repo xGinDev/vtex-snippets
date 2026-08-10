@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Agregar aliases al archivo de configuración de la terminal
+#VTEX
 echo 'alias vls="vtex list"' >> ~/.zshrc
 echo 'alias vl="vtex link"' >> ~/.zshrc
 echo 'alias vli="vtex login"' >> ~/.zshrc
@@ -18,12 +18,13 @@ echo 'alias vrps="vtex release patch stable"' >> ~/.zshrc
 echo 'alias vwp="vtex workspace promote"' >> ~/.zshrc
 echo 'alias vpv="vtex publish --verbose"' >> ~/.zshrc
 echo 'alias vdf="vtex deploy --force"' >> ~/.zshrc
-echo 'alias vi="vtex install"' >> ~/.zshrc
-echo 'alias yd="yarn dev"' >> ~/.zshrc
-echo 'alias ys="yarn start"' >> ~/.zshrc
-echo 'alias yb="yarn build"' >> ~/.zshrc
+echo 'alias vuni="vtex uninstall"' >> ~/.zshrc
+echo 'alias vunl="vtex unlink"' >> ~/.zshrc
+
+
+#Git
+echo 'alias gint="git init"' >> ~/.zshrc
 echo 'alias ga="git add ."' >> ~/.zshrc
-echo 'alias gc="git commit -m"' >> ~/.zshrc
 echo 'alias gph="git push"' >> ~/.zshrc
 echo 'alias gpl="git pull"' >> ~/.zshrc
 echo 'alias gs="git status"' >> ~/.zshrc
@@ -32,6 +33,18 @@ echo 'alias gba="git branch -a"' >> ~/.zshrc
 echo 'alias gbd="git branch -d"' >> ~/.zshrc
 echo 'alias gcb="git checkout -b"' >> ~/.zshrc
 echo 'alias gcba="git checkout -"' >> ~/.zshrc
+
+
+#Yarn
+echo 'alias yi="yarn install"' >> ~/.zshrc
+echo 'alias yst="yarn start"' >> ~/.zshrc
+echo 'alias yd="yarn dev"' >> ~/.zshrc
+echo 'alias ys="yarn start"' >> ~/.zshrc
+echo 'alias yb="yarn build"' >> ~/.zshrc
+echo 'alias yss="yarn sass"' >> ~/.zshrc
+
+
+#Functions
 echo 'vs() {
     if [ $# -ne 2 ]; then
         echo "Uso: vs <account> <workspace>"
@@ -39,15 +52,16 @@ echo 'vs() {
     fi
     vtex switch $1 -w $2
 }' >> ~/.zshrc
-echo 'vsl() {
-    if [ $# -ne 2 ]; then
-        echo "Uso: vs <account> <workspace>"
-        return 1
-    fi
-    vtex link -a $1 -w $2
+
+# Remove the old gcm alias if it exists
+echo 'unset -f gcm 2>/dev/null || true' >> ~/.zshrc
+
+echo 'gcmm() {
+    message=$1
+    git commit -m "$message"
 }' >> ~/.zshrc
 
-# Recargar la configuración de la terminal
+# Reload the terminal configuration
 source ~/.zshrc
 
-echo "Aliases configurados correctamente."
+echo "Aliases configured successfully."
