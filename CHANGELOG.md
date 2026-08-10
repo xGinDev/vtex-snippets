@@ -1,4 +1,12 @@
 Changelog
+### [0.0.74](https://github.com/xGinDev/vtex-snippets/compare/v0.0.73...v0.0.74) (2026-08-10)
+
+
+### Bug Fixes
+
+* all ([b31f1b7](https://github.com/xGinDev/vtex-snippets/commit/b31f1b717def5496b1d5dbba6752a8e445b3ede9))
+* cli commands ([c81bc75](https://github.com/xGinDev/vtex-snippets/commit/c81bc759e989bc46befce65333eaf3d4473b8273))
+
 ### [0.0.73](https://github.com/xGinDev/vtex-snippets/compare/v0.0.72...v0.0.73) (2025-10-17)
 
 
