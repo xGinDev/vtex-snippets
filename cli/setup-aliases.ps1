@@ -36,7 +36,7 @@ Add-Content -Path $PROFILE -Value "function gba { git branch -a @args }"
 Add-Content -Path $PROFILE -Value "function gbd { git branch -d @args }"
 Add-Content -Path $PROFILE -Value "function gcb { git checkout -b @args }"
 Add-Content -Path $PROFILE -Value "function gcba { git checkout - @args }"
-
+Add-Content -Path $PROFILE -Value "function gpr { git pull --rebase origin @args }"
 
 #Yarn
 Add-Content -Path $PROFILE -Value "function yi { yarn install @args }"

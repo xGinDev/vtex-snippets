@@ -75,19 +75,30 @@ After to install la extensión, configura los aliases de terminal ejecutando el 
 | `vwp` | `vtex workspace promote`    | Promueve un workspace a producción.             |
 | `vpv` | `vtex publish --verbose`    | Publica con mensajes detallados.                |
 | `vdf` | `vtex deploy --force`       | Despliega forzadamente.                         |
+| `vuni` | `vtex uninstall`       | Desinstala un componente.                         |
+| `vunl` | `vtex unlink`       | Desvincula un componente.                         |
 
 ## Alias Git
 
 | Alias | Comando          | Descripción                                      |
 |-------|------------------|--------------------------------------------------|
+| `gint`  | `git init`      | Inicializa un repositorio git.        |
 | `ga`  | `git add .`      | Agrega todos los cambios al staging area.        |
-| `gc`  | `git commit -m`  | Realiza un commit con un mensaje.                |
+| `gcmm`  | `git commit -m`  | Realiza un commit con un mensaje.                |
+| `gcb`  | `git checkout -b`  | Crea y cambia a una nueva rama.                |
+| `gcba`  | `git checkout -`  | Cambia a la rama anterior.                |
 | `gph` | `git push`       | Sube los cambios al repositorio remoto.          |
 | `gpl` | `git pull`       | Obtiene los cambios del repositorio remoto.      |
 | `gs`  | `git status`     | Muestra el estado del repositorio.               |
+| `gpr`  | `git pull --rebase origin`  | Obtiene los cambios del repositorio remoto y los rebase.                |
 
 ## Alias Yarn
 
 | Alias | Comando    | Descripción                                      |
 |-------|------------|--------------------------------------------------|
+| `yi`  | `yarn install` | Instala las dependencias.                |
+| `yst`  | `yarn start` | Inicia el servidor de desarrollo.                |
 | `yd`  | `yarn dev` | Inicia el servidor de desarrollo.                |
+| `yb`  | `yarn build` | Construye el proyecto.                |
+| `yss`  | `yarn sass` | Compila los archivos SASS.                |
+
